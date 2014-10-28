@@ -1,0 +1,191 @@
+//-------------------------- 10/27/2014 -- 20:22:25 -----
+Processor Init:
+   Intel Pentium III, ~2.53 Ghz
+   FPU detected
+   MMX detected
+   SSE detected
+   SSE2 detected
+   MP detected [2 cores, 2 logical, 1 physical]
+ 
+Math Init:
+   Installing Standard C extensions
+   Installing Assembly extensions
+   Installing FPU extensions
+   Installing MMX extensions
+   Installing SSE extensions
+ 
+Initializing platform...
+Input Init:
+   keyboard0 input device created.
+   mouse0 input device created.
+   DirectInput enabled.
+
+Done
+SFXFMODProvider - Could not locate 'fmodex.dll' or 'fmodexp.dll' - FMOD  not available.
+GFX Init:
+   Direct 3D (version 9.x) device found
+   Null device found
+
+DebugDrawer Enabled!
+--------- Loading DIRS ---------
+
+--------- Parsing Arguments ---------
+Binding server port to default IP
+UDP initialized on port 0
+Attempting to create GFX device: NVIDIA GeForce GTX 260M   (D3D9) [\\.\DISPLAY1]
+Device created, setting adapter and enumerating modes
+   Cur. D3DDevice ref count=1
+   Pix version detected: 3.000000
+   Vert version detected: 3.000000
+   Maximum number of simultaneous samplers: 16
+   Number of simultaneous render targets: 4
+   Hardware occlusion query detected: Yes
+   Using Direct3D9Ex: No
+WMIVideoInfo: DxDiag initialized
+Initializing GFXCardProfiler (D3D9)
+   o Chipset : 'GeForce GTX 260M'
+   o Card    : 'GeForce GTX 260M  '
+   o Version : '9.18.0013.3788'
+   - Scanning card capabilities...
+GFXCardProfiler (D3D9) - Setting capability 'autoMipMapLevel' to 1.
+GFXCardProfiler (D3D9) - Setting capability 'maxTextureWidth' to 8192.
+GFXCardProfiler (D3D9) - Setting capability 'maxTextureHeight' to 8192.
+GFXCardProfiler (D3D9) - Setting capability 'maxTextureSize' to 8192.
+GFXCardProfiler (D3D9) - Setting capability 'lerpDetailBlend' to 1.
+GFXCardProfiler (D3D9) - Setting capability 'fourStageDetailBlend' to 1.
+   - Loading card profiles...
+      - Loaded card profile core/profile/D3D9.cs
+      - No card profile core/profile/D3D9.GeForceGTX260M.cs exists
+      - No card profile core/profile/D3D9.GeForceGTX260M.GeForceGTX260M.cs exists
+      - No card profile core/profile/D3D9.GeForceGTX260M.GeForceGTX260M.91800133788.cs exists
+% - PostFX Manager - Executing core/scripts/client/postFx/default.postfxpreset.cs
+% - PostFX Manager - Applying from preset
+% - PostFX Manager - PostFX enabled
+ % - Initialized Core
+
+--------- Initializing Directory: scripts ---------
+sfxStartup...
+SFXSystem::createDevice - created DirectSound device 'Speakers (High Definition Audio Device)'
+SFXDSDevice::setDistanceModel - 'linear' distance attenuation not supported by DirectSound
+   Provider: DirectSound
+   Device: Speakers (High Definition Audio Device)
+   Hardware: No
+   Buffers: 16
+
+--------- Initializing TowerWars: Server Scripts ---------
+
+--------- Initializing TowerWars: Client Scripts ---------
+
+--------- Initializing Lighting Systems ---------
+Using Advanced Lighting
+
+
+--------------
+Attempting to set resolution to "1024 768 false 32 60 4"
+Accepted Mode: 
+--Resolution : 1024 768
+--Full Screen : No
+--Bits Per Pixel : 32
+--Refresh Rate : 60
+--FSAA Level : 4
+--------------
+GFXPCD3D9Device::reset - depthstencil 4c65d60 has 2 ref's
+--- Resetting D3D Device ---
+GFXPCD3D9Device::reset - depthstencil 4c6de40 has 2 ref's
+--- Resetting D3D Device ---
+Binding server port to default IP
+UDP initialized on port 0
+ % - Initializing Tools
+ % - Initializing Tools Base
+ % - Initializing Base Editor
+ % - Initializing World Editor
+ % - Initializing Sketch Tool
+ - Initializing Datablock Editor
+ % - Initializing Debugger
+ % - Initializing Decal Editor
+ % - Initializing Forest Editor
+ % - Initializing Gui Editor
+ % - Initializing Material Editor
+ % - Initializing Mesh Road Editor
+ % - Initializing Mission Area Editor
+ % - Initializing Particle Editor
+ % - Initializing Physics Tools
+No physics plugin exists.
+ % - Initializing River Editor
+ - Initializing Road and Path Editor
+ % - Initializing Shape Editor
+Engine initialized...
+Win32Window::WindowProc - resetting device due to window size change.
+GFXPCD3D9Device::reset - depthstencil 4cd0ea0 has 2 ref's
+--- Resetting D3D Device ---
+AntiAliasing has been disabled; it is not compatible with AdvancedLighting.
+Window focus status changed: focus: 1
+Time spent in toggleEditor() : 1.306 s
+Exporting server prefs...
+*** LOADING MISSION: tools/levels/BlankRoom.mis
+*** Stage 1 load
+*** Stage 2 load
+*** Mission loaded
+Connect request from: 
+Connection established 3985
+CADD: 3986 local
+*** Sending mission load to client: tools/levels/BlankRoom.mis
+Mapping string: ServerMessage to index: 0
+Mapping string: MsgConnectionError to index: 1
+onServerMessage: 
+Mapping string: MsgLoadInfo to index: 2
+onServerMessage: 
+Mapping string: MsgLoadDescripition to index: 3
+onServerMessage: 
+Mapping string: MsgLoadInfoDone to index: 4
+onServerMessage: 
+Mapping string: MsgClientJoin to index: 5
+Mapping string: Welcome to a Torque application %1. to index: 6
+Mapping string: Visitor to index: 7
+onServerMessage: 
+  +- a: Welcome to a Torque application Visitor.
+Mapping string: MissionStartPhase1 to index: 8
+*** New Mission: tools/levels/BlankRoom.mis
+*** Phase 1: Download Datablocks & Targets
+% - PostFX Manager - Executing core/scripts/client/postFx/default.postfxpreset.cs
+% - PostFX Manager - Applying from preset
+% - PostFX Manager - PostFX enabled
+Mapping string: MissionStartPhase1Ack to index: 0
+Mapping string: MissionStartPhase2 to index: 9
+*** Phase 2: Download Ghost Objects
+Mapping string: MissionStartPhase2Ack to index: 1
+[Material::mapMaterial] - Cannot map unnamed Material
+[Material::mapMaterial] - Cannot map unnamed Material
+H:/Torque3D-3-0/Torque3D/My Projects/TowerWars/game/shaders/procedural/632b5031898a125e_V.hlsl(48,35): warning X3206: 'mul': implicit truncation of vector type
+Ghost Always objects received.
+Mapping string: MissionStartPhase3 to index: 10
+Client Replication Startup has Happened!
+fxFoliageReplicator - replicated client foliage for 0 objects
+Failed to create resource: [tools/levels/BlankRoom.mis.decals]
+*** Phase 3: Mission Lighting
+Mission lighting done
+Mapping string: MissionStartPhase3Ack to index: 2
+Unable to spawn an object without a spawnClass
+Mapping string: MissionStart to index: 11
+*** Initial Control Object
+Activating DirectInput...
+Missing file: art/forest/brushes.cs!
+Win32Window::WindowProc - resetting device due to window size change.
+GFXPCD3D9Device::reset - depthstencil 4cd0ea0 has 2 ref's
+--- Resetting D3D Device ---
+Time spent in toggleEditor() : 17.163 s
+*** Control Object Changed
+Window focus status changed: focus: 0
+  Using background sleep time: 200
+Win32Window::WindowProc - resetting device due to window size change.
+Window focus status changed: focus: 1
+Mapping string: EditorOrbitCameraSelectChange to index: 3
+Win32Window::WindowProc - resetting device due to window size change.
+GFXPCD3D9Device::reset - depthstencil 6433ce0 has 2 ref's
+--- Resetting D3D Device ---
+*** ENDING MISSION
+CDROP: 3986 
+Exporting server prefs...
+Exporting client prefs
+Exporting server prefs
+Cur. D3DDevice ref count=1
