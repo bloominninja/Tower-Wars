@@ -24,3 +24,27 @@
 // This is the default save location for any GuiProfiles created in the
 // Gui Editor
 // ----------------------------------------------------------------------------
+
+
+singleton GuiControlProfile(CMenuTabBg : CMenuTab)
+{
+   fillColor = "74 165 231 255";
+};
+
+singleton GuiControlProfile(CTab : GuiTabPageProfile)
+{
+   fillColor = "215 241 175 255";
+   fillColorHL = "0 119 255 255";
+   fillColorNA = "255 0 36 255";
+   opaque = "1";
+   fontSize = "20";
+   fontType = "Impact";
+};
+
+singleton GuiControlProfile(CTabContainer : CTab)
+{
+   fillColor = "131 136 124 255";
+   fontType = "Impact";
+   fontColors[0] = "41 41 49 255";
+   fontColor = "41 41 49 255";
+};

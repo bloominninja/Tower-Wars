@@ -1,11 +1,12 @@
-//-------------------------- 10/27/2014 -- 20:22:25 -----
+//-------------------------- 11/9/2014 -- 10:37:28 -----
 Processor Init:
-   Intel Pentium III, ~2.53 Ghz
+   AMD (unknown), ~3.89 Ghz
    FPU detected
    MMX detected
    SSE detected
    SSE2 detected
-   MP detected [2 cores, 2 logical, 1 physical]
+   HT detected
+   MP detected [1 cores, 4 logical, 1 physical]
  
 Math Init:
    Installing Standard C extensions
@@ -18,9 +19,11 @@ Initializing platform...
 Input Init:
    keyboard0 input device created.
    mouse0 input device created.
+   joystick0 input device created.
    DirectInput enabled.
 
 Done
+SFXALProvider - OpenAL not available.
 SFXFMODProvider - Could not locate 'fmodex.dll' or 'fmodexp.dll' - FMOD  not available.
 GFX Init:
    Direct 3D (version 9.x) device found
@@ -32,7 +35,7 @@ DebugDrawer Enabled!
 --------- Parsing Arguments ---------
 Binding server port to default IP
 UDP initialized on port 0
-Attempting to create GFX device: NVIDIA GeForce GTX 260M   (D3D9) [\\.\DISPLAY1]
+Attempting to create GFX device: NVIDIA GeForce GTX 650 Ti (D3D9) [\\.\DISPLAY1]
 Device created, setting adapter and enumerating modes
    Cur. D3DDevice ref count=1
    Pix version detected: 3.000000
@@ -43,21 +46,21 @@ Device created, setting adapter and enumerating modes
    Using Direct3D9Ex: No
 WMIVideoInfo: DxDiag initialized
 Initializing GFXCardProfiler (D3D9)
-   o Chipset : 'GeForce GTX 260M'
-   o Card    : 'GeForce GTX 260M  '
-   o Version : '9.18.0013.3788'
+   o Chipset : 'GeForce GTX 650 Ti'
+   o Card    : 'GeForce GTX 650 Ti'
+   o Version : '9.18.0013.4052'
    - Scanning card capabilities...
 GFXCardProfiler (D3D9) - Setting capability 'autoMipMapLevel' to 1.
-GFXCardProfiler (D3D9) - Setting capability 'maxTextureWidth' to 8192.
-GFXCardProfiler (D3D9) - Setting capability 'maxTextureHeight' to 8192.
-GFXCardProfiler (D3D9) - Setting capability 'maxTextureSize' to 8192.
+GFXCardProfiler (D3D9) - Setting capability 'maxTextureWidth' to 16384.
+GFXCardProfiler (D3D9) - Setting capability 'maxTextureHeight' to 16384.
+GFXCardProfiler (D3D9) - Setting capability 'maxTextureSize' to 16384.
 GFXCardProfiler (D3D9) - Setting capability 'lerpDetailBlend' to 1.
 GFXCardProfiler (D3D9) - Setting capability 'fourStageDetailBlend' to 1.
    - Loading card profiles...
       - Loaded card profile core/profile/D3D9.cs
-      - No card profile core/profile/D3D9.GeForceGTX260M.cs exists
-      - No card profile core/profile/D3D9.GeForceGTX260M.GeForceGTX260M.cs exists
-      - No card profile core/profile/D3D9.GeForceGTX260M.GeForceGTX260M.91800133788.cs exists
+      - No card profile core/profile/D3D9.GeForceGTX650Ti.cs exists
+      - No card profile core/profile/D3D9.GeForceGTX650Ti.GeForceGTX650Ti.cs exists
+      - No card profile core/profile/D3D9.GeForceGTX650Ti.GeForceGTX650Ti.91800134052.cs exists
 % - PostFX Manager - Executing core/scripts/client/postFx/default.postfxpreset.cs
 % - PostFX Manager - Applying from preset
 % - PostFX Manager - PostFX enabled
@@ -65,10 +68,11 @@ GFXCardProfiler (D3D9) - Setting capability 'fourStageDetailBlend' to 1.
 
 --------- Initializing Directory: scripts ---------
 sfxStartup...
-SFXSystem::createDevice - created DirectSound device 'Speakers (High Definition Audio Device)'
+SFXSystem::createDevice - failed creating DirectSound device 'Speakers (High Definition Audio Device)'
+SFXSystem::createDevice - created DirectSound device 'Speakers (2- Logitech G430 Gaming Headset)'
 SFXDSDevice::setDistanceModel - 'linear' distance attenuation not supported by DirectSound
    Provider: DirectSound
-   Device: Speakers (High Definition Audio Device)
+   Device: Speakers (2- Logitech G430 Gaming Headset)
    Hardware: No
    Buffers: 16
 
@@ -89,9 +93,9 @@ Accepted Mode:
 --Refresh Rate : 60
 --FSAA Level : 4
 --------------
-GFXPCD3D9Device::reset - depthstencil 4c65d60 has 2 ref's
+GFXPCD3D9Device::reset - depthstencil 508e8a0 has 2 ref's
 --- Resetting D3D Device ---
-GFXPCD3D9Device::reset - depthstencil 4c6de40 has 2 ref's
+GFXPCD3D9Device::reset - depthstencil 4e6840 has 2 ref's
 --- Resetting D3D Device ---
 Binding server port to default IP
 UDP initialized on port 0
@@ -115,20 +119,100 @@ No physics plugin exists.
  - Initializing Road and Path Editor
  % - Initializing Shape Editor
 Engine initialized...
-Win32Window::WindowProc - resetting device due to window size change.
-GFXPCD3D9Device::reset - depthstencil 4cd0ea0 has 2 ref's
---- Resetting D3D Device ---
-AntiAliasing has been disabled; it is not compatible with AdvancedLighting.
 Window focus status changed: focus: 1
-Time spent in toggleEditor() : 1.306 s
+AntiAliasing has been disabled; it is not compatible with AdvancedLighting.
+Time spent in toggleEditor() : 0.016 s
+Win32Window::WindowProc - resetting device due to window size change.
+GFXPCD3D9Device::reset - depthstencil 4e6840 has 2 ref's
+--- Resetting D3D Device ---
+Window focus status changed: focus: 0
+  Using background sleep time: 200
+Window focus status changed: focus: 1
+Window focus status changed: focus: 0
+  Using background sleep time: 200
+Window focus status changed: focus: 1
+Window focus status changed: focus: 0
+  Using background sleep time: 200
+Window focus status changed: focus: 1
+Window focus status changed: focus: 0
+  Using background sleep time: 200
+Window focus status changed: focus: 1
+Win32Window::WindowProc - resetting device due to window size change.
+GFXPCD3D9Device::reset - depthstencil 50d4760 has 2 ref's
+--- Resetting D3D Device ---
+Window focus status changed: focus: 0
+  Using background sleep time: 200
+Window focus status changed: focus: 1
+Window focus status changed: focus: 0
+  Using background sleep time: 200
+Window focus status changed: focus: 1
+Window focus status changed: focus: 0
+  Using background sleep time: 200
+Window focus status changed: focus: 1
+Window focus status changed: focus: 0
+  Using background sleep time: 200
+Window focus status changed: focus: 1
+Window focus status changed: focus: 0
+  Using background sleep time: 200
+Window focus status changed: focus: 1
+Window focus status changed: focus: 0
+  Using background sleep time: 200
+Window focus status changed: focus: 1
+Window focus status changed: focus: 0
+  Using background sleep time: 200
+Window focus status changed: focus: 1
+Window focus status changed: focus: 0
+  Using background sleep time: 200
+Window focus status changed: focus: 1
+<input> (0): Unable to find object: 'Editor' attempting to call function 'close'
+Win32Window::WindowProc - resetting device due to window size change.
+GFXPCD3D9Device::reset - depthstencil 50d4a80 has 2 ref's
+--- Resetting D3D Device ---
+Win32Window::WindowProc - resetting device due to window size change.
+GFXPCD3D9Device::reset - depthstencil 508e8a0 has 2 ref's
+--- Resetting D3D Device ---
+Window focus status changed: focus: 0
+  Using background sleep time: 200
+Window focus status changed: focus: 1
+<input> (0): Unable to find object: 'Editor' attempting to call function 'close'
+Win32Window::WindowProc - resetting device due to window size change.
+GFXPCD3D9Device::reset - depthstencil 508e7e0 has 2 ref's
+--- Resetting D3D Device ---
+Win32Window::WindowProc - resetting device due to window size change.
+GFXPCD3D9Device::reset - depthstencil 508e7e0 has 2 ref's
+--- Resetting D3D Device ---
+<input> (0): Unable to find object: 'Editor' attempting to call function 'close'
+Win32Window::WindowProc - resetting device due to window size change.
+GFXPCD3D9Device::reset - depthstencil 508e8a0 has 2 ref's
+--- Resetting D3D Device ---
+Win32Window::WindowProc - resetting device due to window size change.
+GFXPCD3D9Device::reset - depthstencil 508e7e0 has 2 ref's
+--- Resetting D3D Device ---
+Window focus status changed: focus: 0
+  Using background sleep time: 200
+Window focus status changed: focus: 1
+tools/guiEditor/scripts/guiEditorProfiles.ed.cs (366): Unable to find object: '' attempting to call function 'getFilename'
+Window focus status changed: focus: 0
+  Using background sleep time: 200
+Window focus status changed: focus: 1
+<input> (0): Unable to find object: 'Editor' attempting to call function 'close'
+Win32Window::WindowProc - resetting device due to window size change.
+GFXPCD3D9Device::reset - depthstencil 508e7e0 has 2 ref's
+--- Resetting D3D Device ---
+Win32Window::WindowProc - resetting device due to window size change.
+GFXPCD3D9Device::reset - depthstencil 508e7e0 has 2 ref's
+--- Resetting D3D Device ---
+Window focus status changed: focus: 0
+  Using background sleep time: 200
+Window focus status changed: focus: 1
 Exporting server prefs...
 *** LOADING MISSION: tools/levels/BlankRoom.mis
 *** Stage 1 load
 *** Stage 2 load
 *** Mission loaded
 Connect request from: 
-Connection established 3985
-CADD: 3986 local
+Connection established 12467
+CADD: 12468 local
 *** Sending mission load to client: tools/levels/BlankRoom.mis
 Mapping string: ServerMessage to index: 0
 Mapping string: MsgConnectionError to index: 1
@@ -137,6 +221,9 @@ Mapping string: MsgLoadInfo to index: 2
 onServerMessage: 
 Mapping string: MsgLoadDescripition to index: 3
 onServerMessage: 
+Win32Window::WindowProc - resetting device due to window size change.
+GFXPCD3D9Device::reset - depthstencil 508e7e0 has 2 ref's
+--- Resetting D3D Device ---
 Mapping string: MsgLoadInfoDone to index: 4
 onServerMessage: 
 Mapping string: MsgClientJoin to index: 5
@@ -156,7 +243,7 @@ Mapping string: MissionStartPhase2 to index: 9
 Mapping string: MissionStartPhase2Ack to index: 1
 [Material::mapMaterial] - Cannot map unnamed Material
 [Material::mapMaterial] - Cannot map unnamed Material
-H:/Torque3D-3-0/Torque3D/My Projects/TowerWars/game/shaders/procedural/632b5031898a125e_V.hlsl(48,35): warning X3206: 'mul': implicit truncation of vector type
+C:/Users/Erin/Desktop/CS425GIT/TowerWars/game/shaders/procedural/632b5031898a125e_V.hlsl(48,35): warning X3206: 'mul': implicit truncation of vector type
 Ghost Always objects received.
 Mapping string: MissionStartPhase3 to index: 10
 Client Replication Startup has Happened!
@@ -171,21 +258,204 @@ Mapping string: MissionStart to index: 11
 Activating DirectInput...
 Missing file: art/forest/brushes.cs!
 Win32Window::WindowProc - resetting device due to window size change.
-GFXPCD3D9Device::reset - depthstencil 4cd0ea0 has 2 ref's
+GFXPCD3D9Device::reset - depthstencil 50d4a80 has 2 ref's
 --- Resetting D3D Device ---
-Time spent in toggleEditor() : 17.163 s
+Time spent in toggleEditor() : 1.156 s
 *** Control Object Changed
-Window focus status changed: focus: 0
-  Using background sleep time: 200
 Win32Window::WindowProc - resetting device due to window size change.
-Window focus status changed: focus: 1
-Mapping string: EditorOrbitCameraSelectChange to index: 3
+GFXPCD3D9Device::reset - depthstencil 7d112a0 has 2 ref's
+--- Resetting D3D Device ---
+Time spent in toggleEditor() : 0.028 s
 Win32Window::WindowProc - resetting device due to window size change.
-GFXPCD3D9Device::reset - depthstencil 6433ce0 has 2 ref's
+GFXPCD3D9Device::reset - depthstencil 7d112a0 has 2 ref's
+--- Resetting D3D Device ---
+Win32Window::WindowProc - resetting device due to window size change.
+GFXPCD3D9Device::reset - depthstencil 7d112a0 has 2 ref's
+--- Resetting D3D Device ---
+Win32Window::WindowProc - resetting device due to window size change.
+GFXPCD3D9Device::reset - depthstencil 7d112a0 has 2 ref's
+--- Resetting D3D Device ---
+Time spent in toggleEditor() : 0.202 s
+Win32Window::WindowProc - resetting device due to window size change.
+GFXPCD3D9Device::reset - depthstencil 7d112a0 has 2 ref's
 --- Resetting D3D Device ---
 *** ENDING MISSION
-CDROP: 3986 
+CDROP: 12468 
+Exporting server prefs...
+Win32Window::WindowProc - resetting device due to window size change.
+GFXPCD3D9Device::reset - depthstencil 7d112a0 has 2 ref's
+--- Resetting D3D Device ---
+<input> (0): Unable to find object: 'Editor' attempting to call function 'close'
+Win32Window::WindowProc - resetting device due to window size change.
+GFXPCD3D9Device::reset - depthstencil 7d112a0 has 2 ref's
+--- Resetting D3D Device ---
+Win32Window::WindowProc - resetting device due to window size change.
+GFXPCD3D9Device::reset - depthstencil 7d112a0 has 2 ref's
+--- Resetting D3D Device ---
+Window focus status changed: focus: 0
+  Using background sleep time: 200
+DirectInput deactivated.
+Activating DirectInput...
+Window focus status changed: focus: 1
+Window focus status changed: focus: 0
+  Using background sleep time: 200
+DirectInput deactivated.
+Activating DirectInput...
+Window focus status changed: focus: 1
+Window focus status changed: focus: 0
+  Using background sleep time: 200
+DirectInput deactivated.
+Activating DirectInput...
+Window focus status changed: focus: 1
+Window focus status changed: focus: 0
+  Using background sleep time: 200
+DirectInput deactivated.
+Activating DirectInput...
+Window focus status changed: focus: 1
+Window focus status changed: focus: 0
+  Using background sleep time: 200
+DirectInput deactivated.
+Activating DirectInput...
+Window focus status changed: focus: 1
+Window focus status changed: focus: 0
+  Using background sleep time: 200
+DirectInput deactivated.
+Activating DirectInput...
+Window focus status changed: focus: 1
+<input> (0): Unable to find object: 'Editor' attempting to call function 'close'
+Win32Window::WindowProc - resetting device due to window size change.
+GFXPCD3D9Device::reset - depthstencil 7d112a0 has 2 ref's
+--- Resetting D3D Device ---
+Win32Window::WindowProc - resetting device due to window size change.
+GFXPCD3D9Device::reset - depthstencil 7d112a0 has 2 ref's
+--- Resetting D3D Device ---
+Window focus status changed: focus: 0
+  Using background sleep time: 200
+DirectInput deactivated.
+Activating DirectInput...
+Window focus status changed: focus: 1
+Window focus status changed: focus: 0
+  Using background sleep time: 200
+DirectInput deactivated.
+Activating DirectInput...
+Window focus status changed: focus: 1
+Window focus status changed: focus: 0
+  Using background sleep time: 200
+DirectInput deactivated.
+Activating DirectInput...
+Window focus status changed: focus: 1
+Window focus status changed: focus: 0
+  Using background sleep time: 200
+DirectInput deactivated.
+Activating DirectInput...
+Window focus status changed: focus: 1
+<input> (0): Unable to find object: 'Editor' attempting to call function 'close'
+Win32Window::WindowProc - resetting device due to window size change.
+GFXPCD3D9Device::reset - depthstencil 7d112a0 has 2 ref's
+--- Resetting D3D Device ---
+Win32Window::WindowProc - resetting device due to window size change.
+GFXPCD3D9Device::reset - depthstencil 7d112a0 has 2 ref's
+--- Resetting D3D Device ---
+Window focus status changed: focus: 0
+  Using background sleep time: 200
+DirectInput deactivated.
+Activating DirectInput...
+Window focus status changed: focus: 1
+Window focus status changed: focus: 0
+  Using background sleep time: 200
+DirectInput deactivated.
+Activating DirectInput...
+Window focus status changed: focus: 1
+<input> (0): Unable to find object: 'Editor' attempting to call function 'close'
+Win32Window::WindowProc - resetting device due to window size change.
+GFXPCD3D9Device::reset - depthstencil 7d112a0 has 2 ref's
+--- Resetting D3D Device ---
+Win32Window::WindowProc - resetting device due to window size change.
+GFXPCD3D9Device::reset - depthstencil 7d112a0 has 2 ref's
+--- Resetting D3D Device ---
+Window focus status changed: focus: 0
+  Using background sleep time: 200
+DirectInput deactivated.
+Activating DirectInput...
+Window focus status changed: focus: 1
+<input> (0): Unable to find object: 'Editor' attempting to call function 'close'
+Win32Window::WindowProc - resetting device due to window size change.
+GFXPCD3D9Device::reset - depthstencil 7d112a0 has 2 ref's
+--- Resetting D3D Device ---
+Win32Window::WindowProc - resetting device due to window size change.
+GFXPCD3D9Device::reset - depthstencil 7d112a0 has 2 ref's
+--- Resetting D3D Device ---
+<input> (0): Unable to find object: 'Editor' attempting to call function 'close'
+Win32Window::WindowProc - resetting device due to window size change.
+GFXPCD3D9Device::reset - depthstencil 7d112a0 has 2 ref's
+--- Resetting D3D Device ---
+Win32Window::WindowProc - resetting device due to window size change.
+GFXPCD3D9Device::reset - depthstencil 7d112a0 has 2 ref's
+--- Resetting D3D Device ---
+<input> (0): Unable to find object: 'Editor' attempting to call function 'close'
+Win32Window::WindowProc - resetting device due to window size change.
+GFXPCD3D9Device::reset - depthstencil 7d112a0 has 2 ref's
+--- Resetting D3D Device ---
+Win32Window::WindowProc - resetting device due to window size change.
+GFXPCD3D9Device::reset - depthstencil 7d112a0 has 2 ref's
+--- Resetting D3D Device ---
+<input> (0): Unable to find object: 'Editor' attempting to call function 'close'
+Win32Window::WindowProc - resetting device due to window size change.
+GFXPCD3D9Device::reset - depthstencil 7d112a0 has 2 ref's
+--- Resetting D3D Device ---
+Win32Window::WindowProc - resetting device due to window size change.
+GFXPCD3D9Device::reset - depthstencil 7d112a0 has 2 ref's
+--- Resetting D3D Device ---
+Window focus status changed: focus: 0
+  Using background sleep time: 200
+DirectInput deactivated.
+Activating DirectInput...
+Window focus status changed: focus: 1
+tools/guiEditor/scripts/guiEditorProfiles.ed.cs (87): Unknown command isInUse.
+  Object CMenuTab(11245) CMenuTab -> GuiControlProfile -> SimObject
+tools/guiEditor/scripts/guiEditorProfiles.ed.cs (106): Cannot re-declare object [GuiEditorProfilesPM].
+<input> (0): Unable to find object: 'Editor' attempting to call function 'close'
+Win32Window::WindowProc - resetting device due to window size change.
+GFXPCD3D9Device::reset - depthstencil 7d112a0 has 2 ref's
+--- Resetting D3D Device ---
+Win32Window::WindowProc - resetting device due to window size change.
+GFXPCD3D9Device::reset - depthstencil 7d112a0 has 2 ref's
+--- Resetting D3D Device ---
+<input> (0): Unable to find object: 'Editor' attempting to call function 'close'
+Win32Window::WindowProc - resetting device due to window size change.
+GFXPCD3D9Device::reset - depthstencil 7d112a0 has 2 ref's
+--- Resetting D3D Device ---
+Win32Window::WindowProc - resetting device due to window size change.
+GFXPCD3D9Device::reset - depthstencil 7d112a0 has 2 ref's
+--- Resetting D3D Device ---
+Window focus status changed: focus: 0
+  Using background sleep time: 200
+DirectInput deactivated.
+Activating DirectInput...
+Window focus status changed: focus: 1
+<input> (0): Unable to find object: 'Editor' attempting to call function 'close'
+Win32Window::WindowProc - resetting device due to window size change.
+GFXPCD3D9Device::reset - depthstencil 7d112a0 has 2 ref's
+--- Resetting D3D Device ---
+Win32Window::WindowProc - resetting device due to window size change.
+GFXPCD3D9Device::reset - depthstencil 7d112a0 has 2 ref's
+--- Resetting D3D Device ---
+<input> (0): Unable to find object: 'Editor' attempting to call function 'close'
+Win32Window::WindowProc - resetting device due to window size change.
+GFXPCD3D9Device::reset - depthstencil 7d112a0 has 2 ref's
+--- Resetting D3D Device ---
+Win32Window::WindowProc - resetting device due to window size change.
+GFXPCD3D9Device::reset - depthstencil 7d112a0 has 2 ref's
+--- Resetting D3D Device ---
+Window focus status changed: focus: 0
+  Using background sleep time: 200
+DirectInput deactivated.
+Activating DirectInput...
+Window focus status changed: focus: 1
 Exporting server prefs...
 Exporting client prefs
 Exporting server prefs
+Win32Window::WindowProc - resetting device due to window size change.
+GFXPCD3D9Device::reset - depthstencil 7d112a0 has 2 ref's
+--- Resetting D3D Device ---
 Cur. D3DDevice ref count=1
