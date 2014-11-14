@@ -1,10 +1,10 @@
 //--- OBJECT WRITE BEGIN ---
 %guiContent = new GuiChunkedBitmapCtrl(MainMenuGui) {
-   bitmap = "art/gui/background";
+   bitmap = "art/gui/launcher/bg.png";
    useVariable = "0";
    tile = "0";
    position = "0 0";
-   extent = "1024 768";
+   extent = "1280 1024";
    minExtent = "8 8";
    horizSizing = "width";
    vertSizing = "height";
@@ -19,25 +19,6 @@
       enabled = "1";
       isDecoy = "0";
 
-   new GuiBitmapCtrl(MainMenuAppLogo) {
-      bitmap = "art/gui/Torque-3D-logo.png";
-      wrap = "0";
-      position = "19 29";
-      extent = "295 77";
-      minExtent = "8 2";
-      horizSizing = "left";
-      vertSizing = "bottom";
-      profile = "GuiDefaultProfile";
-      visible = "1";
-      active = "1";
-      tooltipProfile = "GuiToolTipProfile";
-      hovertime = "1000";
-      isContainer = "0";
-      canSave = "1";
-      canSaveDynamicFields = "1";
-         enabled = "1";
-         isDecoy = "0";
-   };
    new GuiContainer(LauncherMenu) {
       margin = "0 0 0 0";
       padding = "0 0 0 0";
@@ -45,11 +26,11 @@
       anchorBottom = "0";
       anchorLeft = "1";
       anchorRight = "0";
-      position = "9 82";
+      position = "137 202";
       extent = "1006 619";
       minExtent = "8 2";
-      horizSizing = "right";
-      vertSizing = "bottom";
+      horizSizing = "center";
+      vertSizing = "center";
       profile = "CTab";
       visible = "1";
       active = "1";
@@ -174,7 +155,7 @@
          };
       };
       new GuiBitmapButtonTextCtrl(MatchmakingTabButton) {
-         bitmap = "art/gui/launcher/match_tab_selected";
+         bitmap = "art/gui/launcher/match_tab_unselected";
          bitmapMode = "Stretched";
          autoFitExtents = "0";
          useModifiers = "0";
@@ -464,11 +445,12 @@
          horizSizing = "right";
          vertSizing = "bottom";
          profile = "GuiDefaultProfile";
-         visible = "1";
+         visible = "0";
          active = "1";
          tooltipProfile = "GuiToolTipProfile";
          hovertime = "1000";
          isContainer = "1";
+         hidden = "1";
          canSave = "1";
          canSaveDynamicFields = "0";
 
@@ -513,6 +495,23 @@
             canSaveDynamicFields = "0";
          };
       };
+   };
+   new GuiBitmapCtrl() {
+      bitmap = "art/gui/launcher/logo.png";
+      wrap = "0";
+      position = "-33 -15";
+      extent = "357 113";
+      minExtent = "8 2";
+      horizSizing = "right";
+      vertSizing = "bottom";
+      profile = "GuiDefaultProfile";
+      visible = "1";
+      active = "1";
+      tooltipProfile = "GuiToolTipProfile";
+      hovertime = "1000";
+      isContainer = "0";
+      canSave = "1";
+      canSaveDynamicFields = "0";
    };
 };
 //--- OBJECT WRITE END ---
