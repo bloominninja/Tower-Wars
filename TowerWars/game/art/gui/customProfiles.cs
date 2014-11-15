@@ -33,7 +33,7 @@ singleton GuiControlProfile(CMenuTabBg : CMenuTab)
 
 singleton GuiControlProfile(CTab : GuiTabPageProfile)
 {
-   fillColor = "215 241 175 255";
+   fillColor = "22 22 22 255";
    fillColorHL = "0 119 255 255";
    fillColorNA = "255 0 36 255";
    opaque = "1";
@@ -47,4 +47,24 @@ singleton GuiControlProfile(CTabContainer : CTab)
    fontType = "Impact";
    fontColors[0] = "41 41 49 255";
    fontColor = "41 41 49 255";
+};
+
+singleton GuiControlProfile(CContentBackgroundB : CContentBackground)
+{
+   fillColor = "49 49 49 255";
+};
+
+singleton GuiControlProfile(CContentBackground : CTabContainer)
+{
+   fillColor = "135 135 134 255";
+};
+
+singleton GuiControlProfile(CContentPanelTitle)
+{
+   fontType = "Impact";
+   category = "Core";
+   fontSize = "30";
+   justify = "Center";
+   fontColors[0] = "215 215 215 255";
+   fontColor = "215 215 215 255";
 };
