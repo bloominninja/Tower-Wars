@@ -143,7 +143,7 @@
             position = "107 24";
             extent = "559 43";
             minExtent = "8 2";
-            horizSizing = "right";
+            horizSizing = "width";
             vertSizing = "bottom";
             profile = "CContentPanelTitle";
             visible = "1";

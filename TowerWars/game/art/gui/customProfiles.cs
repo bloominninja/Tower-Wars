@@ -63,7 +63,7 @@ singleton GuiControlProfile(CContentPanelTitle)
 {
    fontType = "Impact";
    category = "Core";
-   fontSize = "30";
+   fontSize = "52";
    justify = "Center";
    fontColors[0] = "215 215 215 255";
    fontColor = "215 215 215 255";
