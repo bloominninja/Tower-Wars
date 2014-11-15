@@ -1,4 +1,4 @@
-//-------------------------- 11/14/2014 -- 17:16:45 -----
+//-------------------------- 11/15/2014 -- 07:14:13 -----
 Processor Init:
    AMD (unknown), ~3.89 Ghz
    FPU detected
@@ -93,9 +93,9 @@ Accepted Mode:
 --Refresh Rate : 60
 --FSAA Level : 4
 --------------
-GFXPCD3D9Device::reset - depthstencil 548e8a0 has 2 ref's
+GFXPCD3D9Device::reset - depthstencil 54ae8a0 has 2 ref's
 --- Resetting D3D Device ---
-GFXPCD3D9Device::reset - depthstencil 1f26840 has 2 ref's
+GFXPCD3D9Device::reset - depthstencil 23a6840 has 2 ref's
 --- Resetting D3D Device ---
 Binding server port to default IP
 UDP initialized on port 0
@@ -119,8 +119,9 @@ No physics plugin exists.
  - Initializing Road and Path Editor
  % - Initializing Shape Editor
 Engine initialized...
-Window focus status changed: focus: 1
 AntiAliasing has been disabled; it is not compatible with AdvancedLighting.
+Window focus status changed: focus: 1
+Time spent in toggleEditor() : 0.038 s
 Window focus status changed: focus: 0
   Using background sleep time: 200
 Window focus status changed: focus: 1
@@ -129,21 +130,7 @@ Window focus status changed: focus: 0
 Window focus status changed: focus: 1
 Window focus status changed: focus: 0
   Using background sleep time: 200
-Win32Window::WindowProc - resetting device due to window size change.
 Window focus status changed: focus: 1
-Win32Window::WindowProc - resetting device due to window size change.
-GFXPCD3D9Device::reset - depthstencil 1f26840 has 2 ref's
---- Resetting D3D Device ---
-Win32Window::WindowProc - resetting device due to window size change.
-GFXPCD3D9Device::reset - depthstencil 548e7e0 has 2 ref's
---- Resetting D3D Device ---
-Window focus status changed: focus: 0
-  Using background sleep time: 200
-Window focus status changed: focus: 1
-<input> (0): Unable to find object: 'Editor' attempting to call function 'close'
-Win32Window::WindowProc - resetting device due to window size change.
-GFXPCD3D9Device::reset - depthstencil 548e7e0 has 2 ref's
---- Resetting D3D Device ---
 Exporting server prefs...
 Exporting client prefs
 Exporting server prefs
