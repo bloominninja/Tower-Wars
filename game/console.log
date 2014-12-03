@@ -1,4 +1,4 @@
-//-------------------------- 12/2/2014 -- 21:03:01 -----
+//-------------------------- 12/2/2014 -- 21:33:59 -----
 Processor Init:
    Unknown x86 Compatible, ~2.19 Ghz
    HT detected
@@ -27,6 +27,22 @@ Missing file: scripts/main.cs!
 Error: Unable to find specified directory: scripts
 -------------------->Loading Tools
 --------- Parsing Arguments ---------
+prefs.client.cs Line: 87 - syntax error
+>>> Advanced script error report.  Line 87.
+>>> Some error context, with ## on sides of error halt:
+$pref::TSShapeConstructor::CapsuleShapePath = "core/art/shapes/unit_capsule.dts";
+$pref::TSShapeConstructor::CubeShapePath = "core/art/shapes/unit_cube.dts";
+$pref::TSShapeConstructor::SphereShapePath = "core/art/shapes/unit_sphere.dts";
+$pref::Video::autoDetect = "1";
+$pref::Video::autoDetect=false; = "0";
+##$##pref::Video::Canvas::mode = "1024 768 false 32 60 4";
+$pref::Video::defaultAnisotropy = "0";
+$pref::Video::defaultFenceCount = "0";
+$pref::Video::disableCubemapping = "0";
+$pref::Video::disableHardwareAA = "1";
+$pref::Video::disableNormalMapping = "0";
+>>> Error report complete.
+
 Binding server port to default IP
 UDP initialized on port 0
 Attempting to create GFX device: Intel(R) HD Graphics 4000 (D3D9) [\\.\DISPLAY1]
@@ -99,9 +115,9 @@ Accepted Mode:
 --Refresh Rate : 60
 --FSAA Level : 4
 --------------
-GFXPCD3D9Device::reset - depthstencil 1443f718 has 2 ref's
+GFXPCD3D9Device::reset - depthstencil 14e44038 has 2 ref's
 --- Resetting D3D Device ---
-GFXPCD3D9Device::reset - depthstencil 14440358 has 2 ref's
+GFXPCD3D9Device::reset - depthstencil 14e44038 has 2 ref's
 --- Resetting D3D Device ---
 UDP initialized on port 0
 GuiCanvas::setContent - Invalid control specified')
@@ -130,7 +146,7 @@ WARNING: (tools/editorclasses/gui/images/rollout) texture size = 39x50
  % - Initializing Shape Editor
  % - Initializing Navigation Editor
 Engine initialized...
-GFXPCD3D9Device::reset - depthstencil 1443d698 has 2 ref's
+GFXPCD3D9Device::reset - depthstencil 14e452d8 has 2 ref's
 --- Resetting D3D Device ---
 ### Datablock Cache: Server Datablock CRC is 4294967295
 Window focus status changed: focus: 1
@@ -152,9 +168,137 @@ WARNING: (levels/Empty_Terrain_preview) texture size = 400x300
 WARNING: (levels/navtest_preview) texture size = 400x300
 WARNING: (levels/Outpost_preview) texture size = 400x300
 WARNING: (art/gui/background) texture size = 800x600
+WARNING: (core/art/gui/images/loadingbar) texture size = 70x25
+Exporting server prefs...
+Warning: shape art/shapes/weapons/Turret/Turret_Legs.DAE collision detail 0 (Collision-1) bounds exceed that of shape.
+Warning: shape art/shapes/weapons/Turret/Turret_Legs.DAE collision detail 0 (Collision-1) bounds exceed that of shape.
+Warning: shape art/shapes/weapons/Turret/Turret_Legs.DAE collision detail 0 (Collision-1) bounds exceed that of shape.
+TSShape::removeNode: Node 'collision-1' has 1 objects attached, these will be reassigned to the node's parent ('null')
+TSShape::removeNode: Node 'Cheetah_Turret_LOD300' has 1 objects attached, these will be reassigned to the node's parent ('null')
+TSShape::removeNode: Node 'Tread_LOD300' has 1 objects attached, these will be reassigned to the node's parent ('null')
+TSShape::removeNode: Node 'collision-1' has 1 objects attached, these will be reassigned to the node's parent ('null')
+TSShape::removeNode: Node 'TireBack_LOD300' has 1 objects attached, these will be reassigned to the node's parent ('null')
+TSShape::removeNode: Node 'collision-1' has 1 objects attached, these will be reassigned to the node's parent ('null')
+-----------------> Loaded
+-----------------> Loaded
+*** LOADING MISSION: levels/Outpost.mis
+*** Stage 1 load
+Level File levels/Outpost.mis not found.
+*** Stage 2 load CSHARP
+TerrainFile Coord 'y == 1024' out of range. Fix it in the algorithm.
+[Material::mapMaterial] - Cannot map unnamed Material
+*** Mission loaded
+###Game Started###
+##Mission Loaded###
+### LOAD MISSION###
+###Connection Request: Visitor###
+Connect request from:Visitor
+Connection established 20044
+CADD: 20045 local
+*** Sending mission load to client: levels/Outpost.mis
+Mapping string: ServerMessage to index: 0
+Mapping string: MsgConnectionError to index: 1
+Mapping string: MsgLoadInfo to index: 2
+Mapping string: MsgLoadInfoDone to index: 3
+Mapping string: MissionStartPhase1 to index: 4
+*** New Mission: levels/Outpost.mis
+*** Phase 1: Download Datablocks & Targets
+% - PostFX Manager - Executing levels/Outpost.postfxpreset.cs
+% - PostFX Manager - Applying from preset
+HDR FORMAT: GFXFormatR10G10B10A2
+Using Advanced Lighting
+% - PostFX Manager - PostFX enabled
+Mapping string: MissionStartPhase1Ack to index: 0
+Transmitting Datablocks
+WARNING: (art/lights/lensFlareSheet0) texture size = 1280x1024
+Warning: shape art/shapes/weapons/Turret/Turret_Legs.DAE collision detail 1 (Collision-1) bounds exceed that of shape.
+Warning: shape art/shapes/weapons/Turret/Turret_Legs.DAE collision detail 1 (Collision-1) bounds exceed that of shape.
+Warning: shape art/shapes/weapons/Turret/Turret_Legs.DAE collision detail 1 (Collision-1) bounds exceed that of shape.
+[MaterialList::mapMaterials] Unable to find material for texture: base.lmale
+Mapping string: MissionStartPhase2 to index: 5
+*** Phase 2: Download Ghost Objects
+Mapping string: MissionStartPhase2Ack to index: 1
+[MaterialList::mapMaterials] Creating missing material for texture: art/shapes/rocks/rock2
+Ghost Always objects received.
+Mapping string: MissionStartPhase3 to index: 6
+Client Replication Startup has Happened!
+fxFoliageReplicator - replicated client foliage for 0 objects
+*** Phase 3: Mission Lighting
+Mission lighting done
+Mapping string: MissionStartPhase3Ack to index: 2
+Client 20045 has connected.
+--->Player ID is 20081
+12/2/2014 9:34:15 PM --- PLAYER JOIN::Name 'Visitor'::ID '20081'
+Mapping string: missionstart to index: 7
+Mapping string: SyncClock to index: 8
+Mapping string: RefreshWeaponHud to index: 9
+Mapping string: System to index: 10
+Mapping string: Your on Team 1 to index: 11
+Mapping string: SetAmmoAmountHud to index: 12
+Mapping string: ryder.png to index: 13
+Mapping string: MsgClientJoin to index: 14
+Mapping string: Current Players: 1 to index: 15
+Mapping string: Welcome to the Torque demo app %1. to index: 16
+Mapping string: Visitor to index: 17
+*** Initial Control Object
+WARNING: (art/gui/weaponHud/ryder) texture size = 160x60
+WARNING: (core/art/gui/images/chatHudBorderArray) texture size = 42x42
+Activating DirectInput...
+WARNING: (core/art/gui/images/scrollBar) texture size = 42x162
+*** Control Object Changed
+Mapping string: DarkBlue to index: 18
+Mapping string: Cheetah to index: 19
+C:/Users/nes/Source/Repos/OmniEngine.Net/My Projects/Salvage/game/shaders/common/postFx/dof/DOF_DownSample_P.hlsl(72,10): warning X3205: conversion from larger type to smaller, possible loss of data
+C:/Users/nes/Source/Repos/OmniEngine.Net/My Projects/Salvage/game/shaders/common/postFx/dof/DOF_DownSample_P.hlsl(73,10): warning X3205: conversion from larger type to smaller, possible loss of data
+C:/Users/nes/Source/Repos/OmniEngine.Net/My Projects/Salvage/game/shaders/common/postFx/dof/DOF_DownSample_P.hlsl(74,10): warning X3205: conversion from larger type to smaller, possible loss of data
+C:/Users/nes/Source/Repos/OmniEngine.Net/My Projects/Salvage/game/shaders/common/postFx/dof/DOF_DownSample_P.hlsl(75,10): warning X3205: conversion from larger type to smaller, possible loss of data
+C:/Users/nes/Source/Repos/OmniEngine.Net/My Projects/Salvage/game/shaders/common/postFx/dof/DOF_DownSample_P.hlsl(84,18): warning X3206: 'autogenUncondition_55070f7a': implicit truncation of vector type
+C:/Users/nes/Source/Repos/OmniEngine.Net/My Projects/Salvage/game/shaders/common/postFx/dof/DOF_DownSample_P.hlsl(85,18): warning X3206: 'autogenUncondition_55070f7a': implicit truncation of vector type
+C:/Users/nes/Source/Repos/OmniEngine.Net/My Projects/Salvage/game/shaders/common/postFx/dof/DOF_DownSample_P.hlsl(86,18): warning X3206: 'autogenUncondition_55070f7a': implicit truncation of vector type
+C:/Users/nes/Source/Repos/OmniEngine.Net/My Projects/Salvage/game/shaders/common/postFx/dof/DOF_DownSample_P.hlsl(87,18): warning X3206: 'autogenUncondition_55070f7a': implicit truncation of vector type
+C:/Users/nes/Source/Repos/OmniEngine.Net/My Projects/Salvage/game/shaders/common/postFx/dof/DOF_DownSample_P.hlsl(88,14): warning X3205: conversion from larger type to smaller, possible loss of data
+C:/Users/nes/Source/Repos/OmniEngine.Net/My Projects/Salvage/game/shaders/common/postFx/dof/DOF_DownSample_P.hlsl(88,14): warning X3206: implicit truncation of vector type
+C:/Users/nes/Source/Repos/OmniEngine.Net/My Projects/Salvage/game/shaders/common/postFx/dof/DOF_DownSample_P.hlsl(88,11): warning X3550: array reference cannot be used as an l-value; not natively addressable, forcing loop to unroll
+C:/Users/nes/Source/Repos/OmniEngine.Net/My Projects/Salvage/game/shaders/common/postFx/dof/DOF_CalcCoC_P.hlsl(39,11): warning X3205: conversion from larger type to smaller, possible loss of data
+C:/Users/nes/Source/Repos/OmniEngine.Net/My Projects/Salvage/game/shaders/common/postFx/dof/DOF_CalcCoC_P.hlsl(40,12): warning X3205: conversion from larger type to smaller, possible loss of data
+C:/Users/nes/Source/Repos/OmniEngine.Net/My Projects/Salvage/game/shaders/common/postFx/dof/DOF_Final_P.hlsl(54,8): warning X3205: conversion from larger type to smaller, possible loss of data
+C:/Users/nes/Source/Repos/OmniEngine.Net/My Projects/Salvage/game/shaders/common/postFx/dof/DOF_Final_P.hlsl(55,8): warning X3205: conversion from larger type to smaller, possible loss of data
+C:/Users/nes/Source/Repos/OmniEngine.Net/My Projects/Salvage/game/shaders/common/postFx/dof/DOF_Final_P.hlsl(56,8): warning X3205: conversion from larger type to smaller, possible loss of data
+C:/Users/nes/Source/Repos/OmniEngine.Net/My Projects/Salvage/game/shaders/common/postFx/dof/DOF_Final_P.hlsl(57,8): warning X3205: conversion from larger type to smaller, possible loss of data
+C:/Users/nes/Source/Repos/OmniEngine.Net/My Projects/Salvage/game/shaders/common/postFx/dof/DOF_Final_P.hlsl(75,12): warning X3205: conversion from larger type to smaller, possible loss of data
+C:/Users/nes/Source/Repos/OmniEngine.Net/My Projects/Salvage/game/shaders/common/postFx/dof/DOF_Final_P.hlsl(103,8): warning X3205: conversion from larger type to smaller, possible loss of data
+C:/Users/nes/Source/Repos/OmniEngine.Net/My Projects/Salvage/game/shaders/common/postFx/dof/DOF_Final_P.hlsl(106,10): warning X3205: conversion from larger type to smaller, possible loss of data
+C:/Users/nes/Source/Repos/OmniEngine.Net/My Projects/Salvage/game/shaders/common/postFx/dof/DOF_Final_P.hlsl(117,12): warning X3206: 'autogenUncondition_55070f7a': implicit truncation of vector type
+C:/Users/nes/Source/Repos/OmniEngine.Net/My Projects/Salvage/game/shaders/common/postFx/dof/DOF_Final_P.hlsl(117,10): warning X3205: conversion from larger type to smaller, possible loss of data
+C:/Users/nes/Source/Repos/OmniEngine.Net/My Projects/Salvage/game/shaders/common/postFx/dof/DOF_Final_P.hlsl(131,14): warning X3205: conversion from larger type to smaller, possible loss of data
+C:/Users/nes/Source/Repos/OmniEngine.Net/My Projects/Salvage/game/shaders/common/postFx/dof/DOF_Final_P.hlsl(132,11): warning X3205: conversion from larger type to smaller, possible loss of data
 Window focus status changed: focus: 0
   Using background sleep time: 1
 Window focus status changed: focus: 1
+WARNING: (core/art/gui/images/button) texture size = 16x96
+WARNING: (art/gui/omni-logo) texture size = 439x300
+WARNING: (levels/Outpost_preview) texture size = 400x300
+WARNING: (art/gui/previous-button_n) texture size = 11x81
+WARNING: (art/gui/previous-button_h) texture size = 11x81
+WARNING: (art/gui/previous-button_d) texture size = 11x81
+WARNING: (levels/Empty Room_preview) texture size = 400x300
+WARNING: (levels/Empty Terrain_preview) texture size = 400x300
+WARNING: (levels/Empty_Terrain_preview) texture size = 400x300
+WARNING: (levels/navtest_preview) texture size = 400x300
+WARNING: (art/gui/no-preview) texture size = 400x300
+WARNING: (art/gui/next-button_n) texture size = 11x81
+WARNING: (art/gui/next-button_h) texture size = 11x81
+WARNING: (art/gui/next-button_d) texture size = 11x81
+<input> (0): Cannot re-declare object [theLevelInfo].
+<input> (0): Cannot re-declare object [theLevelInfo].
+<input> (0): Cannot re-declare object [theLevelInfo].
+<input> (0): Cannot re-declare object [theLevelInfo].
+<input> (0): Cannot re-declare object [theLevelInfo].
+<input> (0): Cannot re-declare object [theLevelInfo].
+WARNING: (art/gui/background) texture size = 800x600
+*** ENDING MISSION
+CDROP: 20045 
+Exporting server prefs...
 Exporting server prefs...
 Exporting client prefs
 Exporting server prefs
