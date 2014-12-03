@@ -1,0 +1,31 @@
+﻿Build started 12/2/2014 5:47:47 PM.
+     1>Project "C:\Users\nes\Source\Repos\OmniEngine.Net\My Projects\Salvage\buildFiles\VisualStudio 2013\projects\convexDecomp.vcxproj" on node 5 (Build target(s)).
+     1>ClCompile:
+         C:\ides\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /IC:/Users/nes/Source/Repos/OmniEngine.Net/Engine/lib/convexDecomp /Zi /nologo /W3 /WX- /Ox /Ob2 /D WIN32 /D UNICODE /D _CRT_SECURE_NO_DEPRECATE /D _CRT_SECURE_NO_WARNINGS /GF /Gm- /MT /GS- /Gy /fp:precise /Zc:wchar_t- /Zc:forScope /GR /Fo"../../Link/VC2013.Release.x64/convexDecomp/" /Fd"C:/Users/nes/Source/Repos/OmniEngine.Net/Engine/lib//compiled/Release.x64/convexDecomp.pdb" /Gd /TP /wd4244 /wd4305 /wd4530 /wd4355 /errorReport:prompt /MP C:\Users\nes\Source\Repos\OmniEngine.Net\Engine\lib\convexDecomp\NvConcavityVolume.cpp C:\Users\nes\Source\Repos\OmniEngine.Net\Engine\lib\convexDecomp\NvConvexDecomposition.cpp C:\Users\nes\Source\Repos\OmniEngine.Net\Engine\lib\convexDecomp\NvFloatMath.cpp C:\Users\nes\Source\Repos\OmniEngine.Net\Engine\lib\convexDecomp\NvMeshIslandGeneration.cpp C:\Users\nes\Source\Repos\OmniEngine.Net\Engine\lib\convexDecomp\NvRayCast.cpp C:\Users\nes\Source\Repos\OmniEngine.Net\Engine\lib\convexDecomp\NvRemoveTjunctions.cpp C:\Users\nes\Source\Repos\OmniEngine.Net\Engine\lib\convexDecomp\NvSplitMesh.cpp C:\Users\nes\Source\Repos\OmniEngine.Net\Engine\lib\convexDecomp\NvStanHull.cpp C:\Users\nes\Source\Repos\OmniEngine.Net\Engine\lib\convexDecomp\NvThreadConfig.cpp C:\Users\nes\Source\Repos\OmniEngine.Net\Engine\lib\convexDecomp\wavefront.cpp
+         NvConcavityVolume.cpp
+         NvConvexDecomposition.cpp
+         NvFloatMath.cpp
+         NvMeshIslandGeneration.cpp
+         NvRayCast.cpp
+         NvRemoveTjunctions.cpp
+         NvSplitMesh.cpp
+         NvStanHull.cpp
+         NvThreadConfig.cpp
+         wavefront.cpp
+       Lib:
+         C:\ides\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\Lib.exe /OUT:"C:/Users/nes/Source/Repos/OmniEngine.Net/Engine/lib//compiled/Release.x64//convexDecomp.lib" /NOLOGO /MACHINE:X64 ../../Link/VC2013.Release.x64/convexDecomp/NvConcavityVolume.obj
+         ../../Link/VC2013.Release.x64/convexDecomp/NvConvexDecomposition.obj
+         ../../Link/VC2013.Release.x64/convexDecomp/NvFloatMath.obj
+         ../../Link/VC2013.Release.x64/convexDecomp/NvMeshIslandGeneration.obj
+         ../../Link/VC2013.Release.x64/convexDecomp/NvRayCast.obj
+         ../../Link/VC2013.Release.x64/convexDecomp/NvRemoveTjunctions.obj
+         ../../Link/VC2013.Release.x64/convexDecomp/NvSplitMesh.obj
+         ../../Link/VC2013.Release.x64/convexDecomp/NvStanHull.obj
+         ../../Link/VC2013.Release.x64/convexDecomp/NvThreadConfig.obj
+         ../../Link/VC2013.Release.x64/convexDecomp/wavefront.obj
+         convexDecomp.vcxproj -> C:/Users/nes/Source/Repos/OmniEngine.Net/Engine/lib//compiled/Release.x64/convexDecomp.lib
+     1>Done Building Project "C:\Users\nes\Source\Repos\OmniEngine.Net\My Projects\Salvage\buildFiles\VisualStudio 2013\projects\convexDecomp.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:10.09

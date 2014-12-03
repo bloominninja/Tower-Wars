@@ -1,0 +1,53 @@
+﻿Build started 12/2/2014 5:47:44 PM.
+     1>Project "C:\Users\nes\Source\Repos\OmniEngine.Net\My Projects\Salvage\buildFiles\VisualStudio 2013\projects\zlib.vcxproj" on node 4 (Build target(s)).
+     1>ClCompile:
+         C:\ides\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /IC:/Users/nes/Source/Repos/OmniEngine.Net/Engine/lib/zlib /Zi /nologo /W3 /WX- /Ox /Ob2 /D UNICODE /D _CRT_SECURE_NO_DEPRECATE /D _CRT_SECURE_NO_WARNINGS /GF /Gm- /MT /GS- /Gy /fp:precise /Zc:wchar_t- /Zc:forScope /GR /Fo"../../Link/VC2013.Release.x64/zlib/" /Fd"C:/Users/nes/Source/Repos/OmniEngine.Net/Engine/lib//compiled/Release.x64/zlib.pdb" /Gd /TC /wd4244 /wd4305 /wd4530 /wd4355 /errorReport:prompt /MP C:\Users\nes\Source\Repos\OmniEngine.Net\Engine\lib\zlib\adler32.c C:\Users\nes\Source\Repos\OmniEngine.Net\Engine\lib\zlib\compress.c C:\Users\nes\Source\Repos\OmniEngine.Net\Engine\lib\zlib\crc32.c C:\Users\nes\Source\Repos\OmniEngine.Net\Engine\lib\zlib\deflate.c C:\Users\nes\Source\Repos\OmniEngine.Net\Engine\lib\zlib\gzclose.c C:\Users\nes\Source\Repos\OmniEngine.Net\Engine\lib\zlib\gzlib.c C:\Users\nes\Source\Repos\OmniEngine.Net\Engine\lib\zlib\gzread.c C:\Users\nes\Source\Repos\OmniEngine.Net\Engine\lib\zlib\gzwrite.c C:\Users\nes\Source\Repos\OmniEngine.Net\Engine\lib\zlib\infback.c C:\Users\nes\Source\Repos\OmniEngine.Net\Engine\lib\zlib\inffast.c C:\Users\nes\Source\Repos\OmniEngine.Net\Engine\lib\zlib\inflate.c C:\Users\nes\Source\Repos\OmniEngine.Net\Engine\lib\zlib\inftrees.c C:\Users\nes\Source\Repos\OmniEngine.Net\Engine\lib\zlib\trees.c C:\Users\nes\Source\Repos\OmniEngine.Net\Engine\lib\zlib\uncompr.c C:\Users\nes\Source\Repos\OmniEngine.Net\Engine\lib\zlib\zutil.c
+         adler32.c
+         compress.c
+         crc32.c
+         deflate.c
+         gzclose.c
+         gzlib.c
+         gzread.c
+         gzwrite.c
+         infback.c
+     1>C:\Users\nes\Source\Repos\OmniEngine.Net\Engine\lib\zlib\gzread.c(30): warning C4996: 'read': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _read. See online help for details.
+                 C:\ides\Microsoft Visual Studio 12.0\VC\include\io.h(337) : see declaration of 'read'
+         inffast.c
+         inflate.c
+     1>C:\Users\nes\Source\Repos\OmniEngine.Net\Engine\lib\zlib\gzlib.c(239): warning C4996: 'open': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _open. See online help for details.
+                 C:\ides\Microsoft Visual Studio 12.0\VC\include\io.h(336) : see declaration of 'open'
+     1>C:\Users\nes\Source\Repos\OmniEngine.Net\Engine\lib\zlib\gzwrite.c(84): warning C4996: 'write': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _write. See online help for details.
+                 C:\ides\Microsoft Visual Studio 12.0\VC\include\io.h(342) : see declaration of 'write'
+     1>C:\Users\nes\Source\Repos\OmniEngine.Net\Engine\lib\zlib\gzwrite.c(102): warning C4996: 'write': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _write. See online help for details.
+                 C:\ides\Microsoft Visual Studio 12.0\VC\include\io.h(342) : see declaration of 'write'
+         inftrees.c
+     1>C:\Users\nes\Source\Repos\OmniEngine.Net\Engine\lib\zlib\gzwrite.c(561): warning C4996: 'close': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _close. See online help for details.
+                 C:\ides\Microsoft Visual Studio 12.0\VC\include\io.h(326) : see declaration of 'close'
+     1>C:\Users\nes\Source\Repos\OmniEngine.Net\Engine\lib\zlib\gzread.c(586): warning C4996: 'close': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _close. See online help for details.
+                 C:\ides\Microsoft Visual Studio 12.0\VC\include\io.h(326) : see declaration of 'close'
+         trees.c
+         uncompr.c
+         zutil.c
+       Lib:
+         C:\ides\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\Lib.exe /OUT:"C:/Users/nes/Source/Repos/OmniEngine.Net/Engine/lib//compiled/Release.x64//zlib.lib" /NOLOGO /MACHINE:X64 ../../Link/VC2013.Release.x64/zlib/adler32.obj
+         ../../Link/VC2013.Release.x64/zlib/compress.obj
+         ../../Link/VC2013.Release.x64/zlib/crc32.obj
+         ../../Link/VC2013.Release.x64/zlib/deflate.obj
+         ../../Link/VC2013.Release.x64/zlib/gzclose.obj
+         ../../Link/VC2013.Release.x64/zlib/gzlib.obj
+         ../../Link/VC2013.Release.x64/zlib/gzread.obj
+         ../../Link/VC2013.Release.x64/zlib/gzwrite.obj
+         ../../Link/VC2013.Release.x64/zlib/infback.obj
+         ../../Link/VC2013.Release.x64/zlib/inffast.obj
+         ../../Link/VC2013.Release.x64/zlib/inflate.obj
+         ../../Link/VC2013.Release.x64/zlib/inftrees.obj
+         ../../Link/VC2013.Release.x64/zlib/trees.obj
+         ../../Link/VC2013.Release.x64/zlib/uncompr.obj
+         ../../Link/VC2013.Release.x64/zlib/zutil.obj
+         zlib.vcxproj -> C:/Users/nes/Source/Repos/OmniEngine.Net/Engine/lib//compiled/Release.x64/zlib.lib
+     1>Done Building Project "C:\Users\nes\Source\Repos\OmniEngine.Net\My Projects\Salvage\buildFiles\VisualStudio 2013\projects\zlib.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:05.16

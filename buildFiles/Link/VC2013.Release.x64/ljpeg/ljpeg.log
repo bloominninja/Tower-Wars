@@ -1,0 +1,130 @@
+﻿Build started 12/2/2014 5:47:34 PM.
+     1>Project "C:\Users\nes\Source\Repos\OmniEngine.Net\My Projects\Salvage\buildFiles\VisualStudio 2013\projects\ljpeg.vcxproj" on node 6 (Build target(s)).
+     1>ClCompile:
+         C:\ides\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /IC:/Users/nes/Source/Repos/OmniEngine.Net/Engine/lib/ljpeg /Zi /nologo /W3 /WX- /Ox /Ob2 /D UNICODE /D _CRT_SECURE_NO_DEPRECATE /D _CRT_SECURE_NO_WARNINGS /GF /Gm- /MT /GS- /Gy /fp:precise /Zc:wchar_t- /Zc:forScope /GR /Fo"../../Link/VC2013.Release.x64/ljpeg/" /Fd"C:/Users/nes/Source/Repos/OmniEngine.Net/Engine/lib//compiled/Release.x64/ljpeg.pdb" /Gd /TC /wd4244 /wd4305 /wd4530 /wd4355 /errorReport:prompt /MP C:\Users\nes\Source\Repos\OmniEngine.Net\Engine\lib\ljpeg\jcapimin.c C:\Users\nes\Source\Repos\OmniEngine.Net\Engine\lib\ljpeg\jcapistd.c C:\Users\nes\Source\Repos\OmniEngine.Net\Engine\lib\ljpeg\jccoefct.c C:\Users\nes\Source\Repos\OmniEngine.Net\Engine\lib\ljpeg\jccolor.c C:\Users\nes\Source\Repos\OmniEngine.Net\Engine\lib\ljpeg\jcdctmgr.c C:\Users\nes\Source\Repos\OmniEngine.Net\Engine\lib\ljpeg\jchuff.c C:\Users\nes\Source\Repos\OmniEngine.Net\Engine\lib\ljpeg\jcinit.c C:\Users\nes\Source\Repos\OmniEngine.Net\Engine\lib\ljpeg\jcmainct.c C:\Users\nes\Source\Repos\OmniEngine.Net\Engine\lib\ljpeg\jcmarker.c C:\Users\nes\Source\Repos\OmniEngine.Net\Engine\lib\ljpeg\jcmaster.c C:\Users\nes\Source\Repos\OmniEngine.Net\Engine\lib\ljpeg\jcomapi.c C:\Users\nes\Source\Repos\OmniEngine.Net\Engine\lib\ljpeg\jcparam.c C:\Users\nes\Source\Repos\OmniEngine.Net\Engine\lib\ljpeg\jcphuff.c C:\Users\nes\Source\Repos\OmniEngine.Net\Engine\lib\ljpeg\jcprepct.c C:\Users\nes\Source\Repos\OmniEngine.Net\Engine\lib\ljpeg\jcsample.c C:\Users\nes\Source\Repos\OmniEngine.Net\Engine\lib\ljpeg\jctrans.c C:\Users\nes\Source\Repos\OmniEngine.Net\Engine\lib\ljpeg\jdapimin.c C:\Users\nes\Source\Repos\OmniEngine.Net\Engine\lib\ljpeg\jdapistd.c C:\Users\nes\Source\Repos\OmniEngine.Net\Engine\lib\ljpeg\jdatadst.c C:\Users\nes\Source\Repos\OmniEngine.Net\Engine\lib\ljpeg\jdatasrc.c C:\Users\nes\Source\Repos\OmniEngine.Net\Engine\lib\ljpeg\jdcoefct.c C:\Users\nes\Source\Repos\OmniEngine.Net\Engine\lib\ljpeg\jdcolor.c C:\Users\nes\Source\Repos\OmniEngine.Net\Engine\lib\ljpeg\jddctmgr.c C:\Users\nes\Source\Repos\OmniEngine.Net\Engine\lib\ljpeg\jdhuff.c C:\Users\nes\Source\Repos\OmniEngine.Net\Engine\lib\ljpeg\jdinput.c C:\Users\nes\Source\Repos\OmniEngine.Net\Engine\lib\ljpeg\jdmainct.c C:\Users\nes\Source\Repos\OmniEngine.Net\Engine\lib\ljpeg\jdmarker.c C:\Users\nes\Source\Repos\OmniEngine.Net\Engine\lib\ljpeg\jdmaster.c C:\Users\nes\Source\Repos\OmniEngine.Net\Engine\lib\ljpeg\jdmerge.c C:\Users\nes\Source\Repos\OmniEngine.Net\Engine\lib\ljpeg\jdphuff.c C:\Users\nes\Source\Repos\OmniEngine.Net\Engine\lib\ljpeg\jdpostct.c C:\Users\nes\Source\Repos\OmniEngine.Net\Engine\lib\ljpeg\jdsample.c C:\Users\nes\Source\Repos\OmniEngine.Net\Engine\lib\ljpeg\jdtrans.c C:\Users\nes\Source\Repos\OmniEngine.Net\Engine\lib\ljpeg\jerror.c C:\Users\nes\Source\Repos\OmniEngine.Net\Engine\lib\ljpeg\jfdctflt.c C:\Users\nes\Source\Repos\OmniEngine.Net\Engine\lib\ljpeg\jfdctfst.c C:\Users\nes\Source\Repos\OmniEngine.Net\Engine\lib\ljpeg\jfdctint.c C:\Users\nes\Source\Repos\OmniEngine.Net\Engine\lib\ljpeg\jidctflt.c C:\Users\nes\Source\Repos\OmniEngine.Net\Engine\lib\ljpeg\jidctfst.c C:\Users\nes\Source\Repos\OmniEngine.Net\Engine\lib\ljpeg\jidctint.c C:\Users\nes\Source\Repos\OmniEngine.Net\Engine\lib\ljpeg\jidctred.c C:\Users\nes\Source\Repos\OmniEngine.Net\Engine\lib\ljpeg\jmemmgr.c C:\Users\nes\Source\Repos\OmniEngine.Net\Engine\lib\ljpeg\jmemnobs.c C:\Users\nes\Source\Repos\OmniEngine.Net\Engine\lib\ljpeg\jquant1.c C:\Users\nes\Source\Repos\OmniEngine.Net\Engine\lib\ljpeg\jquant2.c C:\Users\nes\Source\Repos\OmniEngine.Net\Engine\lib\ljpeg\jutils.c
+         jcapimin.c
+         jcapistd.c
+         jccoefct.c
+         jccolor.c
+         jcdctmgr.c
+         jchuff.c
+         jcinit.c
+         jcmainct.c
+     1>C:\Users\nes\Source\Repos\OmniEngine.Net\Engine\lib\ljpeg\jchuff.c(511): warning C4267: '=' : conversion from 'size_t' to 'unsigned long', possible loss of data
+     1>C:\Users\nes\Source\Repos\OmniEngine.Net\Engine\lib\ljpeg\jchuff.c(550): warning C4267: '=' : conversion from 'size_t' to 'unsigned long', possible loss of data
+         jcmarker.c
+         jcmaster.c
+         jcomapi.c
+         jcparam.c
+         jcphuff.c
+         jcprepct.c
+         jcsample.c
+         jctrans.c
+     1>C:\Users\nes\Source\Repos\OmniEngine.Net\Engine\lib\ljpeg\jcphuff.c(442): warning C4267: '=' : conversion from 'size_t' to 'unsigned long', possible loss of data
+     1>C:\Users\nes\Source\Repos\OmniEngine.Net\Engine\lib\ljpeg\jcphuff.c(548): warning C4267: '=' : conversion from 'size_t' to 'unsigned long', possible loss of data
+     1>C:\Users\nes\Source\Repos\OmniEngine.Net\Engine\lib\ljpeg\jcphuff.c(597): warning C4267: '=' : conversion from 'size_t' to 'unsigned long', possible loss of data
+     1>C:\Users\nes\Source\Repos\OmniEngine.Net\Engine\lib\ljpeg\jcphuff.c(725): warning C4267: '=' : conversion from 'size_t' to 'unsigned long', possible loss of data
+     1>C:\Users\nes\Source\Repos\OmniEngine.Net\Engine\lib\ljpeg\jcphuff.c(758): warning C4267: '=' : conversion from 'size_t' to 'unsigned long', possible loss of data
+         jdapimin.c
+         jdapistd.c
+         jdatadst.c
+         jdatasrc.c
+         jdcoefct.c
+         jdcolor.c
+         jddctmgr.c
+         jdhuff.c
+         jdinput.c
+         jdmainct.c
+         jdmarker.c
+         jdmaster.c
+     1>C:\Users\nes\Source\Repos\OmniEngine.Net\Engine\lib\ljpeg\jdhuff.c(619): warning C4267: '=' : conversion from 'size_t' to 'unsigned long', possible loss of data
+         jdmerge.c
+         jdphuff.c
+         jdpostct.c
+         jdsample.c
+         jdtrans.c
+     1>C:\Users\nes\Source\Repos\OmniEngine.Net\Engine\lib\ljpeg\jdphuff.c(340): warning C4267: '=' : conversion from 'size_t' to 'unsigned long', possible loss of data
+     1>C:\Users\nes\Source\Repos\OmniEngine.Net\Engine\lib\ljpeg\jdphuff.c(421): warning C4267: '=' : conversion from 'size_t' to 'unsigned long', possible loss of data
+     1>C:\Users\nes\Source\Repos\OmniEngine.Net\Engine\lib\ljpeg\jdphuff.c(477): warning C4267: '=' : conversion from 'size_t' to 'unsigned long', possible loss of data
+     1>C:\Users\nes\Source\Repos\OmniEngine.Net\Engine\lib\ljpeg\jdphuff.c(618): warning C4267: '=' : conversion from 'size_t' to 'unsigned long', possible loss of data
+     1>C:\Users\nes\Source\Repos\OmniEngine.Net\Engine\lib\ljpeg\jdmarker.c(295): warning C4267: '=' : conversion from 'size_t' to 'unsigned long', possible loss of data
+     1>C:\Users\nes\Source\Repos\OmniEngine.Net\Engine\lib\ljpeg\jdmarker.c(365): warning C4267: '=' : conversion from 'size_t' to 'unsigned long', possible loss of data
+         jerror.c
+     1>C:\Users\nes\Source\Repos\OmniEngine.Net\Engine\lib\ljpeg\jdmarker.c(484): warning C4267: '=' : conversion from 'size_t' to 'unsigned long', possible loss of data
+     1>C:\Users\nes\Source\Repos\OmniEngine.Net\Engine\lib\ljpeg\jdmarker.c(542): warning C4267: '=' : conversion from 'size_t' to 'unsigned long', possible loss of data
+     1>C:\Users\nes\Source\Repos\OmniEngine.Net\Engine\lib\ljpeg\jdmarker.c(566): warning C4267: '=' : conversion from 'size_t' to 'unsigned long', possible loss of data
+         jfdctflt.c
+     1>C:\Users\nes\Source\Repos\OmniEngine.Net\Engine\lib\ljpeg\jdmarker.c(728): warning C4267: '=' : conversion from 'size_t' to 'unsigned long', possible loss of data
+     1>C:\Users\nes\Source\Repos\OmniEngine.Net\Engine\lib\ljpeg\jdmarker.c(789): warning C4267: '=' : conversion from 'size_t' to 'unsigned long', possible loss of data
+     1>C:\Users\nes\Source\Repos\OmniEngine.Net\Engine\lib\ljpeg\jdmarker.c(834): warning C4267: '=' : conversion from 'size_t' to 'unsigned long', possible loss of data
+     1>C:\Users\nes\Source\Repos\OmniEngine.Net\Engine\lib\ljpeg\jdmarker.c(856): warning C4267: '=' : conversion from 'size_t' to 'unsigned long', possible loss of data
+     1>C:\Users\nes\Source\Repos\OmniEngine.Net\Engine\lib\ljpeg\jdmarker.c(888): warning C4267: '=' : conversion from 'size_t' to 'unsigned long', possible loss of data
+     1>C:\Users\nes\Source\Repos\OmniEngine.Net\Engine\lib\ljpeg\jdmarker.c(905): warning C4267: '=' : conversion from 'size_t' to 'unsigned long', possible loss of data
+     1>C:\Users\nes\Source\Repos\OmniEngine.Net\Engine\lib\ljpeg\jdmarker.c(915): warning C4267: '=' : conversion from 'size_t' to 'unsigned long', possible loss of data
+     1>C:\Users\nes\Source\Repos\OmniEngine.Net\Engine\lib\ljpeg\jdmarker.c(939): warning C4267: '=' : conversion from 'size_t' to 'unsigned long', possible loss of data
+         jfdctfst.c
+         jfdctint.c
+         jidctflt.c
+         jidctfst.c
+         jidctint.c
+         jidctred.c
+         jmemmgr.c
+         jmemnobs.c
+         jquant1.c
+         jquant2.c
+         jutils.c
+     1>C:\Users\nes\Source\Repos\OmniEngine.Net\Engine\lib\ljpeg\jquant1.c(731): warning C4267: 'function' : conversion from 'size_t' to 'unsigned long', possible loss of data
+     1>C:\Users\nes\Source\Repos\OmniEngine.Net\Engine\lib\ljpeg\jquant2.c(1204): warning C4267: 'function' : conversion from 'size_t' to 'unsigned long', possible loss of data
+       Lib:
+         C:\ides\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\Lib.exe /OUT:"C:/Users/nes/Source/Repos/OmniEngine.Net/Engine/lib//compiled/Release.x64//ljpeg.lib" /NOLOGO /MACHINE:X64 ../../Link/VC2013.Release.x64/ljpeg/jcapimin.obj
+         ../../Link/VC2013.Release.x64/ljpeg/jcapistd.obj
+         ../../Link/VC2013.Release.x64/ljpeg/jccoefct.obj
+         ../../Link/VC2013.Release.x64/ljpeg/jccolor.obj
+         ../../Link/VC2013.Release.x64/ljpeg/jcdctmgr.obj
+         ../../Link/VC2013.Release.x64/ljpeg/jchuff.obj
+         ../../Link/VC2013.Release.x64/ljpeg/jcinit.obj
+         ../../Link/VC2013.Release.x64/ljpeg/jcmainct.obj
+         ../../Link/VC2013.Release.x64/ljpeg/jcmarker.obj
+         ../../Link/VC2013.Release.x64/ljpeg/jcmaster.obj
+         ../../Link/VC2013.Release.x64/ljpeg/jcomapi.obj
+         ../../Link/VC2013.Release.x64/ljpeg/jcparam.obj
+         ../../Link/VC2013.Release.x64/ljpeg/jcphuff.obj
+         ../../Link/VC2013.Release.x64/ljpeg/jcprepct.obj
+         ../../Link/VC2013.Release.x64/ljpeg/jcsample.obj
+         ../../Link/VC2013.Release.x64/ljpeg/jctrans.obj
+         ../../Link/VC2013.Release.x64/ljpeg/jdapimin.obj
+         ../../Link/VC2013.Release.x64/ljpeg/jdapistd.obj
+         ../../Link/VC2013.Release.x64/ljpeg/jdatadst.obj
+         ../../Link/VC2013.Release.x64/ljpeg/jdatasrc.obj
+         ../../Link/VC2013.Release.x64/ljpeg/jdcoefct.obj
+         ../../Link/VC2013.Release.x64/ljpeg/jdcolor.obj
+         ../../Link/VC2013.Release.x64/ljpeg/jddctmgr.obj
+         ../../Link/VC2013.Release.x64/ljpeg/jdhuff.obj
+         ../../Link/VC2013.Release.x64/ljpeg/jdinput.obj
+         ../../Link/VC2013.Release.x64/ljpeg/jdmainct.obj
+         ../../Link/VC2013.Release.x64/ljpeg/jdmarker.obj
+         ../../Link/VC2013.Release.x64/ljpeg/jdmaster.obj
+         ../../Link/VC2013.Release.x64/ljpeg/jdmerge.obj
+         ../../Link/VC2013.Release.x64/ljpeg/jdphuff.obj
+         ../../Link/VC2013.Release.x64/ljpeg/jdpostct.obj
+         ../../Link/VC2013.Release.x64/ljpeg/jdsample.obj
+         ../../Link/VC2013.Release.x64/ljpeg/jdtrans.obj
+         ../../Link/VC2013.Release.x64/ljpeg/jerror.obj
+         ../../Link/VC2013.Release.x64/ljpeg/jfdctflt.obj
+         ../../Link/VC2013.Release.x64/ljpeg/jfdctfst.obj
+         ../../Link/VC2013.Release.x64/ljpeg/jfdctint.obj
+         ../../Link/VC2013.Release.x64/ljpeg/jidctflt.obj
+         ../../Link/VC2013.Release.x64/ljpeg/jidctfst.obj
+         ../../Link/VC2013.Release.x64/ljpeg/jidctint.obj
+         ../../Link/VC2013.Release.x64/ljpeg/jidctred.obj
+         ../../Link/VC2013.Release.x64/ljpeg/jmemmgr.obj
+         ../../Link/VC2013.Release.x64/ljpeg/jmemnobs.obj
+         ../../Link/VC2013.Release.x64/ljpeg/jquant1.obj
+         ../../Link/VC2013.Release.x64/ljpeg/jquant2.obj
+         ../../Link/VC2013.Release.x64/ljpeg/jutils.obj
+         ljpeg.vcxproj -> C:/Users/nes/Source/Repos/OmniEngine.Net/Engine/lib//compiled/Release.x64/ljpeg.lib
+     1>Done Building Project "C:\Users\nes\Source\Repos\OmniEngine.Net\My Projects\Salvage\buildFiles\VisualStudio 2013\projects\ljpeg.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:12.14

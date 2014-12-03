@@ -1,0 +1,253 @@
+//-------------------------- 12/2/2014 -- 18:39:48 -----
+Processor Init:
+   Unknown x86 Compatible, ~2.19 Ghz
+   HT detected
+   MP detected [4 cores, 8 logical, 1 physical]
+ 
+Math Init:
+   Installing Standard C extensions
+   Installing Assembly extensions
+ 
+Initializing platform...
+Input Init:
+   keyboard0 input device created.
+   mouse0 input device created.
+   DirectInput enabled.
+
+Done
+GFX Init:
+   Direct 3D (version 9.x) device found
+   Null device found
+
+DebugDrawer Enabled!
+--------- Loading DIRS ---------
+Missing file: art/main.cs!
+Error: Unable to find specified directory: art
+Missing file: scripts/main.cs!
+Error: Unable to find specified directory: scripts
+-------------------->Loading Tools
+--------- Parsing Arguments ---------
+Missing file: prefs.client.cs!
+Missing file: prefs.server.cs!
+Binding server port to default IP
+UDP initialized on port 0
+Attempting to create GFX device: Intel(R) HD Graphics 4000 (D3D9) [\\.\DISPLAY1]
+Device created, setting adapter and enumerating modes
+   Cur. D3DDevice ref count=1
+   Pix version detected: 3.000000
+   Vert version detected: 3.000000
+   Maximum number of simultaneous samplers: 16
+   Number of simultaneous render targets: 4
+   Hardware occlusion query detected: Yes
+   Using Direct3D9Ex: No
+WMIVideoInfo: DxDiag initialized
+Initializing GFXCardProfiler (D3D9)
+   o Chipset : 'INTEL'
+   o Card    : 'Intel(R) HD Graphics 4000'
+   o Version : '9.18.0010.3071'
+   o VRAM    : 2147483647 MB
+   - Scanning card capabilities...
+GFXCardProfiler (D3D9) - Setting capability 'autoMipMapLevel' to 1.
+GFXCardProfiler (D3D9) - Setting capability 'maxTextureWidth' to 16384.
+GFXCardProfiler (D3D9) - Setting capability 'maxTextureHeight' to 16384.
+GFXCardProfiler (D3D9) - Setting capability 'maxTextureSize' to 16384.
+GFXCardProfiler (D3D9) - Setting capability 'lerpDetailBlend' to 1.
+GFXCardProfiler (D3D9) - Setting capability 'fourStageDetailBlend' to 1.
+   - Loading card profiles...
+      - Loaded card profile core/profile/D3D9.cs
+      - No card profile core/profile/D3D9.INTEL.cs exists
+      - No card profile core/profile/D3D9.INTEL.IntelRHDGraphics4000.cs exists
+      - No card profile core/profile/D3D9.INTEL.IntelRHDGraphics4000.91800103071.cs exists
+% - PostFX Manager - Executing core/scripts/client/postFx/default.postfxpreset.cs
+% - PostFX Manager - Applying from preset
+% - PostFX Manager - PostFX enabled
+ % - Initialized Core
+
+--------- Initializing Directory: scripts ---------
+sfxStartup...
+SFXSystem::createDevice - created DirectSound device 'Speakers (Conexant SmartAudio HD)'
+SFXDSDevice::setDistanceModel - 'linear' distance attenuation not supported by DirectSound
+   Provider: DirectSound
+   Device: Speakers (Conexant SmartAudio HD)
+   Hardware: No
+   Buffers: 16
+
+--------- Initializing Full: Server Scripts ---------
+
+--------- Initializing Full: Client Scripts ---------
+
+--------- Initializing Lighting Systems ---------
+
+--------- Initializing Advanced Lighting ---------
+
+--------- Initializing Basic Lighting ---------
+
+--------- Initializing Shadow Filter ---------
+
+--------- Finished Initializing Shadow Filter ---------
+
+--------- Initializing ShadowMaps Lighting ---------
+
+--------- Finished Initializing Advanced Lighting ---------
+Using Advanced Lighting
+
+
+--------------
+Attempting to set resolution to "1024 768 false 32 60 4"
+Accepted Mode: 
+--Resolution : 1024 768
+--Full Screen : No
+--Bits Per Pixel : 32
+--Refresh Rate : 60
+--FSAA Level : 4
+--------------
+GFXPCD3D9Device::reset - depthstencil 14e7e318 has 2 ref's
+--- Resetting D3D Device ---
+GFXPCD3D9Device::reset - depthstencil 14e7f838 has 2 ref's
+--- Resetting D3D Device ---
+Warning, overwriting material for: Lurker_Base
+Warning, overwriting material for: Lurker_ScopeScreen_Base
+Warning, overwriting material for: Lurker_MuzzleFlash_Base
+Warning, overwriting material for: FP_Ryder_Base
+Warning, overwriting material for: Ryder_MuzzleFlash_Base
+UDP initialized on port 0
+GuiCanvas::setContent - Invalid control specified')
+WARNING: (art/gui/omni) texture size = 439x474
+WARNING: (art/gui/background_g) texture size = 800x600
+ % - Initializing Tools
+Missing file: tools/gui/guiDialogs.ed.cs!
+ % - Initializing Tools Base
+ % - Initializing Base Editor
+ % - Initializing World Editor
+WARNING: (tools/worldEditor/images/LockedHandle) texture size = 10x12
+ % - Initializing Sketch Tool
+ % Initializing Datablock Editor
+ % - Initializing Debugger
+ % - Initializing Decal Editor
+WARNING: (tools/editorclasses/gui/images/rollout) texture size = 39x50
+ % - Initializing Forest Editor
+ % - Initializing In-game GUI Editor
+ % - Initializing Material Editor
+ % - Initializing Mesh Road Editor
+ % - Initializing Mission Area Editor
+ % - Initializing Particle Editor
+ % - Initializing Physics Tools
+ % - Initializing River Editor
+ % Initializing Road and Path Editor
+ % - Initializing Shape Editor
+ % - Initializing Navigation Editor
+Engine initialized...
+GFXPCD3D9Device::reset - depthstencil 14e7f0d8 has 2 ref's
+--- Resetting D3D Device ---
+### Datablock Cache: Server Datablock CRC is 4294967295
+AntiAliasing has been disabled; it is not compatible with AdvancedLighting.
+Window focus status changed: focus: 1
+Window focus status changed: focus: 0
+  Using background sleep time: 1
+WARNING: (core/art/gui/images/selector-button) texture size = 39x192
+WARNING: (art/gui/omni-logo) texture size = 439x300
+WARNING: (core/art/gui/images/checkbox) texture size = 13x84
+WARNING: (art/gui/previous-button_n) texture size = 11x81
+WARNING: (art/gui/previous-button_h) texture size = 11x81
+WARNING: (art/gui/previous-button_d) texture size = 11x81
+WARNING: (art/gui/next-button_n) texture size = 11x81
+WARNING: (art/gui/next-button_h) texture size = 11x81
+WARNING: (art/gui/next-button_d) texture size = 11x81
+WARNING: (core/art/gui/images/window) texture size = 64x132
+WARNING: (art/gui/no-preview) texture size = 400x300
+WARNING: (levels/Empty Room_preview) texture size = 400x300
+WARNING: (levels/Empty Terrain_preview) texture size = 400x300
+WARNING: (levels/Empty_Terrain_preview) texture size = 400x300
+WARNING: (levels/navtest_preview) texture size = 400x300
+WARNING: (levels/Outpost_preview) texture size = 400x300
+WARNING: (art/gui/background) texture size = 800x600
+Window focus status changed: focus: 1
+Window focus status changed: focus: 0
+  Using background sleep time: 1
+GFXPCD3D9Device::reset - depthstencil 1ccb8298 has 2 ref's
+--- Resetting D3D Device ---
+WARNING: (tools/gui/images/button) texture size = 16x96
+WARNING: (tools/worldEditor/images/toolbar/world) texture size = 29x27
+WARNING: (tools/worldEditor/images/toolbar/world_h) texture size = 29x27
+WARNING: (tools/worldEditor/images/toolbar/world_d) texture size = 29x27
+WARNING: (tools/worldEditor/images/toolbar/gui) texture size = 29x27
+WARNING: (tools/worldEditor/images/toolbar/gui_h) texture size = 29x27
+WARNING: (tools/worldEditor/images/toolbar/gui_d) texture size = 29x27
+WARNING: (tools/worldEditor/images/toolbar/playbutton_n) texture size = 29x27
+WARNING: (tools/worldEditor/images/toolbar/playbutton_h) texture size = 29x27
+WARNING: (tools/worldEditor/images/toolbar/playbutton_d) texture size = 29x27
+WARNING: (tools/gui/images/separator-h) texture size = 2x26
+WARNING: (tools/editorClasses/gui/panels/menubar) texture size = 18x19
+WARNING: (tools/gui/images/dropDown) texture size = 31x78
+WARNING: (tools/gui/images/scrollBar) texture size = 42x162
+WARNING: (tools/gui/images/checkbox) texture size = 13x84
+WARNING: (tools/gui/images/GUI-editor/snap-grid_n) texture size = 29x27
+WARNING: (tools/gui/images/GUI-editor/snap-grid_h) texture size = 29x27
+WARNING: (tools/gui/images/GUI-editor/snap-grid_d) texture size = 29x27
+WARNING: (tools/gui/images/GUI-editor/edgesnap_n) texture size = 29x27
+WARNING: (tools/gui/images/GUI-editor/edgesnap_h) texture size = 29x27
+WARNING: (tools/gui/images/GUI-editor/edgesnap_d) texture size = 29x27
+WARNING: (tools/gui/images/GUI-editor/centersnap_n) texture size = 29x27
+WARNING: (tools/gui/images/GUI-editor/centersnap_h) texture size = 29x27
+WARNING: (tools/gui/images/GUI-editor/centersnap_d) texture size = 29x27
+WARNING: (tools/gui/images/GUI-editor/align-left_n) texture size = 29x27
+WARNING: (tools/gui/images/GUI-editor/align-left_h) texture size = 29x27
+WARNING: (tools/gui/images/GUI-editor/align-left_d) texture size = 29x27
+WARNING: (tools/gui/images/GUI-editor/vertical-center_n) texture size = 29x27
+WARNING: (tools/gui/images/GUI-editor/vertical-center_h) texture size = 29x27
+WARNING: (tools/gui/images/GUI-editor/vertical-center_d) texture size = 29x27
+WARNING: (tools/gui/images/GUI-editor/align-right_n) texture size = 29x27
+WARNING: (tools/gui/images/GUI-editor/align-right_h) texture size = 29x27
+WARNING: (tools/gui/images/GUI-editor/align-right_d) texture size = 29x27
+WARNING: (tools/gui/images/GUI-editor/align-top_n) texture size = 29x27
+WARNING: (tools/gui/images/GUI-editor/align-top_h) texture size = 29x27
+WARNING: (tools/gui/images/GUI-editor/align-top_d) texture size = 29x27
+WARNING: (tools/gui/images/GUI-editor/horizontal-center_n) texture size = 29x27
+WARNING: (tools/gui/images/GUI-editor/horizontal-center_h) texture size = 29x27
+WARNING: (tools/gui/images/GUI-editor/horizontal-center_d) texture size = 29x27
+WARNING: (tools/gui/images/GUI-editor/align-bottom_n) texture size = 29x27
+WARNING: (tools/gui/images/GUI-editor/align-bottom_h) texture size = 29x27
+WARNING: (tools/gui/images/GUI-editor/align-bottom_d) texture size = 29x27
+WARNING: (tools/gui/images/GUI-editor/send-to-back_n) texture size = 29x27
+WARNING: (tools/gui/images/GUI-editor/send-to-back_h) texture size = 29x27
+WARNING: (tools/gui/images/GUI-editor/send-to-back_d) texture size = 29x27
+WARNING: (tools/gui/images/GUI-editor/bring-to-front_n) texture size = 29x27
+WARNING: (tools/gui/images/GUI-editor/bring-to-front_h) texture size = 29x27
+WARNING: (tools/gui/images/GUI-editor/bring-to-front_d) texture size = 29x27
+WARNING: (tools/gui/images/GUI-editor/distribute-horizontal_n) texture size = 29x27
+WARNING: (tools/gui/images/GUI-editor/distribute-horizontal_h) texture size = 29x27
+WARNING: (tools/gui/images/GUI-editor/distribute-horizontal_d) texture size = 29x27
+WARNING: (tools/gui/images/GUI-editor/distribute-vertical_n) texture size = 29x27
+WARNING: (tools/gui/images/GUI-editor/distribute-vertical_h) texture size = 29x27
+WARNING: (tools/gui/images/GUI-editor/distribute-vertical_d) texture size = 29x27
+WARNING: (tools/gui/images/textEditFrame) texture size = 15x15
+WARNING: (tools/gui/images/clear-icon_n) texture size = 17x17
+WARNING: (tools/gui/images/clear-icon_h) texture size = 17x17
+WARNING: (tools/gui/images/clear-icon_d) texture size = 17x17
+WARNING: (tools/gui/images/treeView) texture size = 17x284
+WARNING: (tools/gui/images/save-icon_n) texture size = 17x17
+WARNING: (tools/gui/images/save-icon_h) texture size = 17x17
+WARNING: (tools/gui/images/save-icon_d) texture size = 17x17
+WARNING: (tools/gui/images/save-icon_i) texture size = 17x17
+WARNING: (tools/gui/images/save-as_n) texture size = 17x17
+WARNING: (tools/gui/images/save-as_h) texture size = 17x17
+WARNING: (tools/gui/images/save-as_d) texture size = 17x17
+WARNING: (tools/gui/images/save-as_i) texture size = 17x17
+WARNING: (tools/gui/images/tab) texture size = 67x120
+WARNING: (tools/gui/images/group-border) texture size = 42x42
+WARNING: (tools/gui/images/window) texture size = 64x132
+WARNING: (tools/gui/images/iconbuttonsmall) texture size = 16x104
+GuiControlProfile::loadFont - Failed to load/create profile font (Arial/14)
+GuiControlProfile::loadFont - Failed to load/create profile font (Arial/14)
+GuiControlProfile::loadFont - Failed to load/create profile font (Arial/14)
+GuiControlProfile::loadFont - Failed to load/create profile font (Arial/14)
+GuiControlProfile::loadFont - Failed to load/create profile font (Arial/14)
+GuiControlProfile::loadFont - Failed to load/create profile font (Arial/14)
+GuiControlProfile::loadFont - Failed to load/create profile font (Arial/14)
+GuiControlProfile::loadFont - Failed to load/create profile font (Arial/14)
+GuiControlProfile::loadFont - Failed to load/create profile font (Arial/14)
+GFont::load - error creating platform font for 'core/fonts/Arial Bold 18 (ansi).uft'
+Failed to create resource: [core/fonts/Arial Bold 18 (ansi).uft]
+GuiControlProfile::loadFont - Failed to load/create profile font (Arial Bold/18)
+GFont::load - error creating platform font for 'core/fonts/Arial Bold 18 (ansi).uft'
+Failed to create resource: [core/fonts/Arial Bold 18 (ansi).uft]

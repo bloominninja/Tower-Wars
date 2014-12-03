@@ -1,0 +1,51 @@
+﻿Build started 12/2/2014 5:47:34 PM.
+     1>Project "C:\Users\nes\Source\Repos\OmniEngine.Net\My Projects\Salvage\buildFiles\VisualStudio 2013\projects\lmng.vcxproj" on node 7 (Build target(s)).
+     1>ClCompile:
+         C:\ides\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /IC:/Users/nes/Source/Repos/OmniEngine.Net/Engine/lib/lmng /IC:/Users/nes/Source/Repos/OmniEngine.Net/Engine/lib/lpng /IC:/Users/nes/Source/Repos/OmniEngine.Net/Engine/lib/zlib /IC:/Users/nes/Source/Repos/OmniEngine.Net/Engine/lib/ljpeg /Zi /nologo /W3 /WX- /Ox /Ob2 /D MNG_OPTIMIZE_OBJCLEANUP /D UNICODE /D _CRT_SECURE_NO_DEPRECATE /D _CRT_SECURE_NO_WARNINGS /GF /Gm- /MT /GS- /Gy /fp:precise /Zc:wchar_t- /Zc:forScope /GR /Fo"../../Link/VC2013.Release.x64/lmng/" /Fd"C:/Users/nes/Source/Repos/OmniEngine.Net/Engine/lib//compiled/Release.x64/lmng.pdb" /Gd /TC /wd4244 /wd4305 /wd4530 /wd4355 /errorReport:prompt /MP C:\Users\nes\Source\Repos\OmniEngine.Net\Engine\lib\lmng\libmng_callback_xs.c C:\Users\nes\Source\Repos\OmniEngine.Net\Engine\lib\lmng\libmng_chunk_descr.c C:\Users\nes\Source\Repos\OmniEngine.Net\Engine\lib\lmng\libmng_chunk_io.c C:\Users\nes\Source\Repos\OmniEngine.Net\Engine\lib\lmng\libmng_chunk_prc.c C:\Users\nes\Source\Repos\OmniEngine.Net\Engine\lib\lmng\libmng_chunk_xs.c C:\Users\nes\Source\Repos\OmniEngine.Net\Engine\lib\lmng\libmng_cms.c C:\Users\nes\Source\Repos\OmniEngine.Net\Engine\lib\lmng\libmng_display.c C:\Users\nes\Source\Repos\OmniEngine.Net\Engine\lib\lmng\libmng_dither.c C:\Users\nes\Source\Repos\OmniEngine.Net\Engine\lib\lmng\libmng_error.c C:\Users\nes\Source\Repos\OmniEngine.Net\Engine\lib\lmng\libmng_filter.c C:\Users\nes\Source\Repos\OmniEngine.Net\Engine\lib\lmng\libmng_hlapi.c C:\Users\nes\Source\Repos\OmniEngine.Net\Engine\lib\lmng\libmng_jpeg.c C:\Users\nes\Source\Repos\OmniEngine.Net\Engine\lib\lmng\libmng_object_prc.c C:\Users\nes\Source\Repos\OmniEngine.Net\Engine\lib\lmng\libmng_pixels.c C:\Users\nes\Source\Repos\OmniEngine.Net\Engine\lib\lmng\libmng_prop_xs.c C:\Users\nes\Source\Repos\OmniEngine.Net\Engine\lib\lmng\libmng_read.c C:\Users\nes\Source\Repos\OmniEngine.Net\Engine\lib\lmng\libmng_trace.c C:\Users\nes\Source\Repos\OmniEngine.Net\Engine\lib\lmng\libmng_write.c C:\Users\nes\Source\Repos\OmniEngine.Net\Engine\lib\lmng\libmng_zlib.c
+         libmng_callback_xs.c
+         libmng_chunk_descr.c
+         libmng_chunk_io.c
+         libmng_chunk_prc.c
+         libmng_chunk_xs.c
+         libmng_cms.c
+         libmng_display.c
+         libmng_dither.c
+         libmng_error.c
+         libmng_filter.c
+         libmng_hlapi.c
+         libmng_jpeg.c
+         libmng_object_prc.c
+         libmng_pixels.c
+         libmng_prop_xs.c
+         libmng_read.c
+         libmng_trace.c
+     1>C:\Users\nes\Source\Repos\OmniEngine.Net\Engine\lib\lmng\libmng_hlapi.c(579): warning C4267: '=' : conversion from 'size_t' to 'mng_uint32', possible loss of data
+     1>C:\Users\nes\Source\Repos\OmniEngine.Net\Engine\lib\lmng\libmng_hlapi.c(582): warning C4267: '=' : conversion from 'size_t' to 'mng_uint32', possible loss of data
+         libmng_write.c
+         libmng_zlib.c
+       Lib:
+         C:\ides\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\Lib.exe /OUT:"C:/Users/nes/Source/Repos/OmniEngine.Net/Engine/lib//compiled/Release.x64//lmng.lib" /NOLOGO /MACHINE:X64 ../../Link/VC2013.Release.x64/lmng/libmng_callback_xs.obj
+         ../../Link/VC2013.Release.x64/lmng/libmng_chunk_descr.obj
+         ../../Link/VC2013.Release.x64/lmng/libmng_chunk_io.obj
+         ../../Link/VC2013.Release.x64/lmng/libmng_chunk_prc.obj
+         ../../Link/VC2013.Release.x64/lmng/libmng_chunk_xs.obj
+         ../../Link/VC2013.Release.x64/lmng/libmng_cms.obj
+         ../../Link/VC2013.Release.x64/lmng/libmng_display.obj
+         ../../Link/VC2013.Release.x64/lmng/libmng_dither.obj
+         ../../Link/VC2013.Release.x64/lmng/libmng_error.obj
+         ../../Link/VC2013.Release.x64/lmng/libmng_filter.obj
+         ../../Link/VC2013.Release.x64/lmng/libmng_hlapi.obj
+         ../../Link/VC2013.Release.x64/lmng/libmng_jpeg.obj
+         ../../Link/VC2013.Release.x64/lmng/libmng_object_prc.obj
+         ../../Link/VC2013.Release.x64/lmng/libmng_pixels.obj
+         ../../Link/VC2013.Release.x64/lmng/libmng_prop_xs.obj
+         ../../Link/VC2013.Release.x64/lmng/libmng_read.obj
+         ../../Link/VC2013.Release.x64/lmng/libmng_trace.obj
+         ../../Link/VC2013.Release.x64/lmng/libmng_write.obj
+         ../../Link/VC2013.Release.x64/lmng/libmng_zlib.obj
+         lmng.vcxproj -> C:/Users/nes/Source/Repos/OmniEngine.Net/Engine/lib//compiled/Release.x64/lmng.lib
+     1>Done Building Project "C:\Users\nes\Source\Repos\OmniEngine.Net\My Projects\Salvage\buildFiles\VisualStudio 2013\projects\lmng.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:09.13
