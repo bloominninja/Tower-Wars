@@ -66,32 +66,3 @@ singleton Material(Ryder_MuzzleFlash_Base)
    castShadows = "0";
 };
 
-
-singleton Material(TP_Ryder_FP_Ryder_Base)
-{
-   mapTo = "FP_Ryder_Base";
-   diffuseMap[0] = "FP_Ryder_D";
-   specularPower[0] = "10";
-   specularMap[0] = "FP_Ryder_S";
-   translucentBlendOp = "None";
-   Enabled = "1";
-};
-
-singleton Material(TP_Ryder_Base)
-{
-   mapTo = "TP_Ryder_Base";
-   diffuseMap[0] = "TP_Ryder_D";
-   specular[0] = "0.9 0.9 0.9 1";
-   specularPower[0] = "10";
-   translucentBlendOp = "None";
-};
-
-singleton Material(TP_Ryder_Ryder_MuzzleFlash_Base)
-{
-   mapTo = "Ryder_MuzzleFlash_Base";
-   diffuseMap[0] = "Ryder_MuzzleFlash";
-   specular[0] = "0.9 0.9 0.9 1";
-   specularPower[0] = "10";
-   translucent = "1";
-   Enabled = "1";
-};

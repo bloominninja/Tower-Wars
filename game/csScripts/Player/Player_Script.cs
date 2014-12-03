@@ -1,4 +1,4 @@
-﻿using WinterLeaf.Demo.Full.Models.User.Extendable;
+﻿using LaughingDogStudios.Salvage.Logic.Models.User.Extendable;
 using WinterLeaf.Engine;
 using WinterLeaf.Engine.Classes;
 using WinterLeaf.Engine.Classes.Interopt;

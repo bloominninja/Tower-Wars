@@ -1,4 +1,4 @@
-//-------------------------- 12/2/2014 -- 19:40:35 -----
+//-------------------------- 12/2/2014 -- 20:27:27 -----
 Processor Init:
    Unknown x86 Compatible, ~2.19 Ghz
    HT detected
@@ -99,32 +99,13 @@ Accepted Mode:
 --Refresh Rate : 60
 --FSAA Level : 4
 --------------
-GFXPCD3D9Device::reset - depthstencil 14acda98 has 2 ref's
+GFXPCD3D9Device::reset - depthstencil 19069cd8 has 2 ref's
 --- Resetting D3D Device ---
-GFXPCD3D9Device::reset - depthstencil 14acf7d8 has 2 ref's
+GFXPCD3D9Device::reset - depthstencil 1906d198 has 2 ref's
 --- Resetting D3D Device ---
-Warning, overwriting material for: base_Soldier_Main
-Warning, overwriting material for: base_Soldier_Dazzle
-Warning, overwriting material for: base_FP_Soldier_Arms_Main
-Warning, overwriting material for: Collider
-Warning, overwriting material for: Cheetah_Main
-Warning, overwriting material for: Cheetah_MuzzleFlash
-Warning, overwriting material for: Cheetah_TailLights
-Warning, overwriting material for: Lurker_Base
-Warning, overwriting material for: Lurker_ScopeScreen_Base
-Warning, overwriting material for: Lurker_MuzzleFlash_Base
-Warning, overwriting material for: ProxMine_Base
-Warning, overwriting material for: ProxMine_Glow_Base
-Warning, overwriting material for: FP_Ryder_Base
-Warning, overwriting material for: Ryder_MuzzleFlash_Base
-Warning, overwriting material for: CollisionMat
-Warning, overwriting material for: Turret_Base
-Warning, overwriting material for: Turret_MuzzleFlash_Base
-Warning, overwriting material for: Turret_Lazer_Base
 UDP initialized on port 0
 GuiCanvas::setContent - Invalid control specified')
-WARNING: (art/gui/omni) texture size = 439x474
-WARNING: (art/gui/background_g) texture size = 800x600
+GuiBitmapButtonCtrl::setBitmap - Unable to load texture: art/gui/omni.png
  % - Initializing Tools
 Missing file: tools/gui/guiDialogs.ed.cs!
  % - Initializing Tools Base
@@ -148,38 +129,43 @@ WARNING: (tools/editorclasses/gui/images/rollout) texture size = 39x50
  % - Initializing Shape Editor
  % - Initializing Navigation Editor
 Engine initialized...
-GFXPCD3D9Device::reset - depthstencil 14ad0198 has 2 ref's
+GFXPCD3D9Device::reset - depthstencil 1906e378 has 2 ref's
 --- Resetting D3D Device ---
 ### Datablock Cache: Server Datablock CRC is 4294967295
 Window focus status changed: focus: 1
-WARNING: (core/art/gui/images/selector-button) texture size = 39x192
-WARNING: (art/gui/omni-logo) texture size = 439x300
-WARNING: (core/art/gui/images/checkbox) texture size = 13x84
-WARNING: (art/gui/previous-button_n) texture size = 11x81
-WARNING: (art/gui/previous-button_h) texture size = 11x81
-WARNING: (art/gui/previous-button_d) texture size = 11x81
-WARNING: (art/gui/next-button_n) texture size = 11x81
-WARNING: (art/gui/next-button_h) texture size = 11x81
-WARNING: (art/gui/next-button_d) texture size = 11x81
-WARNING: (core/art/gui/images/window) texture size = 64x132
-WARNING: (art/gui/no-preview) texture size = 400x300
-WARNING: (levels/Empty Room_preview) texture size = 400x300
-WARNING: (levels/Empty Terrain_preview) texture size = 400x300
-WARNING: (levels/Empty_Terrain_preview) texture size = 400x300
-WARNING: (levels/navtest_preview) texture size = 400x300
-WARNING: (levels/Outpost_preview) texture size = 400x300
-WARNING: (art/gui/background) texture size = 800x600
 AntiAliasing has been disabled; it is not compatible with AdvancedLighting.
-GuiControlProfile::loadFont - Failed to load/create profile font (Arial/14)
-GuiControlProfile::loadFont - Failed to load/create profile font (Arial/14)
-GuiControlProfile::loadFont - Failed to load/create profile font (Arial/14)
-GuiControlProfile::loadFont - Failed to load/create profile font (Arial/14)
-GuiControlProfile::loadFont - Failed to load/create profile font (Arial/14)
-GuiControlProfile::loadFont - Failed to load/create profile font (Arial/14)
-GuiControlProfile::loadFont - Failed to load/create profile font (Arial/14)
-GuiControlProfile::loadFont - Failed to load/create profile font (Arial/14)
-GFont::load - error creating platform font for 'core/fonts/Arial Bold 18 (ansi).uft'
-Failed to create resource: [core/fonts/Arial Bold 18 (ansi).uft]
-GuiControlProfile::loadFont - Failed to load/create profile font (Arial Bold/18)
-GFont::load - error creating platform font for 'core/fonts/Arial Bold 18 (ansi).uft'
-Failed to create resource: [core/fonts/Arial Bold 18 (ansi).uft]
+WARNING: (core/art/gui/images/selector-button) texture size = 39x192
+WARNING: (core/art/gui/images/checkbox) texture size = 13x84
+GuiBitmapButtonCtrl::setBitmap - Unable to load texture: art/gui/previous-button
+GuiBitmapButtonCtrl::setBitmap - Unable to load texture: art/gui/next-button
+WARNING: (core/art/gui/images/window) texture size = 64x132
+GuiBitmapButtonCtrl::setBitmap - Unable to load texture: art/gui/no-preview
+WARNING: (levels/Empty Room_preview) texture size = 400x300
+GuiBitmapButtonCtrl::setBitmap - Unable to load texture: art/gui/no-preview
+WARNING: (levels/Empty Terrain_preview) texture size = 400x300
+GuiBitmapButtonCtrl::setBitmap - Unable to load texture: art/gui/no-preview
+WARNING: (levels/Empty_Terrain_preview) texture size = 400x300
+GuiBitmapButtonCtrl::setBitmap - Unable to load texture: art/gui/no-preview
+WARNING: (levels/navtest_preview) texture size = 400x300
+GuiBitmapButtonCtrl::setBitmap - Unable to load texture: art/gui/no-preview
+WARNING: (levels/Outpost_preview) texture size = 400x300
+GuiBitmapButtonCtrl::setBitmap - Unable to load texture: art/gui/no-preview
+GuiBitmapButtonCtrl::setBitmap - Unable to load texture: art/gui/no-preview
+GuiBitmapButtonCtrl::setBitmap - Unable to load texture: art/gui/no-preview
+GuiBitmapButtonCtrl::setBitmap - Unable to load texture: art/gui/no-preview
+GuiBitmapButtonCtrl::setBitmap - Unable to load texture: art/gui/no-preview
+GuiBitmapButtonCtrl::setBitmap - Unable to load texture: art/gui/no-preview
+GuiBitmapButtonCtrl::setBitmap - Unable to load texture: art/gui/no-preview
+Exporting server prefs...
+Exporting client prefs
+Exporting server prefs
+GuiBitmapButtonCtrl::setBitmap - Unable to load texture: art/gui/no-preview
+GuiBitmapButtonCtrl::setBitmap - Unable to load texture: art/gui/no-preview
+GuiBitmapButtonCtrl::setBitmap - Unable to load texture: art/gui/no-preview
+GuiBitmapButtonCtrl::setBitmap - Unable to load texture: art/gui/no-preview
+GuiBitmapButtonCtrl::setBitmap - Unable to load texture: art/gui/no-preview
+GuiBitmapButtonCtrl::setBitmap - Unable to load texture: art/gui/no-preview
+Exporting server prefs...
+Exporting client prefs
+Exporting server prefs
+Cur. D3DDevice ref count=1

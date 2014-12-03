@@ -44,30 +44,3 @@ singleton Material(ProxMine_Glow_Base)
    emissive[0] = "1";
    translucentBlendOp = "Add";
 };
-
-singleton Material(TP_ProxMine_ProxMine_Base)
-{
-   mapTo = "ProxMine_Base";
-   diffuseMap[0] = "ProxMine_D";
-   specular[0] = "0.9 0.9 0.9 1";
-   specularPower[0] = "10";
-   translucentBlendOp = "None";
-};
-
-singleton Material(TP_ProxMine_ProxMine_Glow_Base)
-{
-   mapTo = "ProxMine_Glow_Base";
-   diffuseMap[0] = "ProxMine_Glow";
-   specular[0] = "0.9 0.9 0.9 1";
-   specularPower[0] = "10";
-   translucent = "1";
-};
-
-singleton Material(TP_ProxMine_CollisionMat)
-{
-   mapTo = "CollisionMat";
-   diffuseColor[0] = "1 0 0 0.8";
-   specular[0] = "0.9 0.9 0.9 1";
-   specularPower[0] = "10";
-   translucent = "1";
-};

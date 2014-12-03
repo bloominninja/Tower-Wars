@@ -1,8 +1,8 @@
 ﻿#region
 
 using System.ComponentModel;
-using WinterLeaf.Demo.Full.Models.User.CustomObjects.Utilities;
-using WinterLeaf.Demo.Full.Models.User.Extendable;
+using LaughingDogStudios.Salvage.Logic.Models.User.CustomObjects.Utilities;
+using LaughingDogStudios.Salvage.Logic.Models.User.Extendable;
 using WinterLeaf.Engine;
 using WinterLeaf.Engine.Classes.Helpers;
 using WinterLeaf.Engine.Classes.Extensions;
@@ -10,7 +10,7 @@ using WinterLeaf.Engine.Containers;
 
 #endregion
 
-namespace WinterLeaf.Demo.Full.Models.User.GameCode.Server
+namespace LaughingDogStudios.Salvage.Logic.Models.User.GameCode.Server
     {
     [TypeConverter(typeof(TypeConverterGeneric<CustomHealthPatch>))]
     public class CustomHealthPatch : ItemData

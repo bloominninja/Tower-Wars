@@ -8,8 +8,8 @@
     <ProjectGuid>{D223E980-DD64-499A-A618-9F7A9BE9244F}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Winterleaf.Demo.LiveScripts</RootNamespace>
-    <AssemblyName>Winterleaf.Demo.LiveScripts</AssemblyName>
+    <RootNamespace>LaughingDogStudios.Salvage.LiveScripts</RootNamespace>
+    <AssemblyName>LaughingDogStudios.Salvage.LiveScripts</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <SccProjectName>SAK</SccProjectName>

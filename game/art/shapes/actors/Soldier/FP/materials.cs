@@ -82,12 +82,3 @@ singleton Material(Mat_Yellow_FP_Soldier_Arms_Main : Mat_FP_Soldier_Arms_Main)
    mapTo = "Yellow_FP_Soldier_Arms_Main";
    diffuseMap[0] = "Soldier_FPSarms_Yellow_Dif.dds";
 };
-
-singleton Material(FP_SoldierArms_base_FP_Soldier_Arms_Main)
-{
-   mapTo = "base_FP_Soldier_Arms_Main";
-   diffuseColor[0] = "0.588235 0.588235 0.588235 1";
-   specular[0] = "0.9 0.9 0.9 1";
-   specularPower[0] = "10";
-   translucentBlendOp = "None";
-};

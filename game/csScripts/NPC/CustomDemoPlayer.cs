@@ -2,7 +2,7 @@
 
 using System;
 using System.ComponentModel;
-using WinterLeaf.Demo.Full.Models.User.Extendable;
+using LaughingDogStudios.Salvage.Logic.Models.User.Extendable;
 
 using WinterLeaf.Engine;
 
@@ -13,7 +13,7 @@ using WinterLeaf.Engine.Classes.Extensions;
 
 
 
-namespace WinterLeaf.Demo.Full.Models.User.CustomObjects.Scripted.AI
+namespace LaughingDogStudios.Salvage.Logic.Models.User.CustomObjects.Scripted.AI
     {
     /// <summary>
     /// 

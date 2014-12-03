@@ -41,11 +41,11 @@ using LaughingDogStudios.Salvage.Logic.Models.Base;
 
 namespace LaughingDogStudios.Salvage.Logic.Models.User.Extendable
 {
-    public partial class GuiArrayCtrl : GuiArrayCtrl_Base
-    {
-        public override void onSelect(string x, string y)
-        {
-            this.callScript("onSelect", new string[] {x});
-        }
-    }
+	public partial class GuiArrayCtrl : GuiArrayCtrl_Base
+	{
+		public override void onSelect(string x, string y)
+		{
+			this.callScript("onSelect", new string[] { x });
+		}
+	}
 }

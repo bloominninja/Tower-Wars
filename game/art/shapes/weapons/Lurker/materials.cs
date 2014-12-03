@@ -63,33 +63,3 @@ singleton Material(Lurker_MuzzleFlash_Base)
    waveAmp[0] = "0.016";
    castShadows = "0";
 };
-
-singleton Material(TP_Lurker_Lurker_Base)
-{
-   mapTo = "Lurker_Base";
-   diffuseMap[0] = "art/shapes/weapons/Lurker/Art_Resources/WIP/Art_Pack/Gun_Pack/Lurker/Lurker_D";
-   specular[0] = "0.9 0.9 0.9 1";
-   specularPower[0] = "10";
-   translucentBlendOp = "None";
-   Enabled = "1";
-};
-
-singleton Material(TP_Lurker_Lurker_ScopeScreen_Base)
-{
-   mapTo = "Lurker_ScopeScreen_Base";
-   diffuseMap[0] = "art/shapes/weapons/Lurker/Art_Resources/WIP/Art_Pack/Gun_Pack/Lurker/Lurker_D";
-   specular[0] = "0.9 0.9 0.9 1";
-   specularPower[0] = "10";
-   translucentBlendOp = "None";
-   Enabled = "1";
-};
-
-singleton Material(TP_Lurker_Lurker_MuzzleFlash_Base)
-{
-   mapTo = "Lurker_MuzzleFlash_Base";
-   diffuseMap[0] = "art/shapes/weapons/Lurker/Art_Resources/WIP/Art_Pack/Gun_Pack/Lurker/Lurker_MuzzleFlash";
-   specular[0] = "0.9 0.9 0.9 1";
-   specularPower[0] = "10";
-   translucent = "1";
-   Enabled = "1";
-};

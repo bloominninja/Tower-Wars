@@ -14,7 +14,7 @@
     <Assembly>System.Data.DataSetExtensions.dll</Assembly>
     <Assembly>System.Xml.dll</Assembly>
     <Assembly>System.Xml.Linq.dll</Assembly>
-    <Assembly>Winterleaf.Demo.Full.dll</Assembly>
+    <Assembly>LaughingDogStudios.Salvage.Logic.dll</Assembly>
     <Assembly>WinterLeaf.Engine.Omni.dll</Assembly>
   </ReferencedAssemblies>
 
