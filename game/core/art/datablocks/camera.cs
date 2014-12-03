@@ -27,5 +27,5 @@
 datablock CameraData(Observer)
 {
    mode = "Observer";
-   WLE_OVERRIDE_PROXY_CLASSTYPE = "WinterLeaf.Demo.Full.Models.User.GameCode.Server.Camera.Observer";
+   WLE_OVERRIDE_PROXY_CLASSTYPE = "LaughingDogStudios.Salvage.Logic.Models.User.GameCode.Server.Camera.Observer";
 };

@@ -5,5 +5,5 @@
 datablock TriggerData(StartTrigger : DefaultTrigger)
 {
    tickPeriodMS = 500;
-   WLE_OVERRIDE_PROXY_CLASSTYPE = "WinterLeaf.Demo.Full.Models.User.GameCode.Server.WalkableShape.StartTrigger";
+   WLE_OVERRIDE_PROXY_CLASSTYPE = "LaughingDogStudios.Salvage.Logic.Models.User.GameCode.Server.WalkableShape.StartTrigger";
 };

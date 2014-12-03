@@ -122,7 +122,7 @@ function TurretBulletProjectile::onCollision(%this,%obj,%col,%fade,%pos,%normal)
 
 datablock ItemData(AITurretAmmo)
 {
-   WLE_OVERRIDE_PROXY_CLASSTYPE = "WinterLeaf.Demo.Full.Models.User.GameCode.Server.Weapons.Ammo";
+   WLE_OVERRIDE_PROXY_CLASSTYPE = "LaughingDogStudios.Salvage.Logic.Models.User.GameCode.Server.Weapons.Ammo";
    // Mission editor category
    category = "Ammo";
 
@@ -146,7 +146,7 @@ datablock ItemData(AITurretAmmo)
 
 datablock ItemData(AITurretHead)
 {
-   WLE_OVERRIDE_PROXY_CLASSTYPE = "WinterLeaf.Demo.Full.Models.User.GameCode.Server.Weapons.Weapon";
+   WLE_OVERRIDE_PROXY_CLASSTYPE = "LaughingDogStudios.Salvage.Logic.Models.User.GameCode.Server.Weapons.Weapon";
    // Mission editor category
    category = "Weapon";
 
@@ -170,7 +170,7 @@ datablock ItemData(AITurretHead)
 };
 datablock ShapeBaseImageData(AITurretHeadImage)
 {
-   WLE_OVERRIDE_PROXY_CLASSTYPE = "WinterLeaf.Demo.Full.Models.User.GameCode.Server.Weapons.AITurretHeadImage";
+   WLE_OVERRIDE_PROXY_CLASSTYPE = "LaughingDogStudios.Salvage.Logic.Models.User.GameCode.Server.Weapons.AITurretHeadImage";
    // Basic Item properties
    shapeFile = "art/shapes/weapons/Turret/Turret_Head.DAE";
    emap = true;
@@ -402,7 +402,7 @@ datablock AITurretShapeData(AITurret)
 //-----------------------------------------------------------------------------
 datablock AITurretShapeData(DeployableTurret : AITurret)
 {
-   WLE_OVERRIDE_PROXY_CLASSTYPE = "WinterLeaf.Demo.Full.Models.User.GameCode.Server.Weapons.DeployableTurretWeapon";
+   WLE_OVERRIDE_PROXY_CLASSTYPE = "LaughingDogStudios.Salvage.Logic.Models.User.GameCode.Server.Weapons.DeployableTurretWeapon";
    // Mission editor category
    category = "Weapon";
 
@@ -427,7 +427,7 @@ datablock AITurretShapeData(DeployableTurret : AITurret)
 
 datablock ShapeBaseImageData(DeployableTurretImage)
 {
-   WLE_OVERRIDE_PROXY_CLASSTYPE = "WinterLeaf.Demo.Full.Models.User.GameCode.Server.Weapons.DeployableTurretWeaponImage";
+   WLE_OVERRIDE_PROXY_CLASSTYPE = "LaughingDogStudios.Salvage.Logic.Models.User.GameCode.Server.Weapons.DeployableTurretWeaponImage";
    // Basic Item properties
    shapeFile = "art/shapes/weapons/Turret/TP_Turret.DAE";
    shapeFileFP = "art/shapes/weapons/Turret/FP_Turret.DAE";

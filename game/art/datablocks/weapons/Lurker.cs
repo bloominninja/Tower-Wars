@@ -248,7 +248,7 @@ function BulletProjectile::onCollision(%this,%obj,%col,%fade,%pos,%normal)
 //-----------------------------------------------------------------------------
 datablock ItemData(LurkerClip)
 {
-   WLE_OVERRIDE_PROXY_CLASSTYPE = "WinterLeaf.Demo.Full.Models.User.GameCode.Server.Weapons.AmmoClip";
+   WLE_OVERRIDE_PROXY_CLASSTYPE = "LaughingDogStudios.Salvage.Logic.Models.User.GameCode.Server.Weapons.AmmoClip";
    // Mission editor category
    category = "AmmoClip";
 
@@ -270,7 +270,7 @@ datablock ItemData(LurkerClip)
 
 datablock ItemData(LurkerAmmo)
 {
-   WLE_OVERRIDE_PROXY_CLASSTYPE = "WinterLeaf.Demo.Full.Models.User.GameCode.Server.Weapons.Ammo";
+   WLE_OVERRIDE_PROXY_CLASSTYPE = "LaughingDogStudios.Salvage.Logic.Models.User.GameCode.Server.Weapons.Ammo";
    // Mission editor category
    category = "Ammo";
 
@@ -297,7 +297,7 @@ datablock ItemData(LurkerAmmo)
 //-----------------------------------------------------------------------------
 datablock ItemData(Lurker)
 {
-   WLE_OVERRIDE_PROXY_CLASSTYPE = "WinterLeaf.Demo.Full.Models.User.GameCode.Server.Weapons.Weapon";
+   WLE_OVERRIDE_PROXY_CLASSTYPE = "LaughingDogStudios.Salvage.Logic.Models.User.GameCode.Server.Weapons.Weapon";
    // Mission editor category
    category = "Weapon";
 
@@ -324,7 +324,7 @@ datablock ItemData(Lurker)
 
 datablock ShapeBaseImageData(LurkerWeaponImage)
 {
-   WLE_OVERRIDE_PROXY_CLASSTYPE = "WinterLeaf.Demo.Full.Models.User.GameCode.Server.Weapons.WeaponImage";
+   WLE_OVERRIDE_PROXY_CLASSTYPE = "LaughingDogStudios.Salvage.Logic.Models.User.GameCode.Server.Weapons.WeaponImage";
    // Basic Item properties
    shapeFile = "art/shapes/weapons/Lurker/TP_Lurker.DAE";
    shapeFileFP = "art/shapes/weapons/Lurker/FP_Lurker.DAE";
@@ -561,7 +561,7 @@ datablock ShapeBaseImageData(LurkerWeaponImage)
 
 datablock ItemData(LurkerGrenadeAmmo)
 {
-   WLE_OVERRIDE_PROXY_CLASSTYPE = "WinterLeaf.Demo.Full.Models.User.GameCode.Server.Weapons.Ammo";
+   WLE_OVERRIDE_PROXY_CLASSTYPE = "LaughingDogStudios.Salvage.Logic.Models.User.GameCode.Server.Weapons.Ammo";
    // Mission editor category
    category = "Ammo";
 
@@ -582,7 +582,7 @@ datablock ItemData(LurkerGrenadeAmmo)
 
 datablock ItemData(LurkerGrenadeLauncher)
 {
-   WLE_OVERRIDE_PROXY_CLASSTYPE = "WinterLeaf.Demo.Full.Models.User.GameCode.Server.Weapons.Weapon";
+   WLE_OVERRIDE_PROXY_CLASSTYPE = "LaughingDogStudios.Salvage.Logic.Models.User.GameCode.Server.Weapons.Weapon";
    // Mission editor category
    category = "Weapon";
 
@@ -608,7 +608,7 @@ datablock ItemData(LurkerGrenadeLauncher)
 
 datablock ShapeBaseImageData(LurkerGrenadeLauncherImage)
 {
-   WLE_OVERRIDE_PROXY_CLASSTYPE = "WinterLeaf.Demo.Full.Models.User.GameCode.Server.Weapons.WeaponImage";
+   WLE_OVERRIDE_PROXY_CLASSTYPE = "LaughingDogStudios.Salvage.Logic.Models.User.GameCode.Server.Weapons.WeaponImage";
    // Basic Item properties
    shapeFile = "art/shapes/weapons/Lurker/TP_Lurker.DAE";
    shapeFileFP = "art/shapes/weapons/Lurker/FP_Lurker.DAE";

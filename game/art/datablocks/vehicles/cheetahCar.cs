@@ -147,7 +147,7 @@ datablock ParticleEmitterData(TurretFireSmokeEmitter)
 
 datablock ItemData(BulletAmmo)
 {
-   WLE_OVERRIDE_PROXY_CLASSTYPE = "WinterLeaf.Demo.Full.Models.User.GameCode.Server.Weapons.Ammo";
+   WLE_OVERRIDE_PROXY_CLASSTYPE = "LaughingDogStudios.Salvage.Logic.Models.User.GameCode.Server.Weapons.Ammo";
    // Mission editor category
    category = "Ammo";
 
@@ -168,7 +168,7 @@ datablock ItemData(BulletAmmo)
 
 datablock ShapeBaseImageData(TurretImage)
 {
-   WLE_OVERRIDE_PROXY_CLASSTYPE = "WinterLeaf.Demo.Full.Models.User.GameCode.Server.Weapons.WeaponImage";
+   WLE_OVERRIDE_PROXY_CLASSTYPE = "LaughingDogStudios.Salvage.Logic.Models.User.GameCode.Server.Weapons.WeaponImage";
    // Basic Item properties
    shapeFile = "art/shapes/Cheetah/Cheetah_Turret.DAE";
    emap = true;
@@ -346,7 +346,7 @@ datablock WheeledVehicleSpring(CheetahCarSpring)
 
 datablock WheeledVehicleData(CheetahCar)
 {
-   WLE_OVERRIDE_PROXY_CLASSTYPE = "WinterLeaf.Demo.Full.Models.User.GameCode.Server.Vehicles.CheetahCar";
+   WLE_OVERRIDE_PROXY_CLASSTYPE = "LaughingDogStudios.Salvage.Logic.Models.User.GameCode.Server.Vehicles.CheetahCar";
    category = "Vehicles";
    shapeFile = "art/shapes/Cheetah/Cheetah_Body.DAE";
    emap = 1;

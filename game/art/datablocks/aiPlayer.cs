@@ -26,6 +26,6 @@
 
 datablock PlayerData(DemoPlayer : DefaultPlayerData)
 {
-   WLE_OVERRIDE_PROXY_CLASSTYPE = "WinterLeaf.Demo.Full.Models.User.Extendable.AIPlayerData";
+   WLE_OVERRIDE_PROXY_CLASSTYPE = "LaughingDogStudios.Salvage.Logic.Models.User.Extendable.AIPlayerData";
    shootingDelay = 2000;
 };

@@ -50,7 +50,7 @@ datablock ItemData(HealthKitSmall)
    category = "Health";
 
    className = "HealthPatch";
-   WLE_OVERRIDE_PROXY_CLASSTYPE = "WinterLeaf.Demo.Full.Models.User.GameCode.Server.HealthPatch";
+   WLE_OVERRIDE_PROXY_CLASSTYPE = "LaughingDogStudios.Salvage.Logic.Models.User.GameCode.Server.HealthPatch";
 
    // Basic Item properties
    shapeFile = "art/shapes/items/kit/healthkit.dts";
@@ -72,7 +72,7 @@ datablock ItemData(HealthKitPatch)
    category = "Health";
 
    className = "HealthPatch";
-   WLE_OVERRIDE_PROXY_CLASSTYPE = "WinterLeaf.Demo.Full.Models.User.GameCode.Server.HealthPatch";
+   WLE_OVERRIDE_PROXY_CLASSTYPE = "LaughingDogStudios.Salvage.Logic.Models.User.GameCode.Server.HealthPatch";
 
    // Basic Item properties
    shapeFile = "art/shapes/items/patch/healthpatch.dts";

@@ -193,7 +193,7 @@ datablock ItemData(WeaponTemplateItem)
 
 datablock ShapeBaseImageData(WeaponTemplateImage)
 {
-   WLE_OVERRIDE_PROXY_CLASSTYPE = "WinterLeaf.Demo.Full.Models.User.GameCode.Server.Weapons.WeaponImage";
+   WLE_OVERRIDE_PROXY_CLASSTYPE = "LaughingDogStudios.Salvage.Logic.Models.User.GameCode.Server.Weapons.WeaponImage";
    // FP refers to first person specific features
    
    // Defines what art file to use.

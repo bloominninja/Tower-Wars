@@ -67,7 +67,7 @@ datablock SFXProfile(RyderSwitchinSound)
 //-----------------------------------------------------------------------------
 datablock ItemData(RyderClip)
 {
-   WLE_OVERRIDE_PROXY_CLASSTYPE = "WinterLeaf.Demo.Full.Models.User.GameCode.Server.Weapons.AmmoClip";
+   WLE_OVERRIDE_PROXY_CLASSTYPE = "LaughingDogStudios.Salvage.Logic.Models.User.GameCode.Server.Weapons.AmmoClip";
    // Mission editor category
    category = "AmmoClip";
 
@@ -90,7 +90,7 @@ datablock ItemData(RyderClip)
 
 datablock ItemData(RyderAmmo)
 {
-   WLE_OVERRIDE_PROXY_CLASSTYPE = "WinterLeaf.Demo.Full.Models.User.GameCode.Server.Weapons.Ammo";
+   WLE_OVERRIDE_PROXY_CLASSTYPE = "LaughingDogStudios.Salvage.Logic.Models.User.GameCode.Server.Weapons.Ammo";
    // Mission editor category
    category = "Ammo";
 
@@ -117,7 +117,7 @@ datablock ItemData(RyderAmmo)
 //-----------------------------------------------------------------------------
 datablock ItemData(Ryder)
 {
-   WLE_OVERRIDE_PROXY_CLASSTYPE = "WinterLeaf.Demo.Full.Models.User.GameCode.Server.Weapons.Weapon";
+   WLE_OVERRIDE_PROXY_CLASSTYPE = "LaughingDogStudios.Salvage.Logic.Models.User.GameCode.Server.Weapons.Weapon";
    // Mission editor category
    category = "Weapon";
 
@@ -145,7 +145,7 @@ datablock ItemData(Ryder)
 
 datablock ShapeBaseImageData(RyderWeaponImage)
 {
-   WLE_OVERRIDE_PROXY_CLASSTYPE = "WinterLeaf.Demo.Full.Models.User.GameCode.Server.Weapons.WeaponImage";
+   WLE_OVERRIDE_PROXY_CLASSTYPE = "LaughingDogStudios.Salvage.Logic.Models.User.GameCode.Server.Weapons.WeaponImage";
    // Basic Item properties
    shapeFile = "art/shapes/weapons/Ryder/TP_Ryder.DAE";
    shapeFileFP = "art/shapes/weapons/Ryder/FP_Ryder.DAE";

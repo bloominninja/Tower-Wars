@@ -85,7 +85,7 @@ datablock ProximityMineData( ProxMine )
 
 datablock ShapeBaseImageData( ProxMineImage )
 {
-   WLE_OVERRIDE_PROXY_CLASSTYPE = "WinterLeaf.Demo.Full.Models.User.GameCode.Server.Weapons.ProxMineImage";
+   WLE_OVERRIDE_PROXY_CLASSTYPE = "LaughingDogStudios.Salvage.Logic.Models.User.GameCode.Server.Weapons.ProxMineImage";
    // Basic Item properties
    shapeFile = "art/shapes/weapons/ProxMine/TP_ProxMine.DAE";
    shapeFileFP = "art/shapes/weapons/ProxMine/FP_ProxMine.DAE";
