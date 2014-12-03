@@ -1,4 +1,4 @@
-//-------------------------- 12/2/2014 -- 18:39:48 -----
+//-------------------------- 12/2/2014 -- 19:40:35 -----
 Processor Init:
    Unknown x86 Compatible, ~2.19 Ghz
    HT detected
@@ -27,8 +27,6 @@ Missing file: scripts/main.cs!
 Error: Unable to find specified directory: scripts
 -------------------->Loading Tools
 --------- Parsing Arguments ---------
-Missing file: prefs.client.cs!
-Missing file: prefs.server.cs!
 Binding server port to default IP
 UDP initialized on port 0
 Attempting to create GFX device: Intel(R) HD Graphics 4000 (D3D9) [\\.\DISPLAY1]
@@ -101,15 +99,28 @@ Accepted Mode:
 --Refresh Rate : 60
 --FSAA Level : 4
 --------------
-GFXPCD3D9Device::reset - depthstencil 14e7e318 has 2 ref's
+GFXPCD3D9Device::reset - depthstencil 14acda98 has 2 ref's
 --- Resetting D3D Device ---
-GFXPCD3D9Device::reset - depthstencil 14e7f838 has 2 ref's
+GFXPCD3D9Device::reset - depthstencil 14acf7d8 has 2 ref's
 --- Resetting D3D Device ---
+Warning, overwriting material for: base_Soldier_Main
+Warning, overwriting material for: base_Soldier_Dazzle
+Warning, overwriting material for: base_FP_Soldier_Arms_Main
+Warning, overwriting material for: Collider
+Warning, overwriting material for: Cheetah_Main
+Warning, overwriting material for: Cheetah_MuzzleFlash
+Warning, overwriting material for: Cheetah_TailLights
 Warning, overwriting material for: Lurker_Base
 Warning, overwriting material for: Lurker_ScopeScreen_Base
 Warning, overwriting material for: Lurker_MuzzleFlash_Base
+Warning, overwriting material for: ProxMine_Base
+Warning, overwriting material for: ProxMine_Glow_Base
 Warning, overwriting material for: FP_Ryder_Base
 Warning, overwriting material for: Ryder_MuzzleFlash_Base
+Warning, overwriting material for: CollisionMat
+Warning, overwriting material for: Turret_Base
+Warning, overwriting material for: Turret_MuzzleFlash_Base
+Warning, overwriting material for: Turret_Lazer_Base
 UDP initialized on port 0
 GuiCanvas::setContent - Invalid control specified')
 WARNING: (art/gui/omni) texture size = 439x474
@@ -137,13 +148,10 @@ WARNING: (tools/editorclasses/gui/images/rollout) texture size = 39x50
  % - Initializing Shape Editor
  % - Initializing Navigation Editor
 Engine initialized...
-GFXPCD3D9Device::reset - depthstencil 14e7f0d8 has 2 ref's
+GFXPCD3D9Device::reset - depthstencil 14ad0198 has 2 ref's
 --- Resetting D3D Device ---
 ### Datablock Cache: Server Datablock CRC is 4294967295
-AntiAliasing has been disabled; it is not compatible with AdvancedLighting.
 Window focus status changed: focus: 1
-Window focus status changed: focus: 0
-  Using background sleep time: 1
 WARNING: (core/art/gui/images/selector-button) texture size = 39x192
 WARNING: (art/gui/omni-logo) texture size = 439x300
 WARNING: (core/art/gui/images/checkbox) texture size = 13x84
@@ -161,83 +169,7 @@ WARNING: (levels/Empty_Terrain_preview) texture size = 400x300
 WARNING: (levels/navtest_preview) texture size = 400x300
 WARNING: (levels/Outpost_preview) texture size = 400x300
 WARNING: (art/gui/background) texture size = 800x600
-Window focus status changed: focus: 1
-Window focus status changed: focus: 0
-  Using background sleep time: 1
-GFXPCD3D9Device::reset - depthstencil 1ccb8298 has 2 ref's
---- Resetting D3D Device ---
-WARNING: (tools/gui/images/button) texture size = 16x96
-WARNING: (tools/worldEditor/images/toolbar/world) texture size = 29x27
-WARNING: (tools/worldEditor/images/toolbar/world_h) texture size = 29x27
-WARNING: (tools/worldEditor/images/toolbar/world_d) texture size = 29x27
-WARNING: (tools/worldEditor/images/toolbar/gui) texture size = 29x27
-WARNING: (tools/worldEditor/images/toolbar/gui_h) texture size = 29x27
-WARNING: (tools/worldEditor/images/toolbar/gui_d) texture size = 29x27
-WARNING: (tools/worldEditor/images/toolbar/playbutton_n) texture size = 29x27
-WARNING: (tools/worldEditor/images/toolbar/playbutton_h) texture size = 29x27
-WARNING: (tools/worldEditor/images/toolbar/playbutton_d) texture size = 29x27
-WARNING: (tools/gui/images/separator-h) texture size = 2x26
-WARNING: (tools/editorClasses/gui/panels/menubar) texture size = 18x19
-WARNING: (tools/gui/images/dropDown) texture size = 31x78
-WARNING: (tools/gui/images/scrollBar) texture size = 42x162
-WARNING: (tools/gui/images/checkbox) texture size = 13x84
-WARNING: (tools/gui/images/GUI-editor/snap-grid_n) texture size = 29x27
-WARNING: (tools/gui/images/GUI-editor/snap-grid_h) texture size = 29x27
-WARNING: (tools/gui/images/GUI-editor/snap-grid_d) texture size = 29x27
-WARNING: (tools/gui/images/GUI-editor/edgesnap_n) texture size = 29x27
-WARNING: (tools/gui/images/GUI-editor/edgesnap_h) texture size = 29x27
-WARNING: (tools/gui/images/GUI-editor/edgesnap_d) texture size = 29x27
-WARNING: (tools/gui/images/GUI-editor/centersnap_n) texture size = 29x27
-WARNING: (tools/gui/images/GUI-editor/centersnap_h) texture size = 29x27
-WARNING: (tools/gui/images/GUI-editor/centersnap_d) texture size = 29x27
-WARNING: (tools/gui/images/GUI-editor/align-left_n) texture size = 29x27
-WARNING: (tools/gui/images/GUI-editor/align-left_h) texture size = 29x27
-WARNING: (tools/gui/images/GUI-editor/align-left_d) texture size = 29x27
-WARNING: (tools/gui/images/GUI-editor/vertical-center_n) texture size = 29x27
-WARNING: (tools/gui/images/GUI-editor/vertical-center_h) texture size = 29x27
-WARNING: (tools/gui/images/GUI-editor/vertical-center_d) texture size = 29x27
-WARNING: (tools/gui/images/GUI-editor/align-right_n) texture size = 29x27
-WARNING: (tools/gui/images/GUI-editor/align-right_h) texture size = 29x27
-WARNING: (tools/gui/images/GUI-editor/align-right_d) texture size = 29x27
-WARNING: (tools/gui/images/GUI-editor/align-top_n) texture size = 29x27
-WARNING: (tools/gui/images/GUI-editor/align-top_h) texture size = 29x27
-WARNING: (tools/gui/images/GUI-editor/align-top_d) texture size = 29x27
-WARNING: (tools/gui/images/GUI-editor/horizontal-center_n) texture size = 29x27
-WARNING: (tools/gui/images/GUI-editor/horizontal-center_h) texture size = 29x27
-WARNING: (tools/gui/images/GUI-editor/horizontal-center_d) texture size = 29x27
-WARNING: (tools/gui/images/GUI-editor/align-bottom_n) texture size = 29x27
-WARNING: (tools/gui/images/GUI-editor/align-bottom_h) texture size = 29x27
-WARNING: (tools/gui/images/GUI-editor/align-bottom_d) texture size = 29x27
-WARNING: (tools/gui/images/GUI-editor/send-to-back_n) texture size = 29x27
-WARNING: (tools/gui/images/GUI-editor/send-to-back_h) texture size = 29x27
-WARNING: (tools/gui/images/GUI-editor/send-to-back_d) texture size = 29x27
-WARNING: (tools/gui/images/GUI-editor/bring-to-front_n) texture size = 29x27
-WARNING: (tools/gui/images/GUI-editor/bring-to-front_h) texture size = 29x27
-WARNING: (tools/gui/images/GUI-editor/bring-to-front_d) texture size = 29x27
-WARNING: (tools/gui/images/GUI-editor/distribute-horizontal_n) texture size = 29x27
-WARNING: (tools/gui/images/GUI-editor/distribute-horizontal_h) texture size = 29x27
-WARNING: (tools/gui/images/GUI-editor/distribute-horizontal_d) texture size = 29x27
-WARNING: (tools/gui/images/GUI-editor/distribute-vertical_n) texture size = 29x27
-WARNING: (tools/gui/images/GUI-editor/distribute-vertical_h) texture size = 29x27
-WARNING: (tools/gui/images/GUI-editor/distribute-vertical_d) texture size = 29x27
-WARNING: (tools/gui/images/textEditFrame) texture size = 15x15
-WARNING: (tools/gui/images/clear-icon_n) texture size = 17x17
-WARNING: (tools/gui/images/clear-icon_h) texture size = 17x17
-WARNING: (tools/gui/images/clear-icon_d) texture size = 17x17
-WARNING: (tools/gui/images/treeView) texture size = 17x284
-WARNING: (tools/gui/images/save-icon_n) texture size = 17x17
-WARNING: (tools/gui/images/save-icon_h) texture size = 17x17
-WARNING: (tools/gui/images/save-icon_d) texture size = 17x17
-WARNING: (tools/gui/images/save-icon_i) texture size = 17x17
-WARNING: (tools/gui/images/save-as_n) texture size = 17x17
-WARNING: (tools/gui/images/save-as_h) texture size = 17x17
-WARNING: (tools/gui/images/save-as_d) texture size = 17x17
-WARNING: (tools/gui/images/save-as_i) texture size = 17x17
-WARNING: (tools/gui/images/tab) texture size = 67x120
-WARNING: (tools/gui/images/group-border) texture size = 42x42
-WARNING: (tools/gui/images/window) texture size = 64x132
-WARNING: (tools/gui/images/iconbuttonsmall) texture size = 16x104
-GuiControlProfile::loadFont - Failed to load/create profile font (Arial/14)
+AntiAliasing has been disabled; it is not compatible with AdvancedLighting.
 GuiControlProfile::loadFont - Failed to load/create profile font (Arial/14)
 GuiControlProfile::loadFont - Failed to load/create profile font (Arial/14)
 GuiControlProfile::loadFont - Failed to load/create profile font (Arial/14)

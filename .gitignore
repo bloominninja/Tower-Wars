@@ -1,0 +1,15 @@
+*.DAE
+*.dts
+*.png
+*.bmp
+*.ogg
+*.wav
+*.ter
+*.bak
+*.tmp
+buildFiles/Link/*
+*.db
+*.jpg
+*.dds
+*.log
+*.decals
