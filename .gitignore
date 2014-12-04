@@ -1,0 +1,15 @@
+game/art/**/*.DAE
+game/art/**/*.dts
+game/art/**/*.png
+game/art/**/*.bmp
+game/art/**/*.ogg
+game/art/**/*.wav
+game/art/**/*.ter
+*.bak
+*.tmp
+buildFiles/Link/**/*
+*.db
+game/art/**/*.jpg
+game/art/**/*.dds
+*.log
+game/art/*.decals

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+   <ItemGroup>
+      <Filter Include="Source Files">
+         <UniqueIdentifier>{1f275d8b-e53b-4330-8f4e-364622cb2623}</UniqueIdentifier>
+         <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat;cc</Extensions>
+      </Filter>
+      <Filter Include="Source Files\lib">
+         <UniqueIdentifier>{727ac3a0-b560-413f-895c-e612a5611a2b}</UniqueIdentifier>
+      </Filter>
+   </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Torque.rc">
+      <Filter>Source Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+   <ItemGroup>
+      <ClCompile Include="C:\Users\nes\Source\Repos\OmniEngine.Net\Engine\lib\tinyxml\tinystr.cpp">
+         <Filter>Source Files\lib</Filter>
+      </ClCompile>
+      <ClCompile Include="C:\Users\nes\Source\Repos\OmniEngine.Net\Engine\lib\tinyxml\tinyxml.cpp">
+         <Filter>Source Files\lib</Filter>
+      </ClCompile>
+      <ClCompile Include="C:\Users\nes\Source\Repos\OmniEngine.Net\Engine\lib\tinyxml\tinyxmlerror.cpp">
+         <Filter>Source Files\lib</Filter>
+      </ClCompile>
+      <ClCompile Include="C:\Users\nes\Source\Repos\OmniEngine.Net\Engine\lib\tinyxml\tinyxmlparser.cpp">
+         <Filter>Source Files\lib</Filter>
+      </ClCompile>
+   </ItemGroup>
+   <ItemGroup>
+      <ClInclude Include="C:\Users\nes\Source\Repos\OmniEngine.Net\Engine\lib\tinyxml\tinystr.h">
+         <Filter>Source Files\lib</Filter>
+      </ClInclude>
+      <ClInclude Include="C:\Users\nes\Source\Repos\OmniEngine.Net\Engine\lib\tinyxml\tinyxml.h">
+         <Filter>Source Files\lib</Filter>
+      </ClInclude>
+   </ItemGroup>
+   <ItemGroup>
+   </ItemGroup>
+</Project>

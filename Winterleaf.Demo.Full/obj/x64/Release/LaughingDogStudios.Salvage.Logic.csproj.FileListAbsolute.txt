@@ -1,0 +1,7 @@
+C:\Users\nes\Source\Repos\OmniEngine.Net\My Projects\Salvage\Winterleaf.Demo.Full\obj\x64\Release\LaughingDogStudios.Salvage.Logic.csprojResolveAssemblyReference.cache
+C:\Users\nes\Source\Repos\OmniEngine.Net\My Projects\Salvage\Winterleaf.Demo.Full\bin\release\LaughingDogStudios.Salvage.Logic.dll
+C:\Users\nes\Source\Repos\OmniEngine.Net\My Projects\Salvage\Winterleaf.Demo.Full\bin\release\LaughingDogStudios.Salvage.Logic.pdb
+C:\Users\nes\Source\Repos\OmniEngine.Net\My Projects\Salvage\Winterleaf.Demo.Full\bin\release\WinterLeaf.Engine.Omni.dll
+C:\Users\nes\Source\Repos\OmniEngine.Net\My Projects\Salvage\Winterleaf.Demo.Full\bin\release\WinterLeaf.Engine.Omni.pdb
+C:\Users\nes\Source\Repos\OmniEngine.Net\My Projects\Salvage\Winterleaf.Demo.Full\obj\x64\Release\LaughingDogStudios.Salvage.Logic.dll
+C:\Users\nes\Source\Repos\OmniEngine.Net\My Projects\Salvage\Winterleaf.Demo.Full\obj\x64\Release\LaughingDogStudios.Salvage.Logic.pdb

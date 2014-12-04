@@ -1,0 +1,9 @@
+C:\Users\nes\Source\Repos\OmniEngine.Net\My Projects\Salvage\game\Salvage.exe.config
+C:\Users\nes\Source\Repos\OmniEngine.Net\My Projects\Salvage\Winterleaf.Game\obj\x64\Release\LaughingDogStudios.Salvage.Executable.Properties.Resources.resources
+C:\Users\nes\Source\Repos\OmniEngine.Net\My Projects\Salvage\Winterleaf.Game\obj\x64\Release\Salvage.csproj.GenerateResource.Cache
+C:\Users\nes\Source\Repos\OmniEngine.Net\My Projects\Salvage\Winterleaf.Game\obj\x64\Release\Salvage.csprojResolveAssemblyReference.cache
+C:\Users\nes\Source\Repos\OmniEngine.Net\My Projects\Salvage\game\Omni.ico
+C:\Users\nes\Source\Repos\OmniEngine.Net\My Projects\Salvage\game\Salvage.exe
+C:\Users\nes\Source\Repos\OmniEngine.Net\My Projects\Salvage\game\Salvage.pdb
+C:\Users\nes\Source\Repos\OmniEngine.Net\My Projects\Salvage\Winterleaf.Game\obj\x64\Release\Salvage.exe
+C:\Users\nes\Source\Repos\OmniEngine.Net\My Projects\Salvage\Winterleaf.Game\obj\x64\Release\Salvage.pdb
