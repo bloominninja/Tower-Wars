@@ -1,9 +1,7 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.30501.0
-MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LaughingDogStudios.Salvage.LiveScripts", "..\..\game\csScripts\LaughingDogStudios.Salvage.LiveScripts.csproj", "{D223E980-DD64-499A-A618-9F7A9BE9244F}"
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Winterleaf.Demo.LiveScripts", "..\..\game\csScripts\Winterleaf.Demo.LiveScripts.csproj", "{D223E980-DD64-499A-A618-9F7A9BE9244F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
