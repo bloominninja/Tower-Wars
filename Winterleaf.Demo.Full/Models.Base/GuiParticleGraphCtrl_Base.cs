@@ -511,7 +511,9 @@ public virtual  void onMouseDragged(string buffer){}
         ///  )
         /// </summary>
         [ConsoleInteraction(true)]
-public virtual  void onMouseMove(string buffer){}
+public virtual  void onMouseMove(string buffer){
+
+}
 
         /// <summary>
         ///  )

@@ -1,4 +1,4 @@
-//-------------------------- 12/8/2014 -- 19:14:34 -----
+//-------------------------- 12/8/2014 -- 23:14:30 -----
 Processor Init:
    Unknown x86 Compatible, ~2.53 Ghz
    MP detected [2 cores, 2 logical, 1 physical]
@@ -98,9 +98,9 @@ Accepted Mode:
 --Refresh Rate : 60
 --FSAA Level : 4
 --------------
-GFXPCD3D9Device::reset - depthstencil c646f98 has 2 ref's
+GFXPCD3D9Device::reset - depthstencil 2606f98 has 2 ref's
 --- Resetting D3D Device ---
-GFXPCD3D9Device::reset - depthstencil c646e58 has 2 ref's
+GFXPCD3D9Device::reset - depthstencil 2606e58 has 2 ref's
 --- Resetting D3D Device ---
 UDP initialized on port 0
 GuiCanvas::setContent - Invalid control specified')
@@ -129,13 +129,11 @@ WARNING: (tools/editorclasses/gui/images/rollout) texture size = 39x50
  % - Initializing Shape Editor
  % - Initializing Navigation Editor
 Engine initialized...
-GFXPCD3D9Device::reset - depthstencil 10206438 has 2 ref's
+GFXPCD3D9Device::reset - depthstencil f496438 has 2 ref's
 --- Resetting D3D Device ---
 ### Datablock Cache: Server Datablock CRC is 4294967295
 Window focus status changed: focus: 1
 AntiAliasing has been disabled; it is not compatible with AdvancedLighting.
-Window focus status changed: focus: 0
-  Using background sleep time: 1
 WARNING: (core/art/gui/images/selector-button) texture size = 39x192
 WARNING: (art/gui/omni-logo) texture size = 439x300
 WARNING: (core/art/gui/images/checkbox) texture size = 13x84
@@ -153,7 +151,6 @@ WARNING: (levels/Empty_Terrain_preview) texture size = 400x300
 WARNING: (levels/navtest_preview) texture size = 400x300
 WARNING: (levels/Outpost_preview) texture size = 400x300
 WARNING: (art/gui/background) texture size = 800x600
-Window focus status changed: focus: 1
 WARNING: (art/gui/omni) texture size = 439x474
 WARNING: (core/art/gui/images/loadingbar) texture size = 70x25
 WARNING: (art/gui/background_g) texture size = 800x600
@@ -183,8 +180,8 @@ TerrainFile Coord 'y == 1024' out of range. Fix it in the algorithm.
 ### LOAD MISSION###
 ###Connection Request: Visitor###
 Connect request from:Visitor
-Connection established 20019
-CADD: 20020 local
+Connection established 20018
+CADD: 20019 local
 *** Sending mission load to client: levels/Empty Terrain.mis
 Mapping string: ServerMessage to index: 0
 Mapping string: MsgConnectionError to index: 1
@@ -205,8 +202,6 @@ Warning: shape art/shapes/weapons/Turret/Turret_Legs.DAE collision detail 1 (Col
 Warning: shape art/shapes/weapons/Turret/Turret_Legs.DAE collision detail 1 (Collision-1) bounds exceed that of shape.
 Warning: shape art/shapes/weapons/Turret/Turret_Legs.DAE collision detail 1 (Collision-1) bounds exceed that of shape.
 [MaterialList::mapMaterials] Unable to find material for texture: base.lmale
-Window focus status changed: focus: 0
-  Using background sleep time: 1
 Received info request from a master server [IP:198.101.240.242:28002].
 Mapping string: MissionStartPhase2 to index: 6
 *** Phase 2: Download Ghost Objects
@@ -218,9 +213,10 @@ fxFoliageReplicator - replicated client foliage for 0 objects
 *** Phase 3: Mission Lighting
 Mission lighting done
 Mapping string: MissionStartPhase3Ack to index: 2
-Client 20020 has connected.
---->Player ID is 20029
-12/8/2014 7:15:12 PM --- PLAYER JOIN::Name 'Visitor'::ID '20029'
+Client 20019 has connected.
+--->Player ID is 20028
+no
+12/8/2014 11:14:59 PM --- PLAYER JOIN::Name 'Visitor'::ID '20028'
 Mapping string: missionstart to index: 8
 Mapping string: SyncClock to index: 9
 Mapping string: RefreshWeaponHud to index: 10
@@ -230,7 +226,7 @@ Mapping string: SetAmmoAmountHud to index: 13
 Mapping string: ryder.png to index: 14
 Mapping string: MsgClientJoin to index: 15
 Mapping string: Current Players: 1 to index: 16
-Mapping string: Welcome to the Torque demo app %1. to index: 17
+Mapping string: did something%1. to index: 17
 Mapping string: Visitor to index: 18
 *** Initial Control Object
 WARNING: (art/gui/weaponHud/ryder) texture size = 160x60
@@ -238,9 +234,10 @@ WARNING: (core/art/gui/images/chatHudBorderArray) texture size = 42x42
 Activating DirectInput...
 WARNING: (core/art/gui/images/scrollBar) texture size = 42x162
 *** Control Object Changed
-Mapping string: Orange to index: 19
+Mapping string: base to index: 19
 Mapping string: setDamageDirection to index: 20
-Window focus status changed: focus: 1
+WARNING: (core/art/gui/images/textEdit) texture size = 15x15
+AntiAliasing has been disabled; it is not compatible with AdvancedLighting.
 C:/Users/Bob/Documents/GitHub/Tower-Wars/game/shaders/common/postFx/dof/DOF_DownSample_P.hlsl(72,10): warning X3205: conversion from larger type to smaller, possible loss of data
 C:/Users/Bob/Documents/GitHub/Tower-Wars/game/shaders/common/postFx/dof/DOF_DownSample_P.hlsl(73,10): warning X3205: conversion from larger type to smaller, possible loss of data
 C:/Users/Bob/Documents/GitHub/Tower-Wars/game/shaders/common/postFx/dof/DOF_DownSample_P.hlsl(74,10): warning X3205: conversion from larger type to smaller, possible loss of data
@@ -265,484 +262,26 @@ C:/Users/Bob/Documents/GitHub/Tower-Wars/game/shaders/common/postFx/dof/DOF_Fina
 C:/Users/Bob/Documents/GitHub/Tower-Wars/game/shaders/common/postFx/dof/DOF_Final_P.hlsl(117,10): warning X3205: conversion from larger type to smaller, possible loss of data
 C:/Users/Bob/Documents/GitHub/Tower-Wars/game/shaders/common/postFx/dof/DOF_Final_P.hlsl(131,14): warning X3205: conversion from larger type to smaller, possible loss of data
 C:/Users/Bob/Documents/GitHub/Tower-Wars/game/shaders/common/postFx/dof/DOF_Final_P.hlsl(132,11): warning X3205: conversion from larger type to smaller, possible loss of data
-Received info request from a master server [IP:198.101.240.242:28002].
-Set::add: Object "0" doesn't exist
-Set::add: Object "0" doesn't exist
-WARNING: (tools/editorClasses/gui/panels/menu-fullborder) texture size = 18x19
-WARNING: (tools/gui/images/button) texture size = 16x96
-WARNING: (tools/worldEditor/images/toolbar/world) texture size = 29x27
-WARNING: (tools/worldEditor/images/toolbar/world_h) texture size = 29x27
-WARNING: (tools/worldEditor/images/toolbar/world_d) texture size = 29x27
-WARNING: (tools/worldEditor/images/toolbar/gui) texture size = 29x27
-WARNING: (tools/worldEditor/images/toolbar/gui_h) texture size = 29x27
-WARNING: (tools/worldEditor/images/toolbar/gui_d) texture size = 29x27
-WARNING: (tools/worldEditor/images/toolbar/playbutton_n) texture size = 29x27
-WARNING: (tools/worldEditor/images/toolbar/playbutton_h) texture size = 29x27
-WARNING: (tools/worldEditor/images/toolbar/playbutton_d) texture size = 29x27
-WARNING: (tools/gui/images/separator-h) texture size = 2x26
-WARNING: (tools/worldEditor/images/toolbar/player_n) texture size = 29x27
-WARNING: (tools/worldEditor/images/toolbar/player_h) texture size = 29x27
-WARNING: (tools/worldEditor/images/toolbar/player_d) texture size = 29x27
-WARNING: (tools/gui/images/textEditSliderBox) texture size = 15x15
-WARNING: (tools/gui/images/dropslider_n) texture size = 18x18
-WARNING: (tools/gui/images/dropslider_h) texture size = 18x18
-WARNING: (tools/gui/images/dropslider_d) texture size = 18x18
-WARNING: (tools/gui/images/menubar/visibility-toggle_n) texture size = 29x27
-WARNING: (tools/gui/images/menubar/visibility-toggle_h) texture size = 29x27
-WARNING: (tools/gui/images/menubar/visibility-toggle_d) texture size = 29x27
-WARNING: (tools/editorClasses/gui/panels/menubar) texture size = 18x19
-WARNING: (tools/gui/images/dropDown) texture size = 31x78
-WARNING: (tools/gui/images/scrollBar) texture size = 42x162
-WARNING: (tools/gui/images/menubar/arrow_n) texture size = 26x22
-WARNING: (tools/gui/images/menubar/arrow_h) texture size = 26x22
-WARNING: (tools/gui/images/menubar/arrow_d) texture size = 26x22
-WARNING: (tools/gui/images/menubar/translate_n) texture size = 26x22
-WARNING: (tools/gui/images/menubar/translate_h) texture size = 26x22
-WARNING: (tools/gui/images/menubar/translate_d) texture size = 26x22
-WARNING: (tools/gui/images/menubar/rotate_n) texture size = 26x22
-WARNING: (tools/gui/images/menubar/rotate_h) texture size = 26x22
-WARNING: (tools/gui/images/menubar/rotate_d) texture size = 26x22
-WARNING: (tools/gui/images/menubar/scale_n) texture size = 26x22
-WARNING: (tools/gui/images/menubar/scale_h) texture size = 26x22
-WARNING: (tools/gui/images/menubar/scale_d) texture size = 26x22
-WARNING: (tools/gui/images/toolbar-window) texture size = 64x131
-WARNING: (tools/worldEditor/images/toolbar/transform-objects_n) texture size = 29x27
-WARNING: (tools/worldEditor/images/toolbar/transform-objects_h) texture size = 29x27
-WARNING: (tools/worldEditor/images/toolbar/transform-objects_d) texture size = 29x27
-WARNING: (tools/worldEditor/images/toolbar/sculpt-terrain_n) texture size = 29x27
-WARNING: (tools/worldEditor/images/toolbar/sculpt-terrain_h) texture size = 29x27
-WARNING: (tools/worldEditor/images/toolbar/sculpt-terrain_d) texture size = 29x27
-WARNING: (tools/worldEditor/images/toolbar/paint-terrain_n) texture size = 29x27
-WARNING: (tools/worldEditor/images/toolbar/paint-terrain_h) texture size = 29x27
-WARNING: (tools/worldEditor/images/toolbar/paint-terrain_d) texture size = 29x27
-WARNING: (tools/worldEditor/images/toolbar/matterial-editor_n) texture size = 29x27
-WARNING: (tools/worldEditor/images/toolbar/matterial-editor_h) texture size = 29x27
-WARNING: (tools/worldEditor/images/toolbar/matterial-editor_d) texture size = 29x27
-WARNING: (tools/convexEditor/images/convex-editor-btn_n) texture size = 29x27
-WARNING: (tools/convexEditor/images/convex-editor-btn_h) texture size = 29x27
-WARNING: (tools/convexEditor/images/convex-editor-btn_d) texture size = 29x27
-WARNING: (tools/worldEditor/images/toolbar/datablock-editor_n) texture size = 29x27
-WARNING: (tools/worldEditor/images/toolbar/datablock-editor_h) texture size = 29x27
-WARNING: (tools/worldEditor/images/toolbar/datablock-editor_d) texture size = 29x27
-WARNING: (tools/decalEditor/decal-editor_n) texture size = 29x27
-WARNING: (tools/decalEditor/decal-editor_h) texture size = 29x27
-WARNING: (tools/decalEditor/decal-editor_d) texture size = 29x27
-WARNING: (tools/forestEditor/images/forest-editor-btn_n) texture size = 29x27
-WARNING: (tools/forestEditor/images/forest-editor-btn_h) texture size = 29x27
-WARNING: (tools/forestEditor/images/forest-editor-btn_d) texture size = 29x27
-WARNING: (tools/worldEditor/images/toolbar/mesh-road-editor_n) texture size = 29x27
-WARNING: (tools/worldEditor/images/toolbar/mesh-road-editor_h) texture size = 29x27
-WARNING: (tools/worldEditor/images/toolbar/mesh-road-editor_d) texture size = 29x27
-WARNING: (tools/missionAreaEditor/images/mission-area_n) texture size = 29x27
-WARNING: (tools/missionAreaEditor/images/mission-area_h) texture size = 29x27
-WARNING: (tools/missionAreaEditor/images/mission-area_d) texture size = 29x27
-WARNING: (tools/worldEditor/images/toolbar/particleeditor_n) texture size = 29x27
-WARNING: (tools/worldEditor/images/toolbar/particleeditor_h) texture size = 29x27
-WARNING: (tools/worldEditor/images/toolbar/particleeditor_d) texture size = 29x27
-WARNING: (tools/worldEditor/images/toolbar/river-editor_n) texture size = 29x27
-WARNING: (tools/worldEditor/images/toolbar/river-editor_h) texture size = 29x27
-WARNING: (tools/worldEditor/images/toolbar/river-editor_d) texture size = 29x27
-WARNING: (tools/worldEditor/images/toolbar/road-path-editor_n) texture size = 29x27
-WARNING: (tools/worldEditor/images/toolbar/road-path-editor_h) texture size = 29x27
-WARNING: (tools/worldEditor/images/toolbar/road-path-editor_d) texture size = 29x27
-WARNING: (tools/worldEditor/images/toolbar/shape-editor_n) texture size = 29x27
-WARNING: (tools/worldEditor/images/toolbar/shape-editor_h) texture size = 29x27
-WARNING: (tools/worldEditor/images/toolbar/shape-editor_d) texture size = 29x27
-WARNING: (tools/navEditor/images/nav-editor_n) texture size = 29x27
-WARNING: (tools/navEditor/images/nav-editor_h) texture size = 29x27
-WARNING: (tools/navEditor/images/nav-editor_d) texture size = 29x27
-WARNING: (tools/gui/images/collapse-toolbar_n) texture size = 7x33
-WARNING: (tools/gui/images/collapse-toolbar_h) texture size = 7x33
-WARNING: (tools/gui/images/collapse-toolbar_d) texture size = 7x33
-WARNING: (tools/editorClasses/gui/panels/editor-menubar) texture size = 18x19
-WARNING: (tools/gui/images/treeView) texture size = 17x284
-WARNING: (tools/materialEditor/gui/change-material-btn_n) texture size = 17x17
-WARNING: (tools/materialEditor/gui/change-material-btn_h) texture size = 17x17
-WARNING: (tools/materialEditor/gui/change-material-btn_d) texture size = 17x17
-WARNING: (tools/gui/images/textEditFrame) texture size = 15x15
-WARNING: (tools/gui/images/dropDown-tab) texture size = 31x74
-WARNING: (tools/materialEditor/gui/cubemapBtnBorder_n) texture size = 48x48
-WARNING: (tools/materialEditor/gui/cubemapBtnBorder_h) texture size = 48x48
-WARNING: (tools/materialEditor/gui/cubemapBtnBorder_d) texture size = 48x48
-WARNING: (tools/materialEditor/gui/cubemapBtnBorder_i) texture size = 48x48
-WARNING: (tools/gui/images/separator-v) texture size = 26x2
-WARNING: (core/art/gui/images/separator-v) texture size = 26x2
 WARNING: (core/art/gui/images/button) texture size = 16x96
-WARNING: (core/art/gui/images/slider) texture size = 23x28
-WARNING: (core/art/gui/images/textEdit) texture size = 15x15
-WARNING: (tools/gui/images/checkbox) texture size = 13x84
-WARNING: (tools/gui/images/slider) texture size = 23x28
-WARNING: (tools/gui/images/crosshair_blue) texture size = 7x7
-WARNING: (tools/editorClasses/gui/panels/inspector-style-rollout_inner) texture size = 103x32
-WARNING: (tools/gui/images/crosshair) texture size = 7x7
-WARNING: (tools/materialEditor/gui/wav-sine_n) texture size = 13x13
-WARNING: (tools/materialEditor/gui/wav-sine_h) texture size = 13x13
-WARNING: (tools/materialEditor/gui/wav-sine_d) texture size = 13x13
-WARNING: (tools/materialEditor/gui/wav-sine_i) texture size = 13x13
-WARNING: (tools/materialEditor/gui/wav-triangle_n) texture size = 13x13
-WARNING: (tools/materialEditor/gui/wav-triangle_h) texture size = 13x13
-WARNING: (tools/materialEditor/gui/wav-triangle_d) texture size = 13x13
-WARNING: (tools/materialEditor/gui/wav-triangle_i) texture size = 13x13
-WARNING: (tools/materialEditor/gui/wav-square_n) texture size = 13x13
-WARNING: (tools/materialEditor/gui/wav-square_h) texture size = 13x13
-WARNING: (tools/materialEditor/gui/wav-square_d) texture size = 13x13
-WARNING: (tools/materialEditor/gui/wav-square_i) texture size = 13x13
-WARNING: (tools/gui/images/new_n) texture size = 17x17
-WARNING: (tools/gui/images/new_h) texture size = 17x17
-WARNING: (tools/gui/images/new_d) texture size = 17x17
-WARNING: (tools/gui/images/save-icon_n) texture size = 17x17
-WARNING: (tools/gui/images/save-icon_h) texture size = 17x17
-WARNING: (tools/gui/images/save-icon_d) texture size = 17x17
-WARNING: (tools/gui/images/save-icon_i) texture size = 17x17
-WARNING: (tools/gui/images/reset-icon_n) texture size = 17x17
-WARNING: (tools/gui/images/reset-icon_h) texture size = 17x17
-WARNING: (tools/gui/images/reset-icon_d) texture size = 17x17
-WARNING: (tools/gui/images/clear-icon_n) texture size = 17x17
-WARNING: (tools/gui/images/clear-icon_h) texture size = 17x17
-WARNING: (tools/gui/images/clear-icon_d) texture size = 17x17
-WARNING: (tools/gui/images/window) texture size = 64x132
-WARNING: (tools/gui/images/menubar/fit-selection_n) texture size = 29x27
-WARNING: (tools/gui/images/menubar/fit-selection_h) texture size = 29x27
-WARNING: (tools/gui/images/menubar/fit-selection_d) texture size = 29x27
-WARNING: (tools/gui/images/menubar/snapping-settings_n) texture size = 29x27
-WARNING: (tools/gui/images/menubar/snapping-settings_h) texture size = 29x27
-WARNING: (tools/gui/images/menubar/snapping-settings_d) texture size = 29x27
-WARNING: (tools/gui/images/menubar/snap-grid_n) texture size = 29x27
-WARNING: (tools/gui/images/menubar/snap-grid_h) texture size = 29x27
-WARNING: (tools/gui/images/menubar/snap-grid_d) texture size = 29x27
-WARNING: (tools/gui/images/menubar/snap-terrain_n) texture size = 29x27
-WARNING: (tools/gui/images/menubar/snap-terrain_h) texture size = 29x27
-WARNING: (tools/gui/images/menubar/snap-terrain_d) texture size = 29x27
-WARNING: (tools/gui/images/menubar/snap-objects_n) texture size = 29x27
-WARNING: (tools/gui/images/menubar/snap-objects_h) texture size = 29x27
-WARNING: (tools/gui/images/menubar/snap-objects_d) texture size = 29x27
-WARNING: (tools/gui/images/menubar/select-bounds_n) texture size = 29x27
-WARNING: (tools/gui/images/menubar/select-bounds_h) texture size = 29x27
-WARNING: (tools/gui/images/menubar/select-bounds_d) texture size = 29x27
-WARNING: (tools/gui/images/menubar/bounds-center_n) texture size = 29x27
-WARNING: (tools/gui/images/menubar/bounds-center_h) texture size = 29x27
-WARNING: (tools/gui/images/menubar/bounds-center_d) texture size = 29x27
-WARNING: (tools/gui/images/menubar/world-transform_n) texture size = 29x27
-WARNING: (tools/gui/images/menubar/world-transform_h) texture size = 29x27
-WARNING: (tools/gui/images/menubar/world-transform_d) texture size = 29x27
-WARNING: (tools/gui/images/menubar/object-node-icon_n) texture size = 29x27
-WARNING: (tools/gui/images/menubar/object-node-icon_h) texture size = 29x27
-WARNING: (tools/gui/images/menubar/object-node-icon_d) texture size = 29x27
-WARNING: (tools/gui/images/menubar/object-node-lable_n) texture size = 29x27
-WARNING: (tools/gui/images/menubar/object-node-lable_h) texture size = 29x27
-WARNING: (tools/gui/images/menubar/object-node-lable_d) texture size = 29x27
-WARNING: (tools/gui/images/menubar/selection-to-prefab_n) texture size = 29x27
-WARNING: (tools/gui/images/menubar/selection-to-prefab_h) texture size = 29x27
-WARNING: (tools/gui/images/menubar/selection-to-prefab_d) texture size = 29x27
-WARNING: (tools/gui/images/menubar/selection-to-prefab_i) texture size = 29x27
-WARNING: (tools/gui/images/menubar/explode-prefab_n) texture size = 29x27
-WARNING: (tools/gui/images/menubar/explode-prefab_h) texture size = 29x27
-WARNING: (tools/gui/images/menubar/explode-prefab_d) texture size = 29x27
-WARNING: (tools/gui/images/menubar/explode-prefab_i) texture size = 29x27
-Warning, overwriting material for: matEd_mappedMat
-GFXPCD3D9Device::reset - depthstencil 10289398 has 2 ref's
---- Resetting D3D Device ---
-Time spent in toggleEditor() : 5.335 s
-Mapping string: EditorOrbitCameraSelectChange to index: 3
-Mapping string: SetEditorCameraPlayer to index: 4
-Mapping string: SetEditorOrbitCamera to index: 5
-WARNING: (tools/gui/images/menubar/orbit-cam_n) texture size = 29x27
-WARNING: (tools/gui/images/menubar/orbit-cam_h) texture size = 29x27
-WARNING: (tools/gui/images/menubar/orbit-cam_d) texture size = 29x27
-*** Control Object Changed
-GFXPCD3D9Device::reset - depthstencil 1a5be678 has 2 ref's
---- Resetting D3D Device ---
-Set::remove: Object "20200" does not exist in set
-WARNING: (art/gui/weaponHud/ryder) texture size = 160x60
-WARNING: (tools/worldEditor/images/toolbar/world) texture size = 29x27
-WARNING: (tools/worldEditor/images/toolbar/world_h) texture size = 29x27
-WARNING: (tools/worldEditor/images/toolbar/world_d) texture size = 29x27
-WARNING: (tools/worldEditor/images/toolbar/gui) texture size = 29x27
-WARNING: (tools/worldEditor/images/toolbar/gui_h) texture size = 29x27
-WARNING: (tools/worldEditor/images/toolbar/gui_d) texture size = 29x27
-WARNING: (tools/worldEditor/images/toolbar/playbutton_n) texture size = 29x27
-WARNING: (tools/worldEditor/images/toolbar/playbutton_h) texture size = 29x27
-WARNING: (tools/worldEditor/images/toolbar/playbutton_d) texture size = 29x27
-WARNING: (tools/gui/images/separator-h) texture size = 2x26
-WARNING: (tools/gui/images/menubar/orbit-cam_n) texture size = 29x27
-WARNING: (tools/gui/images/menubar/orbit-cam_h) texture size = 29x27
-WARNING: (tools/gui/images/menubar/orbit-cam_d) texture size = 29x27
-WARNING: (tools/gui/images/dropslider_n) texture size = 18x18
-WARNING: (tools/gui/images/dropslider_h) texture size = 18x18
-WARNING: (tools/gui/images/dropslider_d) texture size = 18x18
-WARNING: (tools/gui/images/menubar/visibility-toggle_n) texture size = 29x27
-WARNING: (tools/gui/images/menubar/visibility-toggle_h) texture size = 29x27
-WARNING: (tools/gui/images/menubar/visibility-toggle_d) texture size = 29x27
-WARNING: (tools/gui/images/menubar/arrow_n) texture size = 26x22
-WARNING: (tools/gui/images/menubar/arrow_h) texture size = 26x22
-WARNING: (tools/gui/images/menubar/arrow_d) texture size = 26x22
-WARNING: (tools/gui/images/menubar/translate_n) texture size = 26x22
-WARNING: (tools/gui/images/menubar/translate_h) texture size = 26x22
-WARNING: (tools/gui/images/menubar/translate_d) texture size = 26x22
-WARNING: (tools/gui/images/menubar/rotate_n) texture size = 26x22
-WARNING: (tools/gui/images/menubar/rotate_h) texture size = 26x22
-WARNING: (tools/gui/images/menubar/rotate_d) texture size = 26x22
-WARNING: (tools/gui/images/menubar/scale_n) texture size = 26x22
-WARNING: (tools/gui/images/menubar/scale_h) texture size = 26x22
-WARNING: (tools/gui/images/menubar/scale_d) texture size = 26x22
-WARNING: (tools/worldEditor/images/toolbar/transform-objects_n) texture size = 29x27
-WARNING: (tools/worldEditor/images/toolbar/transform-objects_h) texture size = 29x27
-WARNING: (tools/worldEditor/images/toolbar/transform-objects_d) texture size = 29x27
-WARNING: (tools/worldEditor/images/toolbar/sculpt-terrain_n) texture size = 29x27
-WARNING: (tools/worldEditor/images/toolbar/sculpt-terrain_h) texture size = 29x27
-WARNING: (tools/worldEditor/images/toolbar/sculpt-terrain_d) texture size = 29x27
-WARNING: (tools/worldEditor/images/toolbar/paint-terrain_n) texture size = 29x27
-WARNING: (tools/worldEditor/images/toolbar/paint-terrain_h) texture size = 29x27
-WARNING: (tools/worldEditor/images/toolbar/paint-terrain_d) texture size = 29x27
-WARNING: (tools/worldEditor/images/toolbar/matterial-editor_n) texture size = 29x27
-WARNING: (tools/worldEditor/images/toolbar/matterial-editor_h) texture size = 29x27
-WARNING: (tools/worldEditor/images/toolbar/matterial-editor_d) texture size = 29x27
-WARNING: (tools/convexEditor/images/convex-editor-btn_n) texture size = 29x27
-WARNING: (tools/convexEditor/images/convex-editor-btn_h) texture size = 29x27
-WARNING: (tools/convexEditor/images/convex-editor-btn_d) texture size = 29x27
-WARNING: (tools/worldEditor/images/toolbar/datablock-editor_n) texture size = 29x27
-WARNING: (tools/worldEditor/images/toolbar/datablock-editor_h) texture size = 29x27
-WARNING: (tools/worldEditor/images/toolbar/datablock-editor_d) texture size = 29x27
-WARNING: (tools/decalEditor/decal-editor_n) texture size = 29x27
-WARNING: (tools/decalEditor/decal-editor_h) texture size = 29x27
-WARNING: (tools/decalEditor/decal-editor_d) texture size = 29x27
-WARNING: (tools/forestEditor/images/forest-editor-btn_n) texture size = 29x27
-WARNING: (tools/forestEditor/images/forest-editor-btn_h) texture size = 29x27
-WARNING: (tools/forestEditor/images/forest-editor-btn_d) texture size = 29x27
-WARNING: (tools/worldEditor/images/toolbar/mesh-road-editor_n) texture size = 29x27
-WARNING: (tools/worldEditor/images/toolbar/mesh-road-editor_h) texture size = 29x27
-WARNING: (tools/worldEditor/images/toolbar/mesh-road-editor_d) texture size = 29x27
-WARNING: (tools/missionAreaEditor/images/mission-area_n) texture size = 29x27
-WARNING: (tools/missionAreaEditor/images/mission-area_h) texture size = 29x27
-WARNING: (tools/missionAreaEditor/images/mission-area_d) texture size = 29x27
-WARNING: (tools/worldEditor/images/toolbar/particleeditor_n) texture size = 29x27
-WARNING: (tools/worldEditor/images/toolbar/particleeditor_h) texture size = 29x27
-WARNING: (tools/worldEditor/images/toolbar/particleeditor_d) texture size = 29x27
-WARNING: (tools/worldEditor/images/toolbar/river-editor_n) texture size = 29x27
-WARNING: (tools/worldEditor/images/toolbar/river-editor_h) texture size = 29x27
-WARNING: (tools/worldEditor/images/toolbar/river-editor_d) texture size = 29x27
-WARNING: (tools/worldEditor/images/toolbar/road-path-editor_n) texture size = 29x27
-WARNING: (tools/worldEditor/images/toolbar/road-path-editor_h) texture size = 29x27
-WARNING: (tools/worldEditor/images/toolbar/road-path-editor_d) texture size = 29x27
-WARNING: (tools/worldEditor/images/toolbar/shape-editor_n) texture size = 29x27
-WARNING: (tools/worldEditor/images/toolbar/shape-editor_h) texture size = 29x27
-WARNING: (tools/worldEditor/images/toolbar/shape-editor_d) texture size = 29x27
-WARNING: (tools/navEditor/images/nav-editor_n) texture size = 29x27
-WARNING: (tools/navEditor/images/nav-editor_h) texture size = 29x27
-WARNING: (tools/navEditor/images/nav-editor_d) texture size = 29x27
-WARNING: (tools/gui/images/collapse-toolbar_n) texture size = 7x33
-WARNING: (tools/gui/images/collapse-toolbar_h) texture size = 7x33
-WARNING: (tools/gui/images/collapse-toolbar_d) texture size = 7x33
-WARNING: (tools/gui/images/treeView) texture size = 17x284
-WARNING: (tools/materialEditor/gui/cubemapBtnBorder_n) texture size = 48x48
-WARNING: (tools/materialEditor/gui/cubemapBtnBorder_h) texture size = 48x48
-WARNING: (tools/materialEditor/gui/cubemapBtnBorder_d) texture size = 48x48
-WARNING: (tools/materialEditor/gui/cubemapBtnBorder_i) texture size = 48x48
-WARNING: (tools/gui/images/separator-v) texture size = 26x2
-WARNING: (core/art/gui/images/separator-v) texture size = 26x2
-WARNING: (tools/gui/images/crosshair_blue) texture size = 7x7
-WARNING: (tools/gui/images/crosshair) texture size = 7x7
-WARNING: (tools/materialEditor/gui/wav-sine_n) texture size = 13x13
-WARNING: (tools/materialEditor/gui/wav-sine_h) texture size = 13x13
-WARNING: (tools/materialEditor/gui/wav-sine_d) texture size = 13x13
-WARNING: (tools/materialEditor/gui/wav-sine_i) texture size = 13x13
-WARNING: (tools/materialEditor/gui/wav-triangle_n) texture size = 13x13
-WARNING: (tools/materialEditor/gui/wav-triangle_h) texture size = 13x13
-WARNING: (tools/materialEditor/gui/wav-triangle_d) texture size = 13x13
-WARNING: (tools/materialEditor/gui/wav-triangle_i) texture size = 13x13
-WARNING: (tools/materialEditor/gui/wav-square_n) texture size = 13x13
-WARNING: (tools/materialEditor/gui/wav-square_h) texture size = 13x13
-WARNING: (tools/materialEditor/gui/wav-square_d) texture size = 13x13
-WARNING: (tools/materialEditor/gui/wav-square_i) texture size = 13x13
-WARNING: (tools/gui/images/new_n) texture size = 17x17
-WARNING: (tools/gui/images/new_h) texture size = 17x17
-WARNING: (tools/gui/images/new_d) texture size = 17x17
-WARNING: (tools/gui/images/save-icon_n) texture size = 17x17
-WARNING: (tools/gui/images/save-icon_h) texture size = 17x17
-WARNING: (tools/gui/images/save-icon_d) texture size = 17x17
-WARNING: (tools/gui/images/save-icon_i) texture size = 17x17
-WARNING: (tools/gui/images/reset-icon_n) texture size = 17x17
-WARNING: (tools/gui/images/reset-icon_h) texture size = 17x17
-WARNING: (tools/gui/images/reset-icon_d) texture size = 17x17
-WARNING: (tools/gui/images/clear-icon_n) texture size = 17x17
-WARNING: (tools/gui/images/clear-icon_h) texture size = 17x17
-WARNING: (tools/gui/images/clear-icon_d) texture size = 17x17
-WARNING: (tools/gui/images/menubar/fit-selection_n) texture size = 29x27
-WARNING: (tools/gui/images/menubar/fit-selection_h) texture size = 29x27
-WARNING: (tools/gui/images/menubar/fit-selection_d) texture size = 29x27
-WARNING: (tools/gui/images/menubar/snapping-settings_n) texture size = 29x27
-WARNING: (tools/gui/images/menubar/snapping-settings_h) texture size = 29x27
-WARNING: (tools/gui/images/menubar/snapping-settings_d) texture size = 29x27
-WARNING: (tools/gui/images/menubar/snap-grid_n) texture size = 29x27
-WARNING: (tools/gui/images/menubar/snap-grid_h) texture size = 29x27
-WARNING: (tools/gui/images/menubar/snap-grid_d) texture size = 29x27
-WARNING: (tools/gui/images/menubar/snap-terrain_n) texture size = 29x27
-WARNING: (tools/gui/images/menubar/snap-terrain_h) texture size = 29x27
-WARNING: (tools/gui/images/menubar/snap-terrain_d) texture size = 29x27
-WARNING: (tools/gui/images/menubar/snap-objects_n) texture size = 29x27
-WARNING: (tools/gui/images/menubar/snap-objects_h) texture size = 29x27
-WARNING: (tools/gui/images/menubar/snap-objects_d) texture size = 29x27
-WARNING: (tools/gui/images/menubar/select-bounds_n) texture size = 29x27
-WARNING: (tools/gui/images/menubar/select-bounds_h) texture size = 29x27
-WARNING: (tools/gui/images/menubar/select-bounds_d) texture size = 29x27
-WARNING: (tools/gui/images/menubar/bounds-center_n) texture size = 29x27
-WARNING: (tools/gui/images/menubar/bounds-center_h) texture size = 29x27
-WARNING: (tools/gui/images/menubar/bounds-center_d) texture size = 29x27
-WARNING: (tools/gui/images/menubar/world-transform_n) texture size = 29x27
-WARNING: (tools/gui/images/menubar/world-transform_h) texture size = 29x27
-WARNING: (tools/gui/images/menubar/world-transform_d) texture size = 29x27
-WARNING: (tools/gui/images/menubar/object-node-icon_n) texture size = 29x27
-WARNING: (tools/gui/images/menubar/object-node-icon_h) texture size = 29x27
-WARNING: (tools/gui/images/menubar/object-node-icon_d) texture size = 29x27
-WARNING: (tools/gui/images/menubar/object-node-lable_n) texture size = 29x27
-WARNING: (tools/gui/images/menubar/object-node-lable_h) texture size = 29x27
-WARNING: (tools/gui/images/menubar/object-node-lable_d) texture size = 29x27
-WARNING: (tools/gui/images/menubar/selection-to-prefab_n) texture size = 29x27
-WARNING: (tools/gui/images/menubar/selection-to-prefab_h) texture size = 29x27
-WARNING: (tools/gui/images/menubar/selection-to-prefab_d) texture size = 29x27
-WARNING: (tools/gui/images/menubar/selection-to-prefab_i) texture size = 29x27
-WARNING: (tools/gui/images/menubar/explode-prefab_n) texture size = 29x27
-WARNING: (tools/gui/images/menubar/explode-prefab_h) texture size = 29x27
-WARNING: (tools/gui/images/menubar/explode-prefab_d) texture size = 29x27
-WARNING: (tools/gui/images/menubar/explode-prefab_i) texture size = 29x27
-Warning, overwriting material for: matEd_mappedMat
-GFXPCD3D9Device::reset - depthstencil 1a5be338 has 2 ref's
---- Resetting D3D Device ---
-Time spent in toggleEditor() : 0.816 s
-Mapping string: SetEditorCameraStandard to index: 6
-WARNING: (tools/worldEditor/images/toolbar/camera_n) texture size = 29x27
-WARNING: (tools/worldEditor/images/toolbar/camera_h) texture size = 29x27
-WARNING: (tools/worldEditor/images/toolbar/camera_d) texture size = 29x27
-WARNING: (tools/worldEditor/images/toolbar/player_n) texture size = 29x27
-WARNING: (tools/worldEditor/images/toolbar/player_h) texture size = 29x27
-WARNING: (tools/worldEditor/images/toolbar/player_d) texture size = 29x27
-*** Control Object Changed
-GFXPCD3D9Device::reset - depthstencil 1a5bdf38 has 2 ref's
---- Resetting D3D Device ---
-Set::remove: Object "20200" does not exist in set
-WARNING: (art/gui/weaponHud/ryder) texture size = 160x60
+Window focus status changed: focus: 0
+  Using background sleep time: 1
+DirectInput deactivated.
 Received info request from a master server [IP:198.101.240.242:28002].
-WARNING: (art/gui/omni-logo) texture size = 439x300
-WARNING: (levels/Empty Terrain_preview) texture size = 400x300
-WARNING: (art/gui/previous-button_n) texture size = 11x81
-WARNING: (art/gui/previous-button_h) texture size = 11x81
-WARNING: (art/gui/previous-button_d) texture size = 11x81
-WARNING: (levels/Empty Room_preview) texture size = 400x300
-WARNING: (levels/Empty_Terrain_preview) texture size = 400x300
-WARNING: (levels/navtest_preview) texture size = 400x300
-WARNING: (levels/Outpost_preview) texture size = 400x300
-WARNING: (art/gui/no-preview) texture size = 400x300
-WARNING: (art/gui/next-button_n) texture size = 11x81
-WARNING: (art/gui/next-button_h) texture size = 11x81
-WARNING: (art/gui/next-button_d) texture size = 11x81
-<input> (0): Cannot re-declare object [theLevelInfo].
-<input> (0): Cannot re-declare object [theLevelInfo].
-<input> (0): Cannot re-declare object [theLevelInfo].
-<input> (0): Cannot re-declare object [theLevelInfo].
-<input> (0): Cannot re-declare object [theLevelInfo].
-<input> (0): Cannot re-declare object [theLevelInfo].
-WARNING: (art/gui/background) texture size = 800x600
-*** ENDING MISSION
-CDROP: 20020 
-Exporting server prefs...
-WARNING: (art/gui/omni) texture size = 439x474
-WARNING: (art/gui/background_g) texture size = 800x600
-Exporting server prefs...
-Starting multiplayer mode
-Binding server port to default IP
-UDP initialized on port 28000
-SimGroup::addObject - (414647648) can't add self!
-Warning: shape art/shapes/weapons/Turret/Turret_Legs.DAE collision detail 0 (Collision-1) bounds exceed that of shape.
-Warning: shape art/shapes/weapons/Turret/Turret_Legs.DAE collision detail 0 (Collision-1) bounds exceed that of shape.
-Warning: shape art/shapes/weapons/Turret/Turret_Legs.DAE collision detail 0 (Collision-1) bounds exceed that of shape.
-TSShape::removeNode: Node 'collision-1' has 1 objects attached, these will be reassigned to the node's parent ('null')
-TSShape::removeNode: Node 'Cheetah_Turret_LOD300' has 1 objects attached, these will be reassigned to the node's parent ('null')
-TSShape::removeNode: Node 'Tread_LOD300' has 1 objects attached, these will be reassigned to the node's parent ('null')
-TSShape::removeNode: Node 'collision-1' has 1 objects attached, these will be reassigned to the node's parent ('null')
-TSShape::removeNode: Node 'TireBack_LOD300' has 1 objects attached, these will be reassigned to the node's parent ('null')
-TSShape::removeNode: Node 'collision-1' has 1 objects attached, these will be reassigned to the node's parent ('null')
------------------> Loaded
------------------> Loaded
-*** LOADING MISSION: levels/Empty Terrain.mis
-*** Stage 1 load
-Level File levels/Empty Terrain.mis not found.
-*** Stage 2 load CSHARP
-*** Mission loaded
-###Game Started###
-##Mission Loaded###
-### LOAD MISSION###
-###Connection Request: Visitor###
-Connect request from:Visitor
-Connection established 21140
-CADD: 21141 local
-*** Sending mission load to client: levels/Empty Terrain.mis
-Mapping string: ServerMessage to index: 0
-Mapping string: MsgConnectionError to index: 1
-Mapping string: MsgLoadInfo to index: 2
+Received info request from a master server [IP:198.101.240.242:28002].
 Sending heartbeat to master server [IP:198.101.240.242:28002]
-Mapping string: MsgLoadDescripition to index: 3
-Mapping string: MsgLoadInfoDone to index: 4
-Mapping string: MissionStartPhase1 to index: 5
-*** New Mission: levels/Empty Terrain.mis
-*** Phase 1: Download Datablocks & Targets
-% - PostFX Manager - Executing core/scripts/client/postFx/default.postfxpreset.cs
-% - PostFX Manager - Applying from preset
-% - PostFX Manager - PostFX enabled
-Mapping string: MissionStartPhase1Ack to index: 0
-Transmitting Datablocks
-WARNING: (art/lights/lensFlareSheet0) texture size = 1280x1024
-Warning: shape art/shapes/weapons/Turret/Turret_Legs.DAE collision detail 1 (Collision-1) bounds exceed that of shape.
-Warning: shape art/shapes/weapons/Turret/Turret_Legs.DAE collision detail 1 (Collision-1) bounds exceed that of shape.
-Warning: shape art/shapes/weapons/Turret/Turret_Legs.DAE collision detail 1 (Collision-1) bounds exceed that of shape.
-[MaterialList::mapMaterials] Unable to find material for texture: base.lmale
-Mapping string: MissionStartPhase2 to index: 6
-*** Phase 2: Download Ghost Objects
-Mapping string: MissionStartPhase2Ack to index: 1
-Ghost Always objects received.
-Mapping string: MissionStartPhase3 to index: 7
-Client Replication Startup has Happened!
-fxFoliageReplicator - replicated client foliage for 0 objects
-*** Phase 3: Mission Lighting
-Mission lighting done
-Mapping string: MissionStartPhase3Ack to index: 2
-Client 21141 has connected.
---->Player ID is 21150
-12/8/2014 7:17:22 PM --- PLAYER JOIN::Name 'Visitor'::ID '21150'
-Mapping string: missionstart to index: 8
-Mapping string: SyncClock to index: 9
-Mapping string: RefreshWeaponHud to index: 10
-Mapping string: System to index: 11
-Mapping string: Your on Team 1 to index: 12
-Mapping string: SetAmmoAmountHud to index: 13
-Mapping string: ryder.png to index: 14
-Mapping string: MsgClientJoin to index: 15
-Mapping string: Current Players: 1 to index: 16
-Mapping string: Welcome to the Torque demo app %1. to index: 17
-Mapping string: Visitor to index: 18
-*** Initial Control Object
-WARNING: (art/gui/weaponHud/ryder) texture size = 160x60
-*** Control Object Changed
-Mapping string: DarkBlue to index: 19
-Mapping string: setDamageDirection to index: 20
-AntiAliasing has been disabled; it is not compatible with AdvancedLighting.
-Window focus status changed: focus: 0
-  Using background sleep time: 1
-DirectInput deactivated.
-Activating DirectInput...
-Window focus status changed: focus: 1
-Window focus status changed: focus: 0
-  Using background sleep time: 1
-DirectInput deactivated.
 Received info request from a master server [IP:198.101.240.242:28002].
+Received info request from a master server [IP:198.101.240.242:28002].
+Sending heartbeat to master server [IP:198.101.240.242:28002]
+Received info request from a master server [IP:198.101.240.242:28002].
+Received info request from a master server [IP:198.101.240.242:28002].
+Sending heartbeat to master server [IP:198.101.240.242:28002]
+Received info request from a master server [IP:198.101.240.242:28002].
+Received info request from a master server [IP:198.101.240.242:28002].
+Sending heartbeat to master server [IP:198.101.240.242:28002]
+Received info request from a master server [IP:198.101.240.242:28002].
+Received info request from a master server [IP:198.101.240.242:28002].
+Sending heartbeat to master server [IP:198.101.240.242:28002]
 Activating DirectInput...
-Window focus status changed: focus: 1
-Mapping string: Crouch to index: 21
-Mapping string: Stand to index: 22
-Window focus status changed: focus: 0
-  Using background sleep time: 1
-DirectInput deactivated.
-Activating DirectInput...
-Window focus status changed: focus: 1
 WARNING: (art/gui/omni-logo) texture size = 439x300
 WARNING: (levels/Empty Terrain_preview) texture size = 400x300
 WARNING: (art/gui/previous-button_n) texture size = 11x81
@@ -764,11 +303,12 @@ WARNING: (art/gui/next-button_d) texture size = 11x81
 <input> (0): Cannot re-declare object [theLevelInfo].
 WARNING: (art/gui/background) texture size = 800x600
 *** ENDING MISSION
-CDROP: 21141 
-Exporting server prefs...
-Exporting server prefs...
-Exporting client prefs
-Exporting server prefs
+CDROP: 20019 
 Exporting server prefs...
 Exporting client prefs
 Exporting server prefs
+Window focus status changed: focus: 1
+Exporting server prefs...
+Exporting client prefs
+Exporting server prefs
+Cur. D3DDevice ref count=1

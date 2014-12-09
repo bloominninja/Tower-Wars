@@ -269,7 +269,7 @@ namespace LaughingDogStudios.Salvage.Logic.Models.User.GameCode.Server
         //   %client.camera.camDist = 5.5;
         //   %client.camera.controlMode = "OrbitObject";
         }
-
+       [ConsoleInteraction(true)]
         public static void serverCmdoverheadCam(GameConnection client)
         {
             Extendable.Camera camera = client["camera"];
@@ -286,7 +286,7 @@ namespace LaughingDogStudios.Salvage.Logic.Models.User.GameCode.Server
             camera.lookAt(player.getPosition());
             camera.controlMode = "Overhead";
         }
-
+        [ConsoleInteraction(true)]
         public static void serverCmdtoggleCamMode(GameConnection client)
         {
             Extendable.Camera camera = client["camera"];
@@ -310,7 +310,7 @@ namespace LaughingDogStudios.Salvage.Logic.Models.User.GameCode.Server
                 camera.controlMode = "Overhead";
             }
         }
-
+        [ConsoleInteraction(true)]
         public static void serverCmdadjustCamera(GameConnection client, int adjustment)
         {
             Extendable.Camera camera = client["camera"];
@@ -348,6 +348,14 @@ namespace LaughingDogStudios.Salvage.Logic.Models.User.GameCode.Server
                 camera.position.Z = beta.z;
             }
         }
+
+        [ConsoleInteraction(true)]
+        public static void serverCmdNudge(GameConnection client)
+        {
+            Extendable.Camera camera = client["camera"];
+            camera.setVelocity(new Point3F("1 0 0"));
+        }
+
 
         //----------------------------------------------------------------------------
         // Server admin

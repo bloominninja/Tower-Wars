@@ -93,6 +93,7 @@ namespace LaughingDogStudios.Salvage.Logic.Models.User.Extendable
         {
             ForestEditorGui.ForestEditTabBook ForestEditTabBook = "ForestEditTabBook";
             ForestEditTabBook.selectPage(0);
+            
         }
     }
 

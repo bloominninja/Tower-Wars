@@ -4121,7 +4121,7 @@ namespace LaughingDogStudios.Salvage.Logic.Models.User.GameCode.Client.Gui.Conte
             public override void onRightClick()
             {
                 ContentBrowserGui ContentBrowserGui = "ContentBrowserGui";
-
+                
                 ContentBrowserGui.displayContextMenu(this);
             }
 

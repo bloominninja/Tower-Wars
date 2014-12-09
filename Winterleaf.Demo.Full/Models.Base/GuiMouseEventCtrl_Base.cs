@@ -17,6 +17,7 @@ using WinterLeaf.Engine.Classes.Decorations;
 using WinterLeaf.Engine.Classes.Extensions;
 using WinterLeaf.Engine.Classes.Helpers;
 using LaughingDogStudios.Salvage.Logic.Models.User.Extendable;
+using LaughingDogStudios.Salvage.Logic.Models.User.CustomObjects.Utilities;
 #endregion
 
 namespace LaughingDogStudios.Salvage.Logic.Models.Base
@@ -162,7 +163,9 @@ public bool lockMouse
         /// @brief Callback that occurs whenever the mouse is pressed down while in this control.   @param modifier Key that was pressed during this callback. Values are:    $EventModifier::RSHIFT   $EventModifier::SHIFT   $EventModifier::LCTRL   $EventModifier::RCTRL   $EventModifier::CTRL   $EventModifier::CTRL   $EventModifier::RALT   $EventModifier::ALT   @param mousePoint X/Y location of the mouse point   @param mouseClickCount How many mouse clicks have occured for this event   @tsexample   // Mouse was pressed down in this control, causing the callback   GuiMouseEventCtrl::onMouseDown(%this,%modifier,%mousePoint,%mouseClickCount)   {   	// Code to call when a mouse event occurs.   }   @endtsexample   @see GuiControl)
         /// </summary>
         [ConsoleInteraction(true)]
-public virtual  void onMouseDown(byte modifier, Point2I mousePoint, byte mouseClickCount){}
+public virtual  void onMouseDown(byte modifier, Point2I mousePoint, byte mouseClickCount){
+
+}
 
         /// <summary>
         /// @brief Callback that occurs whenever the mouse is released while in this control.   @param modifier Key that was pressed during this callback. Values are:    $EventModifier::RSHIFT   $EventModifier::SHIFT   $EventModifier::LCTRL   $EventModifier::RCTRL   $EventModifier::CTRL   $EventModifier::CTRL   $EventModifier::RALT   $EventModifier::ALT   @param mousePoint X/Y location of the mouse point   @param mouseClickCount How many mouse clicks have occured for this event   @tsexample   // Mouse was released in this control, causing the callback   GuiMouseEventCtrl::onMouseUp(%this,%modifier,%mousePoint,%mouseClickCount)   {   	// Code to call when a mouse event occurs.   }   @endtsexample   @see GuiControl)
@@ -174,7 +177,10 @@ public virtual  void onMouseUp(byte modifier, Point2I mousePoint, byte mouseClic
         /// @brief Callback that occurs whenever the mouse is moved (without dragging) while in this control.   @param modifier Key that was pressed during this callback. Values are:    $EventModifier::RSHIFT   $EventModifier::SHIFT   $EventModifier::LCTRL   $EventModifier::RCTRL   $EventModifier::CTRL   $EventModifier::CTRL   $EventModifier::RALT   $EventModifier::ALT   @param mousePoint X/Y location of the mouse point   @param mouseClickCount How many mouse clicks have occured for this event   @tsexample   // Mouse was moved in this control, causing the callback   GuiMouseEventCtrl::onMouseMove(%this,%modifier,%mousePoint,%mouseClickCount)   {   	// Code to call when a mouse event occurs.   }   @endtsexample   @see GuiControl)
         /// </summary>
         [ConsoleInteraction(true)]
-public virtual  void onMouseMove(byte modifier, Point2I mousePoint, byte mouseClickCount){}
+public virtual  void onMouseMove(byte modifier, Point2I mousePoint, byte mouseClickCount)
+        {
+
+        }
 
         /// <summary>
         /// @brief Callback that occurs whenever the mouse is dragged while in this control.   @param modifier Key that was pressed during this callback. Values are:    $EventModifier::RSHIFT   $EventModifier::SHIFT   $EventModifier::LCTRL   $EventModifier::RCTRL   $EventModifier::CTRL   $EventModifier::CTRL   $EventModifier::RALT   $EventModifier::ALT   @param mousePoint X/Y location of the mouse point   @param mouseClickCount How many mouse clicks have occured for this event   @tsexample   // Mouse was dragged in this control, causing the callback   GuiMouseEventCtrl::onMouseDragged(%this,%modifier,%mousePoint,%mouseClickCount)   {   	// Code to call when a mouse event occurs.   }   @endtsexample   @see GuiControl)

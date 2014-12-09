@@ -532,7 +532,7 @@ namespace LaughingDogStudios.Salvage.Logic.Models.User.GameCode.Client
         public static void mouseFire(string val)
         {
             omni.iGlobal["$mvTriggerCount0"] += 1;
-            
+
             //console.SetVar("$mvTriggerCount0", console.GetVarString("$mvTriggerCount0").AsInt() + 1);
         }
 

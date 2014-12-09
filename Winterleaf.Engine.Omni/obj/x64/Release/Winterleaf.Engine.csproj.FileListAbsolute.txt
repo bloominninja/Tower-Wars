@@ -5,3 +5,10 @@ C:\Users\nes\Source\Repos\OmniEngine.Net\My Projects\Salvage\Winterleaf.Engine.O
 C:\Users\nes\Source\Repos\OmniEngine.Net\My Projects\Salvage\Winterleaf.Engine.Omni\obj\x64\Release\Winterleaf.Engine.csproj.GenerateResource.Cache
 C:\Users\nes\Source\Repos\OmniEngine.Net\My Projects\Salvage\Winterleaf.Engine.Omni\obj\x64\Release\WinterLeaf.Engine.Omni.dll
 C:\Users\nes\Source\Repos\OmniEngine.Net\My Projects\Salvage\Winterleaf.Engine.Omni\obj\x64\Release\WinterLeaf.Engine.Omni.pdb
+C:\Users\Bob\Documents\GitHub\Tower-Wars\Winterleaf.Engine.Omni\bin\x64\Release\WinterLeaf.Engine.Omni.dll
+C:\Users\Bob\Documents\GitHub\Tower-Wars\Winterleaf.Engine.Omni\bin\x64\Release\WinterLeaf.Engine.Omni.pdb
+C:\Users\Bob\Documents\GitHub\Tower-Wars\Winterleaf.Engine.Omni\obj\x64\Release\Winterleaf.Engine.csprojResolveAssemblyReference.cache
+C:\Users\Bob\Documents\GitHub\Tower-Wars\Winterleaf.Engine.Omni\obj\x64\Release\WinterLeaf.Engine.Properties.Resources.resources
+C:\Users\Bob\Documents\GitHub\Tower-Wars\Winterleaf.Engine.Omni\obj\x64\Release\Winterleaf.Engine.csproj.GenerateResource.Cache
+C:\Users\Bob\Documents\GitHub\Tower-Wars\Winterleaf.Engine.Omni\obj\x64\Release\WinterLeaf.Engine.Omni.dll
+C:\Users\Bob\Documents\GitHub\Tower-Wars\Winterleaf.Engine.Omni\obj\x64\Release\WinterLeaf.Engine.Omni.pdb

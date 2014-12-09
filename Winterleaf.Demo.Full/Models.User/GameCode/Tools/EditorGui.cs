@@ -4793,7 +4793,7 @@ namespace LaughingDogStudios.Salvage.Logic.Models.User.GameCode.Tools
             public override void onMouseDown(byte modifier, Point2I mousePoint, byte mouseClickCount)
             {
                 GuiCanvas Canvas = "Canvas";
-
+               
                 Canvas.popDialog(this);
             }
 

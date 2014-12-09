@@ -311,13 +311,15 @@ pInvokes.m_ts.fnGuiButtonBaseCtrl_setTextID(_ID, id);
         /// If #useMouseEvents is true, this is called when the left mouse button is pressed on an (active)    button. )
         /// </summary>
         [ConsoleInteraction(true)]
-public virtual  void onMouseDown(){}
+public virtual  void onMouseDown(){
+
+}
 
         /// <summary>
         /// If #useMouseEvents is true, this is called when the left mouse button is release over an (active)    button.   @note To trigger actions, better use onClick() since onMouseUp() will also be called when the mouse was       not originally pressed on the button. )
         /// </summary>
         [ConsoleInteraction(true)]
-public virtual  void onMouseUp(){}
+        public virtual void onMouseUp() {  }
 
         /// <summary>
         /// Called when the left mouse button is double-clicked on the button. )
@@ -329,13 +331,16 @@ public virtual  void onDoubleClick(){}
         /// Called when the right mouse button is clicked on the button. )
         /// </summary>
         [ConsoleInteraction(true)]
-public virtual  void onRightClick(){}
+public virtual  void onRightClick(){
+    
+}
 
         /// <summary>
         /// If #useMouseEvents is true, this is called when the mouse cursor moves over the button (only if the button    is the front-most visible control, though). )
         /// </summary>
         [ConsoleInteraction(true)]
-public virtual  void onMouseEnter(){}
+public virtual  void onMouseEnter(){
+}
 
         /// <summary>
         /// If #useMouseEvents is true, this is called when the mouse cursor moves off the button (only if the button    had previously received an onMouseEvent() event). )
@@ -350,5 +355,9 @@ public virtual  void onMouseLeave(){}
 public virtual  void onMouseDragged(){}
 
 #endregion
-public GuiButtonBaseCtrl_Base (){}
+public GuiButtonBaseCtrl_Base (){
+  
+
+    
+}
 }}

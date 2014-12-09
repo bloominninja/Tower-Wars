@@ -474,7 +474,9 @@ namespace LaughingDogStudios.Salvage.Logic.Models.User.Extendable
             }
             else
             {
-                control = player;
+                omni.console.print("no");
+        
+                //control = player;
                // pInvokes U = new pInvokes();
               //  Point3F beta = new Point3F("0 0 0");
              //   Camera cam= this["camera"];
