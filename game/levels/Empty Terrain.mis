@@ -85,11 +85,11 @@ new SimGroup(MissionGroup) {
    new TerrainBlock(theTerrain) {
       terrainFile = "art/terrains/Empty Terrain_0.ter";
       castShadows = "1";
-      squareSize = "2";
+      squareSize = "4";
       baseTexSize = "1024";
       lightMapSize = "256";
       screenError = "16";
-      position = "-1024 -1024 179.978";
+      position = "-2048 -2048 179.978";
       rotation = "1 0 0 0";
       editable = "0";
       canSave = "1";
@@ -342,8 +342,8 @@ new SimGroup(MissionGroup) {
       disableMove = "0";
       isAIControlled = "0";
       dataBlock = "CheetahCar";
-      position = "-356.554 -296.425 249.041";
-      rotation = "-0.344152 -0.794539 -0.500266 8.78266";
+      position = "-356.593 -296.43 230.133";
+      rotation = "-0.166474 -0.00612335 -0.986027 4.27122";
       scale = "1 1 1";
       editable = "0";
       canSave = "1";
@@ -351,10 +351,10 @@ new SimGroup(MissionGroup) {
       persistentId = "f482c409-20e6-11e4-abee-885f0f70c90b";
       Enabled = "1";
          invBulletAmmo = "1000";
-         leftBrakeLight = "20020";
+         leftBrakeLight = "20019";
          meshCulling = "0";
          mountable = "1";
-         rightBrakeLight = "20019";
+         rightBrakeLight = "20018";
    };
 };
 //--- OBJECT WRITE END ---

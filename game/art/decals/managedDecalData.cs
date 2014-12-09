@@ -55,3 +55,11 @@ datablock DecalData(bulletHoleDecal)
    screenEndRadius = "5";
    clippingAngle = "180";
 };
+
+datablock DecalData(NewDecalData)
+{
+   size = "128";
+   Material = "newMaterial";
+   textureCoordCount = "0";
+   Enabled = "0";
+};

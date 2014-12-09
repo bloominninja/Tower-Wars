@@ -33,12 +33,14 @@ singleton Material(DECAL_scorch)
 
 singleton Material(DECAL_RocketEXP)
 {
-   baseTex[0] = "art/decals/rBlast";
 
    vertColor[0] = true;
    translucent = true;
    translucentBlendOp = LerpAlpha;
    translucentZWrite = true;
+   mapTo = "rBlast";
+   diffuseMap[0] = "art/decals/rBlast";
+   accuDirection[0] = "-0.5";
 };
 
 singleton Material(DECAL_bulletHole)

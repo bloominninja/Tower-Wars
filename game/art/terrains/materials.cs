@@ -143,14 +143,13 @@ singleton Material(TerrainFX_rocktest)
 new TerrainMaterial()
 {
    internalName = "rocktest";
-   diffuseMap = "art/terrains/Example/rocktest";
-   detailMap = "art/terrains/Example/rocktest_d";
+   diffuseMap = "art/decals/grid2";
    detailSize = "10";
    detailDistance = "100";
    isManaged = "1";
    detailBrightness = "1";
    Enabled = "1";
-   diffuseSize = "400";
+   diffuseSize = "128";
 };
 
 // ----------------------------------------------------------------------------
@@ -211,4 +210,16 @@ new TerrainMaterial()
    detailBrightness = "1";
    Enabled = "1";
    diffuseSize = "200";
+};
+
+new TerrainMaterial()
+{
+   diffuseMap = "art/decals/grid2";
+   diffuseSize = "128";
+   detailSize = "10";
+   detailDistance = "100";
+   internalName = "mygraph";
+   isManaged = "1";
+   detailBrightness = "1";
+   detailMap = "art/terrains/Example/sand";
 };
