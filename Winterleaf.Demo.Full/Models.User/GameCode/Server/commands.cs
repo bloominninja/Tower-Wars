@@ -34,7 +34,7 @@
 // THIS SOFTWARE IS PROVIDED BY WINTERLEAF ENTERTAINMENT LLC ''AS IS'' AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL WINTERLEAF ENTERTAINMENT LLC BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE. 
 
 #region
-
+using System;
 using LaughingDogStudios.Salvage.Logic.Models.User.CustomObjects.Utilities;
 using LaughingDogStudios.Salvage.Logic.Models.User.Extendable;
 using LaughingDogStudios.Salvage.Logic.Models.User.GameCode.Server.Weapons;
@@ -78,6 +78,7 @@ namespace LaughingDogStudios.Salvage.Logic.Models.User.GameCode.Server
         //----------------------------------------------------------------------------
         // Camera commands
         //----------------------------------------------------------------------------
+        
         [ConsoleInteraction(true)]
         public static void serverCmdTogglePathCamera(GameConnection client, bool val)
         {
@@ -255,6 +256,97 @@ namespace LaughingDogStudios.Salvage.Logic.Models.User.GameCode.Server
             camera.autoFitRadius(radius);
             client.setControlObject(camera);
             syncEditorGui();
+        }
+        [ConsoleInteraction(true)]
+        public static void serverCmdorbitCam(GameConnection client)
+        {
+           Extendable.Camera camera = client["camera"];
+           //Player player = client["player"];
+           camera.setOrbitObject(client["player"], (new Point3F(".33 0 0")), 1, 5, 5);
+           camera.controlMode = "OrbitObject";
+           //the=camera.getPosition();
+
+        //   %client.camera.camDist = 5.5;
+        //   %client.camera.controlMode = "OrbitObject";
+        }
+
+        public static void serverCmdoverheadCam(GameConnection client)
+        {
+            Extendable.Camera camera = client["camera"];
+            pInvokes U=new pInvokes();
+            Point3F beta= new Point3F("0 0 0");
+            Player player = client["player"];
+            
+
+            //player=new Player;
+            beta=U.Util.VectorAdd(player.getPosition(),(new Point3F("0 0 0")));
+            camera.position.X = beta.x;
+            camera.position.Y = beta.y;
+            camera.position.Z = beta.z;
+            camera.lookAt(player.getPosition());
+            camera.controlMode = "Overhead";
+        }
+
+        public static void serverCmdtoggleCamMode(GameConnection client)
+        {
+            Extendable.Camera camera = client["camera"];
+            pInvokes U = new pInvokes();
+            Point3F beta = new Point3F("0 0 0");
+            Player player = client["player"];
+
+            if (camera.controlMode.AsString() == "Overhead")
+            {
+                //Player player = client["player"];
+                camera.setOrbitObject(player, (new Point3F(".33 0 0")), 1, 5, 5);
+                camera.controlMode = "OrbitObject";
+            }
+            else if(camera.controlMode.AsString() == "OrbitObject")
+            {
+                beta = U.Util.VectorAdd(player.getPosition(), (new Point3F("0 0 0")));
+                camera.position.X = beta.x;
+                camera.position.Y = beta.y;
+                camera.position.Z = beta.z;
+                camera.lookAt(player.getPosition());
+                camera.controlMode = "Overhead";
+            }
+        }
+
+        public static void serverCmdadjustCamera(GameConnection client, int adjustment)
+        {
+            Extendable.Camera camera = client["camera"];
+            Player player = client["player"];
+            pInvokes U = new pInvokes();
+            Point3F beta = new Point3F("0 0 0");
+            double num;
+            if (camera.controlMode.AsString() == "OrbitObject")
+            {
+                if (adjustment == 1)
+                {
+                    num = (camera.getPosition()).z + 0.5;
+                }
+                else
+                {
+                    num = (camera.getPosition()).z - 0.5;
+                }
+                if (num < 0.5)
+                {
+                    num = 0;
+                }
+                if (num > 15.0)
+                {
+                    num = 15.0;
+                }
+
+                camera.setOrbitObject(client["player"], camera.getRotation(), 1, (float)num, (float)num);
+                camera.position.Z = (float)num;
+            }
+            if (camera.controlMode.AsString() == "Overhead")
+            {
+                beta = U.Util.VectorAdd(player.getPosition(), (new Point3F("0 0 adjustment")));
+                camera.position.X = beta.x;
+                camera.position.Y = beta.y;
+                camera.position.Z = beta.z;
+            }
         }
 
         //----------------------------------------------------------------------------

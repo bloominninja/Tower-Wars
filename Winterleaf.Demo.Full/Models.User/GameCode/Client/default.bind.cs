@@ -78,7 +78,7 @@ namespace LaughingDogStudios.Salvage.Logic.Models.User.GameCode.Client
             moveMap.bind("keyboard", "s", "movebackward");
             moveMap.bind("keyboard", "up", "moveforward");
             moveMap.bind("keyboard", "down", "movebackward");
-
+            moveMap.bind("keyboard", "m", "toggleMouseLook");
             moveMap.bind("keyboard", "e", "moveup");
             moveMap.bind("keyboard", "c", "movedown");
 
@@ -153,6 +153,10 @@ namespace LaughingDogStudios.Salvage.Logic.Models.User.GameCode.Client
 
             moveMap.bindCmd("keyboard", "r", "commandToServer('reloadWeapon');", "");
 
+
+
+            moveMap.bind("keyboard", "ctrl m", "toggleCameraMode");
+
             moveMap.bind("keyboard", "0", "unmountWeapon");
 
             moveMap.bind("keyboard", "alt w", "throwWeapon");
@@ -160,8 +164,8 @@ namespace LaughingDogStudios.Salvage.Logic.Models.User.GameCode.Client
 
             moveMap.bind("keyboard", "q", "nextWeapon");
             moveMap.bind("keyboard", "ctrl q", "prevWeapon");
-            moveMap.bind("mouse", "zaxis", "mouseWheelWeaponCycle");
-
+            //moveMap.bind("mouse", "zaxis", "mouseWheelWeaponCycle");
+            moveMap.bind("mouse", "zaxis", "mouseZoom");
             moveMap.bind("gamepad", "btn_l", "prevWeapon");
             moveMap.bind("gamepad", "btn_r", "nextWeapon");
 
@@ -293,6 +297,7 @@ namespace LaughingDogStudios.Salvage.Logic.Models.User.GameCode.Client
         public static void moveforward(int val)
         {
             //console.SetVar("$mvForwardAction", val.AsInt() * movementSpeed);
+            
             omni.iGlobal["$mvForwardAction"] = val*movementSpeed;
         }
 
@@ -348,6 +353,30 @@ namespace LaughingDogStudios.Salvage.Logic.Models.User.GameCode.Client
             omni.iGlobal["$mvPitchUpSpeed"] = val ? omni.iGlobal["$Pref::Input::KeyboardTurnSpeed"] : 0;
             //console.SetVar("$mvPitchUpSpeed", val.AsBool() ? console.GetVarInt("$Pref::Input::KeyboardTurnSpeed") : 0);
         }
+
+        [ConsoleInteraction(true)]
+        public static void toggleCameraMode(bool val)
+        {
+            if(val)
+            {
+                omni.console.commandToServer("toggleCamMode");
+            }
+        }
+
+        [ConsoleInteraction(true)]
+        public static void mouseZoom(int val)
+        {
+            if (val > 0)
+            {
+                omni.console.commandToServer("adjustCamera", new[] {"-1.0"});
+            }
+            else
+            {
+                omni.console.commandToServer("adjustCamera", new[] { "1.0" });
+            }
+        }  
+
+
 
         [ConsoleInteraction(true)]
         public static float getMouseAdjustAmount(float val)
@@ -503,6 +532,7 @@ namespace LaughingDogStudios.Salvage.Logic.Models.User.GameCode.Client
         public static void mouseFire(string val)
         {
             omni.iGlobal["$mvTriggerCount0"] += 1;
+            
             //console.SetVar("$mvTriggerCount0", console.GetVarString("$mvTriggerCount0").AsInt() + 1);
         }
 
@@ -518,6 +548,7 @@ namespace LaughingDogStudios.Salvage.Logic.Models.User.GameCode.Client
         {
             if (val > .1 && !omni.console.GetVarBool("$gamepadFireTriggered"))
                 {
+                    
                 omni.bGlobal["$gamepadFireTriggered"] = true;
                 omni.Util.rumble("gamepad", (float) 0.25, (float) 0.25); //deviceName, Left Motor(low-frequency),Right Motor(high-frequency)//Rumble Start
                 //console.SetVar("$gamepadFireTriggered", true);
@@ -646,7 +677,14 @@ namespace LaughingDogStudios.Salvage.Logic.Models.User.GameCode.Client
             if (val)
                 omni.console.commandToServer("ToggleCamera");
         }
-
+        [ConsoleInteraction(true)]
+        public static void toggleMouseLook(bool val)
+        {
+            if (val)
+            {
+                GuiCanvas.showCursor();
+            }
+        }
         [ConsoleInteraction(true)]
         public static void unmountWeapon(bool val)
         {

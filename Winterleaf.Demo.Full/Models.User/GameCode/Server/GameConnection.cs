@@ -466,17 +466,28 @@ namespace LaughingDogStudios.Salvage.Logic.Models.User.Extendable
 
             SimObject control = null;
             if (console.GetVarString("$startWorldEditor") == "1")
-                {
+            {
                 control = this["camera"];
                 Camera c = this["camera"];
                 c.setMode("Fly");
                 console.Call("EditorGui", "syncCameraGui");
-                }
+            }
             else
+            {
                 control = player;
+               // pInvokes U = new pInvokes();
+              //  Point3F beta = new Point3F("0 0 0");
+             //   Camera cam= this["camera"];
 
-            if (!nocontrol)
-                this.setControlObject(control);
+             //   player=new Player;
+           //     beta = U.Util.VectorAdd(player.getPosition(), (new Point3F("0 0 30")));
+           //     cam.position.X = beta.x;
+          //      cam.position.Y = beta.y;
+          //      cam.position.Z = beta.z;
+          //      cam.lookAt(player.getPosition());
+
+            }
+
 
             int team = new Random().Next(1, 2);
 
@@ -529,8 +540,9 @@ namespace LaughingDogStudios.Salvage.Logic.Models.User.Extendable
             string playerSpawnPoint = pickPlayerSpawnPoint(sGlobal["$Game::DefaultPlayerSpawnGroups"]);
 
             if (SpawnPlayer(playerSpawnPoint, false))
-
+                
                 LoadOut(this["player"]);
+            
         }
 
         #endregion
@@ -597,6 +609,9 @@ namespace LaughingDogStudios.Salvage.Logic.Models.User.Extendable
                 camera.setTransform(((SpawnSphere) spawnPoint).getTransform());
             else
                 camera.setTransform(new TransformF(spawnPoint));
+
+
+           // omni.console.commandToServer("orbitCam");
         }
 
         #endregion
@@ -795,11 +810,11 @@ namespace LaughingDogStudios.Salvage.Logic.Models.User.Extendable
             // Prepare the player object.
 
             preparePlayer();
-
+            //omni.console.commandToServer("orbitCam");
             message.MessageClient(this, "MsgClientJoin", "Current Players: " + ClientGroup.Count);
 
             // Inform the client we've joined up
-            message.MessageClient(this, "MsgClientJoin", @"\c2Welcome to the Torque demo app %1.", this["playerName"], this, this["sendGuid"], this["team"], this["score"], this["kills"], this["deaths"], this["isAiControlled"], this["isAdmin"], this["isSuperAdmin"]);
+            message.MessageClient(this, "MsgClientJoin", @"\c2did something%1.", this["playerName"], this, this["sendGuid"], this["team"], this["score"], this["kills"], this["deaths"], this["isAiControlled"], this["isAdmin"], this["isSuperAdmin"]);
 
             //// Inform all the other clients of the new guy
 

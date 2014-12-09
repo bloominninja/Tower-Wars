@@ -1,8 +1,7 @@
-//-------------------------- 12/4/2014 -- 10:03:47 -----
+//-------------------------- 12/8/2014 -- 19:14:34 -----
 Processor Init:
-   Unknown x86 Compatible, ~2.19 Ghz
-   HT detected
-   MP detected [4 cores, 8 logical, 1 physical]
+   Unknown x86 Compatible, ~2.53 Ghz
+   MP detected [2 cores, 2 logical, 1 physical]
  
 Math Init:
    Installing Standard C extensions
@@ -29,7 +28,7 @@ Error: Unable to find specified directory: scripts
 --------- Parsing Arguments ---------
 Binding server port to default IP
 UDP initialized on port 0
-Attempting to create GFX device: Intel(R) HD Graphics 4000 (D3D9) [\\.\DISPLAY1]
+Attempting to create GFX device: NVIDIA GeForce GTX 260M   (D3D9) [\\.\DISPLAY1]
 Device created, setting adapter and enumerating modes
    Cur. D3DDevice ref count=1
    Pix version detected: 3.000000
@@ -40,22 +39,22 @@ Device created, setting adapter and enumerating modes
    Using Direct3D9Ex: No
 WMIVideoInfo: DxDiag initialized
 Initializing GFXCardProfiler (D3D9)
-   o Chipset : 'INTEL'
-   o Card    : 'Intel(R) HD Graphics 4000'
-   o Version : '9.18.0010.3071'
-   o VRAM    : 2147483647 MB
+   o Chipset : 'GeForce GTX 260M'
+   o Card    : 'GeForce GTX 260M  '
+   o Version : '9.18.0013.3788'
+   o VRAM    : 1024 MB
    - Scanning card capabilities...
 GFXCardProfiler (D3D9) - Setting capability 'autoMipMapLevel' to 1.
-GFXCardProfiler (D3D9) - Setting capability 'maxTextureWidth' to 16384.
-GFXCardProfiler (D3D9) - Setting capability 'maxTextureHeight' to 16384.
-GFXCardProfiler (D3D9) - Setting capability 'maxTextureSize' to 16384.
+GFXCardProfiler (D3D9) - Setting capability 'maxTextureWidth' to 8192.
+GFXCardProfiler (D3D9) - Setting capability 'maxTextureHeight' to 8192.
+GFXCardProfiler (D3D9) - Setting capability 'maxTextureSize' to 8192.
 GFXCardProfiler (D3D9) - Setting capability 'lerpDetailBlend' to 1.
 GFXCardProfiler (D3D9) - Setting capability 'fourStageDetailBlend' to 1.
    - Loading card profiles...
       - Loaded card profile core/profile/D3D9.cs
-      - No card profile core/profile/D3D9.INTEL.cs exists
-      - No card profile core/profile/D3D9.INTEL.IntelRHDGraphics4000.cs exists
-      - No card profile core/profile/D3D9.INTEL.IntelRHDGraphics4000.91800103071.cs exists
+      - No card profile core/profile/D3D9.GeForceGTX260M.cs exists
+      - No card profile core/profile/D3D9.GeForceGTX260M.GeForceGTX260M.cs exists
+      - No card profile core/profile/D3D9.GeForceGTX260M.GeForceGTX260M.91800133788.cs exists
 % - PostFX Manager - Executing core/scripts/client/postFx/default.postfxpreset.cs
 % - PostFX Manager - Applying from preset
 % - PostFX Manager - PostFX enabled
@@ -63,10 +62,10 @@ GFXCardProfiler (D3D9) - Setting capability 'fourStageDetailBlend' to 1.
 
 --------- Initializing Directory: scripts ---------
 sfxStartup...
-SFXSystem::createDevice - created DirectSound device 'Speakers (Conexant SmartAudio HD)'
+SFXSystem::createDevice - created DirectSound device 'Speakers (High Definition Audio Device)'
 SFXDSDevice::setDistanceModel - 'linear' distance attenuation not supported by DirectSound
    Provider: DirectSound
-   Device: Speakers (Conexant SmartAudio HD)
+   Device: Speakers (High Definition Audio Device)
    Hardware: No
    Buffers: 16
 
@@ -99,9 +98,9 @@ Accepted Mode:
 --Refresh Rate : 60
 --FSAA Level : 4
 --------------
-GFXPCD3D9Device::reset - depthstencil 157fc378 has 2 ref's
+GFXPCD3D9Device::reset - depthstencil c646f98 has 2 ref's
 --- Resetting D3D Device ---
-GFXPCD3D9Device::reset - depthstencil 157fc378 has 2 ref's
+GFXPCD3D9Device::reset - depthstencil c646e58 has 2 ref's
 --- Resetting D3D Device ---
 UDP initialized on port 0
 GuiCanvas::setContent - Invalid control specified')
@@ -130,11 +129,13 @@ WARNING: (tools/editorclasses/gui/images/rollout) texture size = 39x50
  % - Initializing Shape Editor
  % - Initializing Navigation Editor
 Engine initialized...
-GFXPCD3D9Device::reset - depthstencil 157fc378 has 2 ref's
+GFXPCD3D9Device::reset - depthstencil 10206438 has 2 ref's
 --- Resetting D3D Device ---
 ### Datablock Cache: Server Datablock CRC is 4294967295
 Window focus status changed: focus: 1
 AntiAliasing has been disabled; it is not compatible with AdvancedLighting.
+Window focus status changed: focus: 0
+  Using background sleep time: 1
 WARNING: (core/art/gui/images/selector-button) texture size = 39x192
 WARNING: (art/gui/omni-logo) texture size = 439x300
 WARNING: (core/art/gui/images/checkbox) texture size = 13x84
@@ -152,8 +153,14 @@ WARNING: (levels/Empty_Terrain_preview) texture size = 400x300
 WARNING: (levels/navtest_preview) texture size = 400x300
 WARNING: (levels/Outpost_preview) texture size = 400x300
 WARNING: (art/gui/background) texture size = 800x600
+Window focus status changed: focus: 1
+WARNING: (art/gui/omni) texture size = 439x474
 WARNING: (core/art/gui/images/loadingbar) texture size = 70x25
+WARNING: (art/gui/background_g) texture size = 800x600
 Exporting server prefs...
+Starting multiplayer mode
+Binding server port to default IP
+UDP initialized on port 28000
 Warning: shape art/shapes/weapons/Turret/Turret_Legs.DAE collision detail 0 (Collision-1) bounds exceed that of shape.
 Warning: shape art/shapes/weapons/Turret/Turret_Legs.DAE collision detail 0 (Collision-1) bounds exceed that of shape.
 Warning: shape art/shapes/weapons/Turret/Turret_Legs.DAE collision detail 0 (Collision-1) bounds exceed that of shape.
@@ -165,26 +172,28 @@ TSShape::removeNode: Node 'TireBack_LOD300' has 1 objects attached, these will b
 TSShape::removeNode: Node 'collision-1' has 1 objects attached, these will be reassigned to the node's parent ('null')
 -----------------> Loaded
 -----------------> Loaded
-*** LOADING MISSION: levels/Empty Room.mis
+*** LOADING MISSION: levels/Empty Terrain.mis
 *** Stage 1 load
-Level File levels/Empty Room.mis not found.
+Level File levels/Empty Terrain.mis not found.
 *** Stage 2 load CSHARP
+TerrainFile Coord 'y == 1024' out of range. Fix it in the algorithm.
 *** Mission loaded
 ###Game Started###
 ##Mission Loaded###
 ### LOAD MISSION###
 ###Connection Request: Visitor###
 Connect request from:Visitor
-Connection established 20004
-CADD: 20005 local
-*** Sending mission load to client: levels/Empty Room.mis
+Connection established 20019
+CADD: 20020 local
+*** Sending mission load to client: levels/Empty Terrain.mis
 Mapping string: ServerMessage to index: 0
 Mapping string: MsgConnectionError to index: 1
 Mapping string: MsgLoadInfo to index: 2
+Sending heartbeat to master server [IP:198.101.240.242:28002]
 Mapping string: MsgLoadDescripition to index: 3
 Mapping string: MsgLoadInfoDone to index: 4
 Mapping string: MissionStartPhase1 to index: 5
-*** New Mission: levels/Empty Room.mis
+*** New Mission: levels/Empty Terrain.mis
 *** Phase 1: Download Datablocks & Targets
 % - PostFX Manager - Executing core/scripts/client/postFx/default.postfxpreset.cs
 % - PostFX Manager - Applying from preset
@@ -196,14 +205,12 @@ Warning: shape art/shapes/weapons/Turret/Turret_Legs.DAE collision detail 1 (Col
 Warning: shape art/shapes/weapons/Turret/Turret_Legs.DAE collision detail 1 (Collision-1) bounds exceed that of shape.
 Warning: shape art/shapes/weapons/Turret/Turret_Legs.DAE collision detail 1 (Collision-1) bounds exceed that of shape.
 [MaterialList::mapMaterials] Unable to find material for texture: base.lmale
+Window focus status changed: focus: 0
+  Using background sleep time: 1
+Received info request from a master server [IP:198.101.240.242:28002].
 Mapping string: MissionStartPhase2 to index: 6
 *** Phase 2: Download Ghost Objects
 Mapping string: MissionStartPhase2Ack to index: 1
-[Material::mapMaterial] - Cannot map unnamed Material
-[Material::mapMaterial] - Cannot map unnamed Material
-GFXD3D9Shader::_compileShader - Error compiling shader: E_FAIL: An undetermined error occurred (80004005)
-   C:/Users/nes/Source/Repos/OmniEngine.Net/My Projects/Salvage/game/shaders/procedural/fcbe4acd89bd47f2_P.hlsl(65,4): error X3004: undeclared identifier 'lightinfoUncondition'
-Failed to initialize material 'RifleShell_ColorEffectR88G88B225_material'
 Ghost Always objects received.
 Mapping string: MissionStartPhase3 to index: 7
 Client Replication Startup has Happened!
@@ -211,9 +218,9 @@ fxFoliageReplicator - replicated client foliage for 0 objects
 *** Phase 3: Mission Lighting
 Mission lighting done
 Mapping string: MissionStartPhase3Ack to index: 2
-Client 20005 has connected.
---->Player ID is 20015
-12/4/2014 10:04:05 AM --- PLAYER JOIN::Name 'Visitor'::ID '20015'
+Client 20020 has connected.
+--->Player ID is 20029
+12/8/2014 7:15:12 PM --- PLAYER JOIN::Name 'Visitor'::ID '20029'
 Mapping string: missionstart to index: 8
 Mapping string: SyncClock to index: 9
 Mapping string: RefreshWeaponHud to index: 10
@@ -231,7 +238,34 @@ WARNING: (core/art/gui/images/chatHudBorderArray) texture size = 42x42
 Activating DirectInput...
 WARNING: (core/art/gui/images/scrollBar) texture size = 42x162
 *** Control Object Changed
-Mapping string: Violet to index: 19
+Mapping string: Orange to index: 19
+Mapping string: setDamageDirection to index: 20
+Window focus status changed: focus: 1
+C:/Users/Bob/Documents/GitHub/Tower-Wars/game/shaders/common/postFx/dof/DOF_DownSample_P.hlsl(72,10): warning X3205: conversion from larger type to smaller, possible loss of data
+C:/Users/Bob/Documents/GitHub/Tower-Wars/game/shaders/common/postFx/dof/DOF_DownSample_P.hlsl(73,10): warning X3205: conversion from larger type to smaller, possible loss of data
+C:/Users/Bob/Documents/GitHub/Tower-Wars/game/shaders/common/postFx/dof/DOF_DownSample_P.hlsl(74,10): warning X3205: conversion from larger type to smaller, possible loss of data
+C:/Users/Bob/Documents/GitHub/Tower-Wars/game/shaders/common/postFx/dof/DOF_DownSample_P.hlsl(75,10): warning X3205: conversion from larger type to smaller, possible loss of data
+C:/Users/Bob/Documents/GitHub/Tower-Wars/game/shaders/common/postFx/dof/DOF_DownSample_P.hlsl(84,18): warning X3206: 'autogenUncondition_55070f7a': implicit truncation of vector type
+C:/Users/Bob/Documents/GitHub/Tower-Wars/game/shaders/common/postFx/dof/DOF_DownSample_P.hlsl(85,18): warning X3206: 'autogenUncondition_55070f7a': implicit truncation of vector type
+C:/Users/Bob/Documents/GitHub/Tower-Wars/game/shaders/common/postFx/dof/DOF_DownSample_P.hlsl(86,18): warning X3206: 'autogenUncondition_55070f7a': implicit truncation of vector type
+C:/Users/Bob/Documents/GitHub/Tower-Wars/game/shaders/common/postFx/dof/DOF_DownSample_P.hlsl(87,18): warning X3206: 'autogenUncondition_55070f7a': implicit truncation of vector type
+C:/Users/Bob/Documents/GitHub/Tower-Wars/game/shaders/common/postFx/dof/DOF_DownSample_P.hlsl(88,14): warning X3205: conversion from larger type to smaller, possible loss of data
+C:/Users/Bob/Documents/GitHub/Tower-Wars/game/shaders/common/postFx/dof/DOF_DownSample_P.hlsl(88,14): warning X3206: implicit truncation of vector type
+C:/Users/Bob/Documents/GitHub/Tower-Wars/game/shaders/common/postFx/dof/DOF_DownSample_P.hlsl(88,11): warning X3550: array reference cannot be used as an l-value; not natively addressable, forcing loop to unroll
+C:/Users/Bob/Documents/GitHub/Tower-Wars/game/shaders/common/postFx/dof/DOF_CalcCoC_P.hlsl(39,11): warning X3205: conversion from larger type to smaller, possible loss of data
+C:/Users/Bob/Documents/GitHub/Tower-Wars/game/shaders/common/postFx/dof/DOF_CalcCoC_P.hlsl(40,12): warning X3205: conversion from larger type to smaller, possible loss of data
+C:/Users/Bob/Documents/GitHub/Tower-Wars/game/shaders/common/postFx/dof/DOF_Final_P.hlsl(54,8): warning X3205: conversion from larger type to smaller, possible loss of data
+C:/Users/Bob/Documents/GitHub/Tower-Wars/game/shaders/common/postFx/dof/DOF_Final_P.hlsl(55,8): warning X3205: conversion from larger type to smaller, possible loss of data
+C:/Users/Bob/Documents/GitHub/Tower-Wars/game/shaders/common/postFx/dof/DOF_Final_P.hlsl(56,8): warning X3205: conversion from larger type to smaller, possible loss of data
+C:/Users/Bob/Documents/GitHub/Tower-Wars/game/shaders/common/postFx/dof/DOF_Final_P.hlsl(57,8): warning X3205: conversion from larger type to smaller, possible loss of data
+C:/Users/Bob/Documents/GitHub/Tower-Wars/game/shaders/common/postFx/dof/DOF_Final_P.hlsl(75,12): warning X3205: conversion from larger type to smaller, possible loss of data
+C:/Users/Bob/Documents/GitHub/Tower-Wars/game/shaders/common/postFx/dof/DOF_Final_P.hlsl(103,8): warning X3205: conversion from larger type to smaller, possible loss of data
+C:/Users/Bob/Documents/GitHub/Tower-Wars/game/shaders/common/postFx/dof/DOF_Final_P.hlsl(106,10): warning X3205: conversion from larger type to smaller, possible loss of data
+C:/Users/Bob/Documents/GitHub/Tower-Wars/game/shaders/common/postFx/dof/DOF_Final_P.hlsl(117,12): warning X3206: 'autogenUncondition_55070f7a': implicit truncation of vector type
+C:/Users/Bob/Documents/GitHub/Tower-Wars/game/shaders/common/postFx/dof/DOF_Final_P.hlsl(117,10): warning X3205: conversion from larger type to smaller, possible loss of data
+C:/Users/Bob/Documents/GitHub/Tower-Wars/game/shaders/common/postFx/dof/DOF_Final_P.hlsl(131,14): warning X3205: conversion from larger type to smaller, possible loss of data
+C:/Users/Bob/Documents/GitHub/Tower-Wars/game/shaders/common/postFx/dof/DOF_Final_P.hlsl(132,11): warning X3205: conversion from larger type to smaller, possible loss of data
+Received info request from a master server [IP:198.101.240.242:28002].
 Set::add: Object "0" doesn't exist
 Set::add: Object "0" doesn't exist
 WARNING: (tools/editorClasses/gui/panels/menu-fullborder) texture size = 18x19
@@ -406,121 +440,20 @@ WARNING: (tools/gui/images/menubar/explode-prefab_h) texture size = 29x27
 WARNING: (tools/gui/images/menubar/explode-prefab_d) texture size = 29x27
 WARNING: (tools/gui/images/menubar/explode-prefab_i) texture size = 29x27
 Warning, overwriting material for: matEd_mappedMat
-GFXPCD3D9Device::reset - depthstencil 1d8dda38 has 2 ref's
+GFXPCD3D9Device::reset - depthstencil 10289398 has 2 ref's
 --- Resetting D3D Device ---
-Time spent in toggleEditor() : 2.742 s
+Time spent in toggleEditor() : 5.335 s
 Mapping string: EditorOrbitCameraSelectChange to index: 3
 Mapping string: SetEditorCameraPlayer to index: 4
-GFXPCD3D9Device::reset - depthstencil 290d4258 has 2 ref's
---- Resetting D3D Device ---
-Set::remove: Object "20060" does not exist in set
-WARNING: (art/gui/weaponHud/ryder) texture size = 160x60
-WARNING: (tools/gui/images/treeView) texture size = 17x284
-Warning, overwriting material for: matEd_mappedMat
-GFXPCD3D9Device::reset - depthstencil 290d4cf8 has 2 ref's
---- Resetting D3D Device ---
-Time spent in toggleEditor() : 0.238 s
-GFXPCD3D9Device::reset - depthstencil 290d5038 has 2 ref's
---- Resetting D3D Device ---
-Set::remove: Object "20060" does not exist in set
-WARNING: (art/gui/weaponHud/ryder) texture size = 160x60
-WARNING: (art/gui/omni-logo) texture size = 439x300
-WARNING: (levels/Empty Room_preview) texture size = 400x300
-WARNING: (art/gui/previous-button_n) texture size = 11x81
-WARNING: (art/gui/previous-button_h) texture size = 11x81
-WARNING: (art/gui/previous-button_d) texture size = 11x81
-WARNING: (levels/Empty Terrain_preview) texture size = 400x300
-WARNING: (levels/Empty_Terrain_preview) texture size = 400x300
-WARNING: (levels/navtest_preview) texture size = 400x300
-WARNING: (levels/Outpost_preview) texture size = 400x300
-WARNING: (art/gui/no-preview) texture size = 400x300
-WARNING: (art/gui/next-button_n) texture size = 11x81
-WARNING: (art/gui/next-button_h) texture size = 11x81
-WARNING: (art/gui/next-button_d) texture size = 11x81
-<input> (0): Cannot re-declare object [theLevelInfo].
-<input> (0): Cannot re-declare object [theLevelInfo].
-<input> (0): Cannot re-declare object [theLevelInfo].
-<input> (0): Cannot re-declare object [theLevelInfo].
-<input> (0): Cannot re-declare object [theLevelInfo].
-<input> (0): Cannot re-declare object [theLevelInfo].
-WARNING: (art/gui/background) texture size = 800x600
-*** ENDING MISSION
-CDROP: 20005 
-Exporting server prefs...
-WARNING: (art/gui/omni) texture size = 439x474
-WARNING: (art/gui/background_g) texture size = 800x600
-Exporting server prefs...
-SimGroup::addObject - (817910736) can't add self!
-Warning: shape art/shapes/weapons/Turret/Turret_Legs.DAE collision detail 0 (Collision-1) bounds exceed that of shape.
-Warning: shape art/shapes/weapons/Turret/Turret_Legs.DAE collision detail 0 (Collision-1) bounds exceed that of shape.
-Warning: shape art/shapes/weapons/Turret/Turret_Legs.DAE collision detail 0 (Collision-1) bounds exceed that of shape.
-TSShape::removeNode: Node 'collision-1' has 1 objects attached, these will be reassigned to the node's parent ('null')
-TSShape::removeNode: Node 'Cheetah_Turret_LOD300' has 1 objects attached, these will be reassigned to the node's parent ('null')
-TSShape::removeNode: Node 'Tread_LOD300' has 1 objects attached, these will be reassigned to the node's parent ('null')
-TSShape::removeNode: Node 'collision-1' has 1 objects attached, these will be reassigned to the node's parent ('null')
-TSShape::removeNode: Node 'TireBack_LOD300' has 1 objects attached, these will be reassigned to the node's parent ('null')
-TSShape::removeNode: Node 'collision-1' has 1 objects attached, these will be reassigned to the node's parent ('null')
------------------> Loaded
------------------> Loaded
-*** LOADING MISSION: levels/Empty Room.mis
-*** Stage 1 load
-Level File levels/Empty Room.mis not found.
-*** Stage 2 load CSHARP
-*** Mission loaded
-###Game Started###
-##Mission Loaded###
-### LOAD MISSION###
-###Connection Request: Visitor###
-Connect request from:Visitor
-Connection established 20908
-CADD: 20909 local
-*** Sending mission load to client: levels/Empty Room.mis
-Mapping string: ServerMessage to index: 0
-Mapping string: MsgConnectionError to index: 1
-Mapping string: MsgLoadInfo to index: 2
-Mapping string: MsgLoadDescripition to index: 3
-Mapping string: MsgLoadInfoDone to index: 4
-Mapping string: MissionStartPhase1 to index: 5
-*** New Mission: levels/Empty Room.mis
-*** Phase 1: Download Datablocks & Targets
-% - PostFX Manager - Executing core/scripts/client/postFx/default.postfxpreset.cs
-% - PostFX Manager - Applying from preset
-% - PostFX Manager - PostFX enabled
-Mapping string: MissionStartPhase1Ack to index: 0
-Transmitting Datablocks
-Warning: shape art/shapes/weapons/Turret/Turret_Legs.DAE collision detail 1 (Collision-1) bounds exceed that of shape.
-Warning: shape art/shapes/weapons/Turret/Turret_Legs.DAE collision detail 1 (Collision-1) bounds exceed that of shape.
-Warning: shape art/shapes/weapons/Turret/Turret_Legs.DAE collision detail 1 (Collision-1) bounds exceed that of shape.
-[MaterialList::mapMaterials] Unable to find material for texture: base.lmale
-Mapping string: MissionStartPhase2 to index: 6
-*** Phase 2: Download Ghost Objects
-Mapping string: MissionStartPhase2Ack to index: 1
-[Material::mapMaterial] - Cannot map unnamed Material
-[Material::mapMaterial] - Cannot map unnamed Material
-Ghost Always objects received.
-Mapping string: MissionStartPhase3 to index: 7
-Client Replication Startup has Happened!
-fxFoliageReplicator - replicated client foliage for 0 objects
-*** Phase 3: Mission Lighting
-Mission lighting done
-Mapping string: MissionStartPhase3Ack to index: 2
-Client 20909 has connected.
---->Player ID is 20919
-12/4/2014 10:04:25 AM --- PLAYER JOIN::Name 'Visitor'::ID '20919'
-Mapping string: missionstart to index: 8
-Mapping string: SyncClock to index: 9
-Mapping string: RefreshWeaponHud to index: 10
-Mapping string: System to index: 11
-Mapping string: Your on Team 1 to index: 12
-Mapping string: SetAmmoAmountHud to index: 13
-Mapping string: ryder.png to index: 14
-Mapping string: MsgClientJoin to index: 15
-Mapping string: Current Players: 1 to index: 16
-Mapping string: Welcome to the Torque demo app %1. to index: 17
-Mapping string: Visitor to index: 18
-*** Initial Control Object
+Mapping string: SetEditorOrbitCamera to index: 5
+WARNING: (tools/gui/images/menubar/orbit-cam_n) texture size = 29x27
+WARNING: (tools/gui/images/menubar/orbit-cam_h) texture size = 29x27
+WARNING: (tools/gui/images/menubar/orbit-cam_d) texture size = 29x27
 *** Control Object Changed
-Mapping string: LightGreen to index: 19
+GFXPCD3D9Device::reset - depthstencil 1a5be678 has 2 ref's
+--- Resetting D3D Device ---
+Set::remove: Object "20200" does not exist in set
+WARNING: (art/gui/weaponHud/ryder) texture size = 160x60
 WARNING: (tools/worldEditor/images/toolbar/world) texture size = 29x27
 WARNING: (tools/worldEditor/images/toolbar/world_h) texture size = 29x27
 WARNING: (tools/worldEditor/images/toolbar/world_d) texture size = 29x27
@@ -531,9 +464,9 @@ WARNING: (tools/worldEditor/images/toolbar/playbutton_n) texture size = 29x27
 WARNING: (tools/worldEditor/images/toolbar/playbutton_h) texture size = 29x27
 WARNING: (tools/worldEditor/images/toolbar/playbutton_d) texture size = 29x27
 WARNING: (tools/gui/images/separator-h) texture size = 2x26
-WARNING: (tools/worldEditor/images/toolbar/player_n) texture size = 29x27
-WARNING: (tools/worldEditor/images/toolbar/player_h) texture size = 29x27
-WARNING: (tools/worldEditor/images/toolbar/player_d) texture size = 29x27
+WARNING: (tools/gui/images/menubar/orbit-cam_n) texture size = 29x27
+WARNING: (tools/gui/images/menubar/orbit-cam_h) texture size = 29x27
+WARNING: (tools/gui/images/menubar/orbit-cam_d) texture size = 29x27
 WARNING: (tools/gui/images/dropslider_n) texture size = 18x18
 WARNING: (tools/gui/images/dropslider_h) texture size = 18x18
 WARNING: (tools/gui/images/dropslider_d) texture size = 18x18
@@ -673,20 +606,28 @@ WARNING: (tools/gui/images/menubar/explode-prefab_h) texture size = 29x27
 WARNING: (tools/gui/images/menubar/explode-prefab_d) texture size = 29x27
 WARNING: (tools/gui/images/menubar/explode-prefab_i) texture size = 29x27
 Warning, overwriting material for: matEd_mappedMat
-GFXPCD3D9Device::reset - depthstencil 290d2fb8 has 2 ref's
+GFXPCD3D9Device::reset - depthstencil 1a5be338 has 2 ref's
 --- Resetting D3D Device ---
-Time spent in toggleEditor() : 0.344 s
-Mapping string: EditorOrbitCameraSelectChange to index: 3
-GFXPCD3D9Device::reset - depthstencil 25ba9d58 has 2 ref's
+Time spent in toggleEditor() : 0.816 s
+Mapping string: SetEditorCameraStandard to index: 6
+WARNING: (tools/worldEditor/images/toolbar/camera_n) texture size = 29x27
+WARNING: (tools/worldEditor/images/toolbar/camera_h) texture size = 29x27
+WARNING: (tools/worldEditor/images/toolbar/camera_d) texture size = 29x27
+WARNING: (tools/worldEditor/images/toolbar/player_n) texture size = 29x27
+WARNING: (tools/worldEditor/images/toolbar/player_h) texture size = 29x27
+WARNING: (tools/worldEditor/images/toolbar/player_d) texture size = 29x27
+*** Control Object Changed
+GFXPCD3D9Device::reset - depthstencil 1a5bdf38 has 2 ref's
 --- Resetting D3D Device ---
-Set::remove: Object "20060" does not exist in set
+Set::remove: Object "20200" does not exist in set
 WARNING: (art/gui/weaponHud/ryder) texture size = 160x60
+Received info request from a master server [IP:198.101.240.242:28002].
 WARNING: (art/gui/omni-logo) texture size = 439x300
-WARNING: (levels/Empty Room_preview) texture size = 400x300
+WARNING: (levels/Empty Terrain_preview) texture size = 400x300
 WARNING: (art/gui/previous-button_n) texture size = 11x81
 WARNING: (art/gui/previous-button_h) texture size = 11x81
 WARNING: (art/gui/previous-button_d) texture size = 11x81
-WARNING: (levels/Empty Terrain_preview) texture size = 400x300
+WARNING: (levels/Empty Room_preview) texture size = 400x300
 WARNING: (levels/Empty_Terrain_preview) texture size = 400x300
 WARNING: (levels/navtest_preview) texture size = 400x300
 WARNING: (levels/Outpost_preview) texture size = 400x300
@@ -702,7 +643,128 @@ WARNING: (art/gui/next-button_d) texture size = 11x81
 <input> (0): Cannot re-declare object [theLevelInfo].
 WARNING: (art/gui/background) texture size = 800x600
 *** ENDING MISSION
-CDROP: 20909 IP:0.0.0.0:0
+CDROP: 20020 
+Exporting server prefs...
+WARNING: (art/gui/omni) texture size = 439x474
+WARNING: (art/gui/background_g) texture size = 800x600
+Exporting server prefs...
+Starting multiplayer mode
+Binding server port to default IP
+UDP initialized on port 28000
+SimGroup::addObject - (414647648) can't add self!
+Warning: shape art/shapes/weapons/Turret/Turret_Legs.DAE collision detail 0 (Collision-1) bounds exceed that of shape.
+Warning: shape art/shapes/weapons/Turret/Turret_Legs.DAE collision detail 0 (Collision-1) bounds exceed that of shape.
+Warning: shape art/shapes/weapons/Turret/Turret_Legs.DAE collision detail 0 (Collision-1) bounds exceed that of shape.
+TSShape::removeNode: Node 'collision-1' has 1 objects attached, these will be reassigned to the node's parent ('null')
+TSShape::removeNode: Node 'Cheetah_Turret_LOD300' has 1 objects attached, these will be reassigned to the node's parent ('null')
+TSShape::removeNode: Node 'Tread_LOD300' has 1 objects attached, these will be reassigned to the node's parent ('null')
+TSShape::removeNode: Node 'collision-1' has 1 objects attached, these will be reassigned to the node's parent ('null')
+TSShape::removeNode: Node 'TireBack_LOD300' has 1 objects attached, these will be reassigned to the node's parent ('null')
+TSShape::removeNode: Node 'collision-1' has 1 objects attached, these will be reassigned to the node's parent ('null')
+-----------------> Loaded
+-----------------> Loaded
+*** LOADING MISSION: levels/Empty Terrain.mis
+*** Stage 1 load
+Level File levels/Empty Terrain.mis not found.
+*** Stage 2 load CSHARP
+*** Mission loaded
+###Game Started###
+##Mission Loaded###
+### LOAD MISSION###
+###Connection Request: Visitor###
+Connect request from:Visitor
+Connection established 21140
+CADD: 21141 local
+*** Sending mission load to client: levels/Empty Terrain.mis
+Mapping string: ServerMessage to index: 0
+Mapping string: MsgConnectionError to index: 1
+Mapping string: MsgLoadInfo to index: 2
+Sending heartbeat to master server [IP:198.101.240.242:28002]
+Mapping string: MsgLoadDescripition to index: 3
+Mapping string: MsgLoadInfoDone to index: 4
+Mapping string: MissionStartPhase1 to index: 5
+*** New Mission: levels/Empty Terrain.mis
+*** Phase 1: Download Datablocks & Targets
+% - PostFX Manager - Executing core/scripts/client/postFx/default.postfxpreset.cs
+% - PostFX Manager - Applying from preset
+% - PostFX Manager - PostFX enabled
+Mapping string: MissionStartPhase1Ack to index: 0
+Transmitting Datablocks
+WARNING: (art/lights/lensFlareSheet0) texture size = 1280x1024
+Warning: shape art/shapes/weapons/Turret/Turret_Legs.DAE collision detail 1 (Collision-1) bounds exceed that of shape.
+Warning: shape art/shapes/weapons/Turret/Turret_Legs.DAE collision detail 1 (Collision-1) bounds exceed that of shape.
+Warning: shape art/shapes/weapons/Turret/Turret_Legs.DAE collision detail 1 (Collision-1) bounds exceed that of shape.
+[MaterialList::mapMaterials] Unable to find material for texture: base.lmale
+Mapping string: MissionStartPhase2 to index: 6
+*** Phase 2: Download Ghost Objects
+Mapping string: MissionStartPhase2Ack to index: 1
+Ghost Always objects received.
+Mapping string: MissionStartPhase3 to index: 7
+Client Replication Startup has Happened!
+fxFoliageReplicator - replicated client foliage for 0 objects
+*** Phase 3: Mission Lighting
+Mission lighting done
+Mapping string: MissionStartPhase3Ack to index: 2
+Client 21141 has connected.
+--->Player ID is 21150
+12/8/2014 7:17:22 PM --- PLAYER JOIN::Name 'Visitor'::ID '21150'
+Mapping string: missionstart to index: 8
+Mapping string: SyncClock to index: 9
+Mapping string: RefreshWeaponHud to index: 10
+Mapping string: System to index: 11
+Mapping string: Your on Team 1 to index: 12
+Mapping string: SetAmmoAmountHud to index: 13
+Mapping string: ryder.png to index: 14
+Mapping string: MsgClientJoin to index: 15
+Mapping string: Current Players: 1 to index: 16
+Mapping string: Welcome to the Torque demo app %1. to index: 17
+Mapping string: Visitor to index: 18
+*** Initial Control Object
+WARNING: (art/gui/weaponHud/ryder) texture size = 160x60
+*** Control Object Changed
+Mapping string: DarkBlue to index: 19
+Mapping string: setDamageDirection to index: 20
+AntiAliasing has been disabled; it is not compatible with AdvancedLighting.
+Window focus status changed: focus: 0
+  Using background sleep time: 1
+DirectInput deactivated.
+Activating DirectInput...
+Window focus status changed: focus: 1
+Window focus status changed: focus: 0
+  Using background sleep time: 1
+DirectInput deactivated.
+Received info request from a master server [IP:198.101.240.242:28002].
+Activating DirectInput...
+Window focus status changed: focus: 1
+Mapping string: Crouch to index: 21
+Mapping string: Stand to index: 22
+Window focus status changed: focus: 0
+  Using background sleep time: 1
+DirectInput deactivated.
+Activating DirectInput...
+Window focus status changed: focus: 1
+WARNING: (art/gui/omni-logo) texture size = 439x300
+WARNING: (levels/Empty Terrain_preview) texture size = 400x300
+WARNING: (art/gui/previous-button_n) texture size = 11x81
+WARNING: (art/gui/previous-button_h) texture size = 11x81
+WARNING: (art/gui/previous-button_d) texture size = 11x81
+WARNING: (levels/Empty Room_preview) texture size = 400x300
+WARNING: (levels/Empty_Terrain_preview) texture size = 400x300
+WARNING: (levels/navtest_preview) texture size = 400x300
+WARNING: (levels/Outpost_preview) texture size = 400x300
+WARNING: (art/gui/no-preview) texture size = 400x300
+WARNING: (art/gui/next-button_n) texture size = 11x81
+WARNING: (art/gui/next-button_h) texture size = 11x81
+WARNING: (art/gui/next-button_d) texture size = 11x81
+<input> (0): Cannot re-declare object [theLevelInfo].
+<input> (0): Cannot re-declare object [theLevelInfo].
+<input> (0): Cannot re-declare object [theLevelInfo].
+<input> (0): Cannot re-declare object [theLevelInfo].
+<input> (0): Cannot re-declare object [theLevelInfo].
+<input> (0): Cannot re-declare object [theLevelInfo].
+WARNING: (art/gui/background) texture size = 800x600
+*** ENDING MISSION
+CDROP: 21141 
 Exporting server prefs...
 Exporting server prefs...
 Exporting client prefs
@@ -710,4 +772,3 @@ Exporting server prefs
 Exporting server prefs...
 Exporting client prefs
 Exporting server prefs
-Cur. D3DDevice ref count=1
