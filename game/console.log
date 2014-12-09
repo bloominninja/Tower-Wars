@@ -1,7 +1,12 @@
+<<<<<<< HEAD
 //-------------------------- 12/8/2014 -- 23:14:30 -----
+=======
+//-------------------------- 12/9/2014 -- 01:45:29 -----
+>>>>>>> origin/Omni
 Processor Init:
-   Unknown x86 Compatible, ~2.53 Ghz
-   MP detected [2 cores, 2 logical, 1 physical]
+   Unknown x86 Compatible, ~4.02 Ghz
+   HT detected
+   MP detected [4 cores, 8 logical, 1 physical]
  
 Math Init:
    Installing Standard C extensions
@@ -11,6 +16,7 @@ Initializing platform...
 Input Init:
    keyboard0 input device created.
    mouse0 input device created.
+   joystick0 input device created.
    DirectInput enabled.
 
 Done
@@ -28,7 +34,7 @@ Error: Unable to find specified directory: scripts
 --------- Parsing Arguments ---------
 Binding server port to default IP
 UDP initialized on port 0
-Attempting to create GFX device: NVIDIA GeForce GTX 260M   (D3D9) [\\.\DISPLAY1]
+Attempting to create GFX device: AMD Radeon R9 200 Series (D3D9) [\\.\DISPLAY1]
 Device created, setting adapter and enumerating modes
    Cur. D3DDevice ref count=1
    Pix version detected: 3.000000
@@ -39,22 +45,22 @@ Device created, setting adapter and enumerating modes
    Using Direct3D9Ex: No
 WMIVideoInfo: DxDiag initialized
 Initializing GFXCardProfiler (D3D9)
-   o Chipset : 'GeForce GTX 260M'
-   o Card    : 'GeForce GTX 260M  '
-   o Version : '9.18.0013.3788'
-   o VRAM    : 1024 MB
+   o Chipset : 'AMD Radeon Graphics Processor (0x6810)'
+   o Card    : 'AMD Radeon R9 200 Series'
+   o Version : '8.17.0010.1247'
+   o VRAM    : 2147483647 MB
    - Scanning card capabilities...
 GFXCardProfiler (D3D9) - Setting capability 'autoMipMapLevel' to 1.
-GFXCardProfiler (D3D9) - Setting capability 'maxTextureWidth' to 8192.
-GFXCardProfiler (D3D9) - Setting capability 'maxTextureHeight' to 8192.
-GFXCardProfiler (D3D9) - Setting capability 'maxTextureSize' to 8192.
+GFXCardProfiler (D3D9) - Setting capability 'maxTextureWidth' to 16384.
+GFXCardProfiler (D3D9) - Setting capability 'maxTextureHeight' to 16384.
+GFXCardProfiler (D3D9) - Setting capability 'maxTextureSize' to 16384.
 GFXCardProfiler (D3D9) - Setting capability 'lerpDetailBlend' to 1.
 GFXCardProfiler (D3D9) - Setting capability 'fourStageDetailBlend' to 1.
    - Loading card profiles...
       - Loaded card profile core/profile/D3D9.cs
-      - No card profile core/profile/D3D9.GeForceGTX260M.cs exists
-      - No card profile core/profile/D3D9.GeForceGTX260M.GeForceGTX260M.cs exists
-      - No card profile core/profile/D3D9.GeForceGTX260M.GeForceGTX260M.91800133788.cs exists
+      - No card profile core/profile/D3D9.AMDRadeonGraphicsProcessor0x6810.cs exists
+      - No card profile core/profile/D3D9.AMDRadeonGraphicsProcessor0x6810.AMDRadeonR9200Series.cs exists
+      - No card profile core/profile/D3D9.AMDRadeonGraphicsProcessor0x6810.AMDRadeonR9200Series.81700101247.cs exists
 % - PostFX Manager - Executing core/scripts/client/postFx/default.postfxpreset.cs
 % - PostFX Manager - Applying from preset
 % - PostFX Manager - PostFX enabled
@@ -98,9 +104,15 @@ Accepted Mode:
 --Refresh Rate : 60
 --FSAA Level : 4
 --------------
+<<<<<<< HEAD
 GFXPCD3D9Device::reset - depthstencil 2606f98 has 2 ref's
 --- Resetting D3D Device ---
 GFXPCD3D9Device::reset - depthstencil 2606e58 has 2 ref's
+=======
+GFXPCD3D9Device::reset - depthstencil 1a026158 has 2 ref's
+--- Resetting D3D Device ---
+GFXPCD3D9Device::reset - depthstencil 133f7898 has 2 ref's
+>>>>>>> origin/Omni
 --- Resetting D3D Device ---
 UDP initialized on port 0
 GuiCanvas::setContent - Invalid control specified')
@@ -129,10 +141,13 @@ WARNING: (tools/editorclasses/gui/images/rollout) texture size = 39x50
  % - Initializing Shape Editor
  % - Initializing Navigation Editor
 Engine initialized...
+<<<<<<< HEAD
 GFXPCD3D9Device::reset - depthstencil f496438 has 2 ref's
+=======
+GFXPCD3D9Device::reset - depthstencil 133f77b8 has 2 ref's
+>>>>>>> origin/Omni
 --- Resetting D3D Device ---
 ### Datablock Cache: Server Datablock CRC is 4294967295
-Window focus status changed: focus: 1
 AntiAliasing has been disabled; it is not compatible with AdvancedLighting.
 WARNING: (core/art/gui/images/selector-button) texture size = 39x192
 WARNING: (art/gui/omni-logo) texture size = 439x300
@@ -155,9 +170,6 @@ WARNING: (art/gui/omni) texture size = 439x474
 WARNING: (core/art/gui/images/loadingbar) texture size = 70x25
 WARNING: (art/gui/background_g) texture size = 800x600
 Exporting server prefs...
-Starting multiplayer mode
-Binding server port to default IP
-UDP initialized on port 28000
 Warning: shape art/shapes/weapons/Turret/Turret_Legs.DAE collision detail 0 (Collision-1) bounds exceed that of shape.
 Warning: shape art/shapes/weapons/Turret/Turret_Legs.DAE collision detail 0 (Collision-1) bounds exceed that of shape.
 Warning: shape art/shapes/weapons/Turret/Turret_Legs.DAE collision detail 0 (Collision-1) bounds exceed that of shape.
@@ -180,13 +192,17 @@ TerrainFile Coord 'y == 1024' out of range. Fix it in the algorithm.
 ### LOAD MISSION###
 ###Connection Request: Visitor###
 Connect request from:Visitor
+<<<<<<< HEAD
 Connection established 20018
 CADD: 20019 local
+=======
+Connection established 20022
+CADD: 20023 local
+>>>>>>> origin/Omni
 *** Sending mission load to client: levels/Empty Terrain.mis
 Mapping string: ServerMessage to index: 0
 Mapping string: MsgConnectionError to index: 1
 Mapping string: MsgLoadInfo to index: 2
-Sending heartbeat to master server [IP:198.101.240.242:28002]
 Mapping string: MsgLoadDescripition to index: 3
 Mapping string: MsgLoadInfoDone to index: 4
 Mapping string: MissionStartPhase1 to index: 5
@@ -202,7 +218,10 @@ Warning: shape art/shapes/weapons/Turret/Turret_Legs.DAE collision detail 1 (Col
 Warning: shape art/shapes/weapons/Turret/Turret_Legs.DAE collision detail 1 (Collision-1) bounds exceed that of shape.
 Warning: shape art/shapes/weapons/Turret/Turret_Legs.DAE collision detail 1 (Collision-1) bounds exceed that of shape.
 [MaterialList::mapMaterials] Unable to find material for texture: base.lmale
+<<<<<<< HEAD
 Received info request from a master server [IP:198.101.240.242:28002].
+=======
+>>>>>>> origin/Omni
 Mapping string: MissionStartPhase2 to index: 6
 *** Phase 2: Download Ghost Objects
 Mapping string: MissionStartPhase2Ack to index: 1
@@ -213,10 +232,16 @@ fxFoliageReplicator - replicated client foliage for 0 objects
 *** Phase 3: Mission Lighting
 Mission lighting done
 Mapping string: MissionStartPhase3Ack to index: 2
+<<<<<<< HEAD
 Client 20019 has connected.
 --->Player ID is 20028
 no
 12/8/2014 11:14:59 PM --- PLAYER JOIN::Name 'Visitor'::ID '20028'
+=======
+Client 20023 has connected.
+--->Player ID is 20032
+12/9/2014 1:46:14 AM --- PLAYER JOIN::Name 'Visitor'::ID '20032'
+>>>>>>> origin/Omni
 Mapping string: missionstart to index: 8
 Mapping string: SyncClock to index: 9
 Mapping string: RefreshWeaponHud to index: 10
@@ -234,6 +259,7 @@ WARNING: (core/art/gui/images/chatHudBorderArray) texture size = 42x42
 Activating DirectInput...
 WARNING: (core/art/gui/images/scrollBar) texture size = 42x162
 *** Control Object Changed
+<<<<<<< HEAD
 Mapping string: base to index: 19
 Mapping string: setDamageDirection to index: 20
 WARNING: (core/art/gui/images/textEdit) texture size = 15x15
@@ -282,6 +308,115 @@ Received info request from a master server [IP:198.101.240.242:28002].
 Received info request from a master server [IP:198.101.240.242:28002].
 Sending heartbeat to master server [IP:198.101.240.242:28002]
 Activating DirectInput...
+=======
+Mapping string: LightGreen to index: 19
+Window focus status changed: focus: 0
+  Using background sleep time: 1
+Pressed Xbox Button
+Window focus status changed: focus: 1
+Mapping string: setDamageDirection to index: 20
+Set::add: Object "0" doesn't exist
+Set::add: Object "0" doesn't exist
+WARNING: (tools/editorClasses/gui/panels/menu-fullborder) texture size = 18x19
+WARNING: (tools/gui/images/button) texture size = 16x96
+WARNING: (tools/worldEditor/images/toolbar/world) texture size = 29x27
+WARNING: (tools/worldEditor/images/toolbar/world_h) texture size = 29x27
+WARNING: (tools/worldEditor/images/toolbar/world_d) texture size = 29x27
+WARNING: (tools/worldEditor/images/toolbar/gui) texture size = 29x27
+WARNING: (tools/worldEditor/images/toolbar/gui_h) texture size = 29x27
+WARNING: (tools/worldEditor/images/toolbar/gui_d) texture size = 29x27
+WARNING: (tools/worldEditor/images/toolbar/playbutton_n) texture size = 29x27
+WARNING: (tools/worldEditor/images/toolbar/playbutton_h) texture size = 29x27
+WARNING: (tools/worldEditor/images/toolbar/playbutton_d) texture size = 29x27
+WARNING: (tools/gui/images/separator-h) texture size = 2x26
+WARNING: (tools/worldEditor/images/toolbar/player_n) texture size = 29x27
+WARNING: (tools/worldEditor/images/toolbar/player_h) texture size = 29x27
+WARNING: (tools/worldEditor/images/toolbar/player_d) texture size = 29x27
+WARNING: (tools/gui/images/textEditSliderBox) texture size = 15x15
+WARNING: (tools/gui/images/dropslider_n) texture size = 18x18
+WARNING: (tools/gui/images/dropslider_h) texture size = 18x18
+WARNING: (tools/gui/images/dropslider_d) texture size = 18x18
+WARNING: (tools/gui/images/menubar/visibility-toggle_n) texture size = 29x27
+WARNING: (tools/gui/images/menubar/visibility-toggle_h) texture size = 29x27
+WARNING: (tools/gui/images/menubar/visibility-toggle_d) texture size = 29x27
+WARNING: (tools/editorClasses/gui/panels/menubar) texture size = 18x19
+WARNING: (tools/gui/images/dropDown) texture size = 31x78
+WARNING: (tools/gui/images/scrollBar) texture size = 42x162
+WARNING: (tools/worldEditor/images/toolbar/transform-objects_n) texture size = 29x27
+WARNING: (tools/worldEditor/images/toolbar/transform-objects_h) texture size = 29x27
+WARNING: (tools/worldEditor/images/toolbar/transform-objects_d) texture size = 29x27
+WARNING: (tools/worldEditor/images/toolbar/sculpt-terrain_n) texture size = 29x27
+WARNING: (tools/worldEditor/images/toolbar/sculpt-terrain_h) texture size = 29x27
+WARNING: (tools/worldEditor/images/toolbar/sculpt-terrain_d) texture size = 29x27
+WARNING: (tools/worldEditor/images/toolbar/paint-terrain_n) texture size = 29x27
+WARNING: (tools/worldEditor/images/toolbar/paint-terrain_h) texture size = 29x27
+WARNING: (tools/worldEditor/images/toolbar/paint-terrain_d) texture size = 29x27
+WARNING: (tools/worldEditor/images/toolbar/matterial-editor_n) texture size = 29x27
+WARNING: (tools/worldEditor/images/toolbar/matterial-editor_h) texture size = 29x27
+WARNING: (tools/worldEditor/images/toolbar/matterial-editor_d) texture size = 29x27
+WARNING: (tools/convexEditor/images/convex-editor-btn_n) texture size = 29x27
+WARNING: (tools/convexEditor/images/convex-editor-btn_h) texture size = 29x27
+WARNING: (tools/convexEditor/images/convex-editor-btn_d) texture size = 29x27
+WARNING: (tools/worldEditor/images/toolbar/datablock-editor_n) texture size = 29x27
+WARNING: (tools/worldEditor/images/toolbar/datablock-editor_h) texture size = 29x27
+WARNING: (tools/worldEditor/images/toolbar/datablock-editor_d) texture size = 29x27
+WARNING: (tools/decalEditor/decal-editor_n) texture size = 29x27
+WARNING: (tools/decalEditor/decal-editor_h) texture size = 29x27
+WARNING: (tools/decalEditor/decal-editor_d) texture size = 29x27
+WARNING: (tools/forestEditor/images/forest-editor-btn_n) texture size = 29x27
+WARNING: (tools/forestEditor/images/forest-editor-btn_h) texture size = 29x27
+WARNING: (tools/forestEditor/images/forest-editor-btn_d) texture size = 29x27
+WARNING: (tools/worldEditor/images/toolbar/mesh-road-editor_n) texture size = 29x27
+WARNING: (tools/worldEditor/images/toolbar/mesh-road-editor_h) texture size = 29x27
+WARNING: (tools/worldEditor/images/toolbar/mesh-road-editor_d) texture size = 29x27
+WARNING: (tools/missionAreaEditor/images/mission-area_n) texture size = 29x27
+WARNING: (tools/missionAreaEditor/images/mission-area_h) texture size = 29x27
+WARNING: (tools/missionAreaEditor/images/mission-area_d) texture size = 29x27
+WARNING: (tools/worldEditor/images/toolbar/particleeditor_n) texture size = 29x27
+WARNING: (tools/worldEditor/images/toolbar/particleeditor_h) texture size = 29x27
+WARNING: (tools/worldEditor/images/toolbar/particleeditor_d) texture size = 29x27
+WARNING: (tools/worldEditor/images/toolbar/river-editor_n) texture size = 29x27
+WARNING: (tools/worldEditor/images/toolbar/river-editor_h) texture size = 29x27
+WARNING: (tools/worldEditor/images/toolbar/river-editor_d) texture size = 29x27
+WARNING: (tools/worldEditor/images/toolbar/road-path-editor_n) texture size = 29x27
+WARNING: (tools/worldEditor/images/toolbar/road-path-editor_h) texture size = 29x27
+WARNING: (tools/worldEditor/images/toolbar/road-path-editor_d) texture size = 29x27
+WARNING: (tools/worldEditor/images/toolbar/shape-editor_n) texture size = 29x27
+WARNING: (tools/worldEditor/images/toolbar/shape-editor_h) texture size = 29x27
+WARNING: (tools/worldEditor/images/toolbar/shape-editor_d) texture size = 29x27
+WARNING: (tools/navEditor/images/nav-editor_n) texture size = 29x27
+WARNING: (tools/navEditor/images/nav-editor_h) texture size = 29x27
+WARNING: (tools/navEditor/images/nav-editor_d) texture size = 29x27
+WARNING: (tools/gui/images/collapse-toolbar_n) texture size = 7x33
+WARNING: (tools/gui/images/collapse-toolbar_h) texture size = 7x33
+WARNING: (tools/gui/images/collapse-toolbar_d) texture size = 7x33
+WARNING: (tools/editorClasses/gui/panels/editor-menubar) texture size = 18x19
+WARNING: (tools/gui/images/textEditFrame) texture size = 15x15
+WARNING: (tools/gui/images/clear-icon_n) texture size = 17x17
+WARNING: (tools/gui/images/clear-icon_h) texture size = 17x17
+WARNING: (tools/gui/images/clear-icon_d) texture size = 17x17
+WARNING: (tools/gui/images/window) texture size = 64x132
+WARNING: (tools/worldEditor/images/terrainpainter/terrain-painter-border-large) texture size = 200x200
+WARNING: (core/art/gui/images/button) texture size = 16x96
+WARNING: (tools/worldEditor/images/circleBrush_n) texture size = 29x27
+WARNING: (tools/worldEditor/images/circleBrush_h) texture size = 29x27
+WARNING: (tools/worldEditor/images/circleBrush_d) texture size = 29x27
+WARNING: (tools/worldEditor/images/boxBrush_n) texture size = 29x27
+WARNING: (tools/worldEditor/images/boxBrush_h) texture size = 29x27
+WARNING: (tools/worldEditor/images/boxBrush_d) texture size = 29x27
+WARNING: (tools/worldEditor/images/terrainpainter/new_layer_icon) texture size = 38x38
+GFXPCD3D9Device::reset - depthstencil 1a107e98 has 2 ref's
+--- Resetting D3D Device ---
+Time spent in toggleEditor() : 1.612 s
+Mapping string: SetEditorCameraPlayer to index: 3
+Mapping string: SetEditorCameraStandard to index: 4
+WARNING: (tools/worldEditor/images/toolbar/camera_n) texture size = 29x27
+WARNING: (tools/worldEditor/images/toolbar/camera_h) texture size = 29x27
+WARNING: (tools/worldEditor/images/toolbar/camera_d) texture size = 29x27
+*** Control Object Changed
+GFXPCD3D9Device::reset - depthstencil 274851f8 has 2 ref's
+--- Resetting D3D Device ---
+>>>>>>> origin/Omni
 WARNING: (art/gui/omni-logo) texture size = 439x300
 WARNING: (levels/Empty Terrain_preview) texture size = 400x300
 WARNING: (art/gui/previous-button_n) texture size = 11x81
@@ -303,7 +438,11 @@ WARNING: (art/gui/next-button_d) texture size = 11x81
 <input> (0): Cannot re-declare object [theLevelInfo].
 WARNING: (art/gui/background) texture size = 800x600
 *** ENDING MISSION
+<<<<<<< HEAD
 CDROP: 20019 
+=======
+CDROP: 20023 
+>>>>>>> origin/Omni
 Exporting server prefs...
 Exporting client prefs
 Exporting server prefs
