@@ -1,11 +1,282 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+﻿create object = new ObjectCreator()
+//new WinterLeaf.Engine.Classes.View.Creators.ObjectCreator()
+//new WinterLeaf.Engine.Classes.View.Creators.DatablockCreator(...)
+//SingletonCreator
+this["varname"] = value
 
-namespace LaughingDogStudios.Salvage.Logic
+public partial class ClassName
+	public override ...
+
+public int myVar
 {
-    class notes
-    {
-    }
+	get
+	{
+		return this["myVar"];
+	}
+	set
+	{
+		this["myVar"] = value;
+	}
 }
+
+Global Functoin
+
+[ConsoleInteraction(true)]
+public static ...
+
+public override bool OnFunctionNotFoundCallTorqueScript()
+{
+	return false;
+}
+
+
+Must have this at the top
+
+[TypeConverter(typeof(TypeConverterGeneric<MyClass>))]
+
+
+Must have the following
+
+
+#region AutoGen Operator Overrides
+
+		/// <summary>
+		/// 
+		/// </summary>
+		/// <param name="ts"></param>
+		/// <param name="simobjectid"></param>
+		/// <returns></returns>
+		public static bool operator ==(DemoPlayer ts, string simobjectid)
+		{
+			if (ReferenceEquals(ts, null))
+				return ReferenceEquals(simobjectid, null);
+			return ts.Equals(simobjectid);
+		}
+
+		/// <summary>
+		/// 
+		/// </summary>
+		/// <returns></returns>
+		public override int GetHashCode()
+		{
+			return base.GetHashCode();
+		}
+
+		/// <summary>
+		/// 
+		/// </summary>
+		/// <param name="obj"></param>
+		/// <returns></returns>
+		public override bool Equals(object obj)
+		{
+			return (this._ID == (string)myReflections.ChangeType(obj, typeof(string)));
+		}
+
+		/// <summary>
+		/// 
+		/// </summary>
+		/// <param name="ts"></param>
+		/// <param name="simobjectid"></param>
+		/// <returns></returns>
+		public static bool operator !=(DemoPlayer ts, string simobjectid)
+		{
+			if (ReferenceEquals(ts, null))
+				return !ReferenceEquals(simobjectid, null);
+			return !ts.Equals(simobjectid);
+		}
+
+		/// <summary>
+		/// 
+		/// </summary>
+		/// <param name="ts"></param>
+		/// <returns></returns>
+		public static implicit operator string(DemoPlayer ts)
+		{
+			if (ReferenceEquals(ts, null))
+				return "0";
+			return ts._ID;
+		}
+
+		/// <summary>
+		/// 
+		/// </summary>
+		/// <param name="ts"></param>
+		/// <returns></returns>
+		public static implicit operator DemoPlayer(string ts)
+		{
+			uint simobjectid = resolveobject(ts);
+			return (DemoPlayer)Omni.self.getSimObject(simobjectid, typeof(DemoPlayer));
+		}
+
+		/// <summary>
+		/// 
+		/// </summary>
+		/// <param name="ts"></param>
+		/// <returns></returns>
+		public static implicit operator int(DemoPlayer ts)
+		{
+			if (ReferenceEquals(ts, null))
+				return 0;
+			int i;
+			return int.TryParse(ts._ID, out i) ? i : 0;
+		}
+
+		/// <summary>
+		/// 
+		/// </summary>
+		/// <param name="simobjectid"></param>
+		/// <returns></returns>
+		public static implicit operator DemoPlayer(int simobjectid)
+		{
+			return (DemoPlayer)Omni.self.getSimObject((uint)simobjectid, typeof(DemoPlayer));
+		}
+
+		/// <summary>
+		/// 
+		/// </summary>
+		/// <param name="ts"></param>
+		/// <returns></returns>
+		public static implicit operator uint(DemoPlayer ts)
+		{
+			if (ReferenceEquals(ts, null))
+				return 0;
+			uint i;
+			return uint.TryParse(ts._ID, out i) ? i : 0;
+		}
+
+		/// <summary>
+		/// 
+		/// </summary>
+		/// <returns></returns>
+		public static implicit operator DemoPlayer(uint simobjectid)
+		{
+			return (DemoPlayer)Omni.self.getSimObject(simobjectid, typeof(DemoPlayer));
+		}
+
+		#endregion
+
+
+
+page 87-8???
+
+How does the model interact with the view here?
+When is an instance of the control created? Where are they linked?
+I don't get it! It's not explained
+
+//allows two static methods to have the same name
+[ConsoleInteraction(true, "alias")]
+
+
+For live scripts
+Override console
+
+<OverrideConfig Type ="MemberConsoleFunctionOverride">
+  <NameSpace>LaughingDogStudios.Salvage.Logic.Models.User.Extendable.Player</NameSpace>
+  <Files>
+    <FileName>Player\Player_Script.cs</FileName>
+  </Files>
+  <ClassName>Player_Script</ClassName>
+  <ReferencedAssemblies>
+    <Assembly>System.dll</Assembly>
+    <Assembly>Microsoft.CSharp.dll</Assembly>
+    <Assembly>System.Core.dll</Assembly>
+    <Assembly>System.Data.dll</Assembly>
+    <Assembly>System.Data.DataSetExtensions.dll</Assembly>
+    <Assembly>System.Xml.dll</Assembly>
+    <Assembly>System.Xml.Linq.dll</Assembly>
+    <Assembly>LaughingDogStudios.Salvage.Logic.dll</Assembly>
+    <Assembly>WinterLeaf.Engine.Omni.dll</Assembly>
+  </ReferencedAssemblies>
+  <FunctionOverrides>
+    <Function>playPain</Function>
+    <Function>playDeathCry</Function>
+    <function>DoSomethingcool</function>
+  </FunctionOverrides>
+</OverrideConfig>
+
+
+Add classes
+
+<OverrideConfig Type="Classes">
+  
+  <Files>
+    <FileName>NPC\CustomDemoPlayer.cs</FileName>
+    <FileName>NPC\NPCHelper.cs</FileName>
+  </Files>
+  <ReferencedAssemblies>
+    <Assembly>System.dll</Assembly>
+    <Assembly>Microsoft.CSharp.dll</Assembly>
+    <Assembly>System.Core.dll</Assembly>
+    <Assembly>System.Data.dll</Assembly>
+    <Assembly>System.Data.DataSetExtensions.dll</Assembly>
+    <Assembly>System.Xml.dll</Assembly>
+    <Assembly>System.Xml.Linq.dll</Assembly>
+    <Assembly>LaughingDogStudios.Salvage.Logic.dll</Assembly>
+    <Assembly>WinterLeaf.Engine.Omni.dll</Assembly>
+  </ReferencedAssemblies>
+</OverrideConfig>
+
+
+When making console methods that can be overwritten by live scripts, the first parameter of the method must be
+the class that is being overrided
+
+
+When adding a new player type via live scripts, how does the engine use it when it doesn't even know the type?
+
+page 87? Wtf
+
+
+
+game.cs
+-	main game, static
+-	game._gameBase == gameDM
+gameDM.cs
+-	implementation of game
+-	gameDM.EventManager
+
+missionLoad.cs
+-	load mission
+missionLoadDM.cs
+-	implementation of loading mission
+
+GameConnection.cs
+-important, has a variety of messages in it
+
+There are three steps to starting a mission
+
+Server init -> Mission Load Init -> Base Mission Load Init
+			-> Game Init -> Game DM Init -> Game Base Init
+			-> Spawn Init
+
+4. The game is initialized - this is run by the server
+----------------------------------------
+1. The game is created
+2. The mission is loaded
+3. The game is started
+4. Initialize Game Variables - this is run by startGame
+
+
+
+How to code a timer: (should start timer variable initialization)
+
+	schedule("ms", "function");
+
+
+
+Code specific to a mission is run in objects placed by the World Editor during onAdd. There are two primary
+phases.
+
+-onAdd
+-onInitializeVariables
+
+The second phase will run things like timers or Windows Forms. The second phase should also play sounds. Currently T3D plays sounds
+too early.
+
+Events should be registered to after all objects are added to the scene. Events should be created when an object is added to a scene.
+This means register to events during the initialization of game variables.
+
+Objects do not necessarily have to be placed in a mission. Every mission has a unique string name. This is known because of missionLoad.cs.
+Events are indexed by strings. As such, rather than placing an object into each mission, an event can be created for each mission. It is
+still preferable to place an object for each mission to run mission load events. Only 1 object should ever be placed into a mission for the
+sole purpose of running scripts. This can actually be the level info object, as it has the level information and should know the mission name.
+Actually, the object that runs the code can't be client side.

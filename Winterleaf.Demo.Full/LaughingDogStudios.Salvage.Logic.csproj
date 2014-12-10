@@ -1037,6 +1037,7 @@
     <Compile Include="Models.User\GameCode\Server\Camera\Observer.cs" />
     <Compile Include="Models.User\GameCode\Server\centerPrint.cs" />
     <Compile Include="Models.User\GameCode\Server\commands.cs" />
+    <Compile Include="Models.User\GameCode\Server\Data\RandomData.cs" />
     <Compile Include="Models.User\GameCode\Server\game.cs" />
     <Compile Include="Models.User\GameCode\Server\GameConnection.cs" />
     <Compile Include="Models.User\GameCode\Server\GameConnectionDM.cs" />
@@ -1360,7 +1361,9 @@
       <Name>Winterleaf.Engine</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Content Include="notes.txt" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

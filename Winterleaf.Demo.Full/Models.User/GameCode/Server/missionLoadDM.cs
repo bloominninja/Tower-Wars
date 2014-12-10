@@ -37,13 +37,13 @@ using LaughingDogStudios.Salvage.Logic.Models.User.GameCode.Server.Game;
 
 namespace LaughingDogStudios.Salvage.Logic.Models.User.GameCode.Server
 {
-    internal class missionLoadDM : missionLoadBase
-    {
-        //Override any functions you want for this type of mission.
-        public override void loadMission(string missionName, bool isFirstMission)
-        {
-            base.loadMission(missionName, isFirstMission);
-            console.print("### LOAD MISSION###");
-        }
-    }
+	internal class missionLoadDM : missionLoadBase
+	{
+		//Override any functions you want for this type of mission.
+		public override void loadMission(string missionName, bool isFirstMission)
+		{
+			base.loadMission(missionName, isFirstMission);
+			console.print("### LOAD MISSION###");
+		}
+	}
 }

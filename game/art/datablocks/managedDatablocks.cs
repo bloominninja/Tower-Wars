@@ -22,3 +22,10 @@
 
 // This is the default save location for any Datablocks created in the
 // Datablock Editor (this script is executed from onServerCreated())
+
+datablock TriggerData(RandomData)
+{
+   WLE_OVERRIDE_PROXY_CLASSTYPE = "LaughingDogStudios.Salvage.Logic.Models.User.GameCode.Server.Data.RandomData";
+   class = "RandomData";
+   Enabled = "1";
+};

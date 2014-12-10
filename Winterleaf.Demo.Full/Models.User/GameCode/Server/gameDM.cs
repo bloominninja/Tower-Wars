@@ -41,52 +41,66 @@ using WinterLeaf.Engine.Classes.Interopt;
 
 namespace LaughingDogStudios.Salvage.Logic.Models.User.GameCode.Server
 {
-    internal class gameDM : gameBase
-    {
-        public static pInvokes omni = new pInvokes();
+	internal class gameDM : gameBase
+	{
+		public static pInvokes omni = new pInvokes();
 
-        //To extend the base game functionality override the functions here.
-        public override void onMissionLoaded()
-        {
-            base.onMissionLoaded();
-            console.print("##Mission Loaded###");
-        }
+		public static class Event
+		{
+			public const string initGameVars = "initGameVars";
 
-        public override void startGame()
-        {
-            base.startGame();
-            console.print("###Game Started###");
-        }
+			public static string ToString() { return "event"; }
+		} //Event
 
-        [ConsoleInteraction(true)]
-        public static void sendMsgClientKilled_Impact(string msgtype, GameConnection client, GameConnection sourceclient, string damloc)
-        {
-            if (client.isObject())
+		//To extend the base game functionality override the functions here.
+		public override void onMissionLoaded()
+		{
+			base.onMissionLoaded();
+			console.print("##Mission Loaded###");
+		}
 
-                message.MessageAll(msgtype, "%1 fell to his death!", client["playerName"]);
-            // console.GetVarString(string.Format("{0}.playerName", client)));
-        }
+		public override void startGame()
+		{
+			base.startGame();
+			console.print("###Game Started###");
+		}
 
-        [ConsoleInteraction(true)]
-        public static void sendMsgClientKilled_Suicide(string msgtype, GameConnection client, GameConnection sourceclient, string damloc)
-        {
-            if (client.isObject())
+		public override ScriptObject createGame()
+		{
+			EventManager.EventManager_registerEvent(Event.ToString(), Event.initGameVars);
+			return base.createGame();
+		}
 
-                message.MessageAll(msgtype, "%1 takes his own life!", client["playerName"]);
-        }
+		public override void endGame()
+		{
+			base.endGame();
+		}
 
-        [ConsoleInteraction(true)]
-        public static void sendMsgClientKilled_Default(string msgtype, GameConnection client, GameConnection sourceclient, string damloc)
-        {
-            if (!client.isObject())
-                return;
-            if (sourceclient == client)
-                sendMsgClientKilled_Suicide(msgtype, client, sourceclient, damloc);
+		public override void initGame()
+		{
+			base.initGame();
+		}
 
-            else if (omni.console.GetVarString(sourceclient["team"]) != string.Empty && sourceclient["team"] != client["team"])
-                message.MessageAll(msgtype, "%1 killed by %2 - friendly fire!", client["playerName"], sourceclient["playerName"]);
-            else
-                message.MessageAll(msgtype, "%1 gets nailed by %2!", client["playerName"], sourceclient.isObject() ? sourceclient["playerName"] : "a Bot!");
-        }
-    }
+		public override void initGameVars()
+		{
+			base.initGameVars();
+
+			EventManager.EventManager_postEvent(Event.ToString(), Event.initGameVars);
+		}
+		/*
+		[ConsoleInteraction(true)]
+		public static void sendMsgClientKilled_Default(string msgtype, GameConnection client, GameConnection sourceclient, string damloc)
+		{
+			if (!client.isObject())
+				return;
+			if (sourceclient == client)
+				sendMsgClientKilled_Suicide(msgtype, client, sourceclient, damloc);
+
+			else if (omni.console.GetVarString(sourceclient["team"]) != string.Empty && sourceclient["team"] != client["team"])
+				message.MessageAll(msgtype, "%1 killed by %2 - friendly fire!", client["playerName"], sourceclient["playerName"]);
+			else
+				message.MessageAll(msgtype, "%1 gets nailed by %2!", client["playerName"], sourceclient.isObject() ? sourceclient["playerName"] : "a Bot!");
+		}
+		 */
+	}
 }

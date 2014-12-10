@@ -34,9 +34,11 @@ namespace LaughingDogStudios.Salvage.Executable
 				//If you don't do this, you can't pass the mouse and key strokes, w/out the mouse and keystrokes
 				//being redirected the application will hang intermittently.
 #if DEBUG
+				omni.Initialize(new[] { "" }, "Salvage", "LaughingDogStudios.Salvage.Logic.dll", "LaughingDogStudios.Salvage.Logic", "csScripts");
+				/*
 				omni.Initialize(MessageBox.Show("Dedicated", "Dedicated", MessageBoxButtons.YesNo) == DialogResult.Yes ?
 					new[] { "-dedicated", "-mission", @"levels/Empty_Terrain.mis" } :
-					new[] { "" }, "Salvage_DEBUG", "LaughingDogStudios.Salvage.Logic.dll", "LaughingDogStudios.Salvage.Logic", "csScripts");
+					new[] { "" }, "Salvage_DEBUG", "LaughingDogStudios.Salvage.Logic.dll", "LaughingDogStudios.Salvage.Logic", "csScripts");*/
 #else
 				/*
             omni.Initialize(MessageBox.Show("Dedicated", "Dedicated", MessageBoxButtons.YesNo) == DialogResult.Yes ?

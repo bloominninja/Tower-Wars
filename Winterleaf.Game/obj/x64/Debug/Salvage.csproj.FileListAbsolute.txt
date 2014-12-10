@@ -1,1 +1,10 @@
 C:\Users\Bob\Documents\GitHub\Tower-Wars\game\Salvage.exe.config
+C:\Users\nes\Source\Repos\OmniEngine.Net\My Projects\Salvage\game\Omni.ico
+C:\Users\nes\Source\Repos\OmniEngine.Net\My Projects\Salvage\game\Salvage.exe.config
+C:\Users\nes\Source\Repos\OmniEngine.Net\My Projects\Salvage\game\Salvage.exe
+C:\Users\nes\Source\Repos\OmniEngine.Net\My Projects\Salvage\game\Salvage.pdb
+C:\Users\nes\Source\Repos\OmniEngine.Net\My Projects\Salvage\Winterleaf.Game\obj\x64\Debug\Salvage.csprojResolveAssemblyReference.cache
+C:\Users\nes\Source\Repos\OmniEngine.Net\My Projects\Salvage\Winterleaf.Game\obj\x64\Debug\LaughingDogStudios.Salvage.Executable.Properties.Resources.resources
+C:\Users\nes\Source\Repos\OmniEngine.Net\My Projects\Salvage\Winterleaf.Game\obj\x64\Debug\Salvage.csproj.GenerateResource.Cache
+C:\Users\nes\Source\Repos\OmniEngine.Net\My Projects\Salvage\Winterleaf.Game\obj\x64\Debug\Salvage.exe
+C:\Users\nes\Source\Repos\OmniEngine.Net\My Projects\Salvage\Winterleaf.Game\obj\x64\Debug\Salvage.pdb

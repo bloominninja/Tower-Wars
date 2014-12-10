@@ -41,11 +41,11 @@ using LaughingDogStudios.Salvage.Logic.Models.Base;
 
 namespace LaughingDogStudios.Salvage.Logic.Models.User.Extendable
 {
-    public partial class ScriptObject : ScriptObject_Base
-    {
-        //internal override void onAdd(string ID)
-        //{
+	public partial class ScriptObject : ScriptObject_Base
+	{
+		//internal override void onAdd(string ID)
+		//{
 
-        //}
-    }
+		//}
+	}
 }
