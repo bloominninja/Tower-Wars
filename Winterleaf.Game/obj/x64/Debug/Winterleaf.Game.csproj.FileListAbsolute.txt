@@ -1,2 +1,0 @@
-C:\Users\nes\Source\Repos\OmniEngine.Net\My Projects\Salvage\game\Winterleaf.Game.exe.config
-C:\Users\nes\Source\Repos\OmniEngine.Net\My Projects\Salvage\game\Salvage.exe.config
