@@ -30,3 +30,5 @@ Winterleaf.Engine.Omni/bin/Debug/DotNetTorque.XML
 Winterleaf.Game/obj/x64/Debug/Salvage.csproj.FileListAbsolute.txt
 procedural
 Winterleaf.Game/obj/x64/Debug/Salvage.csproj.FileListAbsolute.txt
+game/prefs.client.cs
+game/tools/settings.xml
