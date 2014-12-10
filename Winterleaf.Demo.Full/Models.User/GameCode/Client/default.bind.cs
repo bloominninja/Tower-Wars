@@ -298,7 +298,7 @@ namespace LaughingDogStudios.Salvage.Logic.Models.User.GameCode.Client
         {
             //console.SetVar("$mvForwardAction", val.AsInt() * movementSpeed);
             
-            omni.iGlobal["$mvForwardAction"] = val*movementSpeed;
+            //omni.iGlobal["$mvForwardAction"] = val*movementSpeed;
         }
 
         [ConsoleInteraction(true)]
@@ -396,12 +396,16 @@ namespace LaughingDogStudios.Salvage.Logic.Models.User.GameCode.Client
         public static void yaw(float val)
         {
             float yawAdj = getMouseAdjustAmount(val);
-            if (((GameConnection) "ServerConnection").isControlObjectRotDampedCamera())
-                {
-                yawAdj = omni.Util.mClamp(yawAdj, (-omni.Util.m2Pi() + (float) 0.01), (omni.Util.m2Pi() - (float) 0.01));
-                yawAdj *= (float) 0.5;
-                }
-            omni.fGlobal["$mvYaw"] = omni.fGlobal["$mvYaw"] + yawAdj;
+           // if (((GameConnection) "ServerConnection").isControlObjectRotDampedCamera())
+              ///  {
+          //      yawAdj = omni.Util.mClamp(yawAdj, (-omni.Util.m2Pi() + (float) 0.01), (omni.Util.m2Pi() - (float) 0.01));
+          //      yawAdj *= (float) 0.5;
+          //      }
+           // omni.fGlobal["$mvYaw"] = omni.fGlobal["$mvYaw"] + yawAdj;
+            omni.console.print("no");
+            omni.console.commandToServer("Nudge");
+            omni.dGlobal["$mvForwardAction"] = 1;
+
             //console.SetVar("$mvYaw", console.GetVarFloat("$mvYaw") + yawAdj);
         }
 

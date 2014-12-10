@@ -353,7 +353,10 @@ namespace LaughingDogStudios.Salvage.Logic.Models.User.GameCode.Server
         public static void serverCmdNudge(GameConnection client)
         {
             Extendable.Camera camera = client["camera"];
-            camera.setVelocity(new Point3F("1 0 0"));
+            camera.setEditable();
+
+            camera.position.X = (float)5;
+            omni.console.print((camera.position.X).AsString());
         }
 
 
