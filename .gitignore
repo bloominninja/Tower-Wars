@@ -1,8 +1,8 @@
-#game/art/**/*
-#game/levels/**/*
-#game/core/**/*
-#game/tools/**/*
-#game/web/**/*
+game/art/**/*
+game/levels/**/*
+game/core/**/*
+game/tools/**/*
+game/web/**/*
 game/shaders/procedural/*
 Winterleaf.Demo.Full/bin/**/*
 Winterleaf.Demo.Full/obj/**/*
