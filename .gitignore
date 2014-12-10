@@ -1,12 +1,12 @@
 game/art/**/*
 game/levels/**/*
 game/shaders/procedural/*
-C:\Users\nes\Source\Repos\OmniEngine.Net\My Projects\Salvage\Winterleaf.Demo.Full/bin/**/*
-C:\Users\nes\Source\Repos\OmniEngine.Net\My Projects\Salvage\Winterleaf.Demo.Full/obj/**/*
-C:\Users\nes\Source\Repos\OmniEngine.Net\My Projects\Salvage\Winterleaf.Engine.Omni/bin/**/*
-C:\Users\nes\Source\Repos\OmniEngine.Net\My Projects\Salvage\Winterleaf.Engine.Omni/obj/**/*
-C:\Users\nes\Source\Repos\OmniEngine.Net\My Projects\Salvage\Winterleaf.Game/bin/**/*
-C:\Users\nes\Source\Repos\OmniEngine.Net\My Projects\Salvage\Winterleaf.Game/obj/**/*
+Winterleaf.Demo.Full/bin/**/*
+Winterleaf.Demo.Full/obj/**/*
+Winterleaf.Engine.Omni/bin/**/*
+Winterleaf.Engine.Omni/obj/**/*
+Winterleaf.Game/bin/**/*
+Winterleaf.Game/obj/**/*
 buildFiles/Link/**/*
 *.bak
 *.tmp
@@ -18,15 +18,5 @@ buildFiles/Link/**/*
 *.cache
 *.Cache
 *log*
-Winterleaf.Game/obj/x64/Debug/Salvage.csproj.FileListAbsolute.txt
-Winterleaf.Game/obj/x64/Debug/Salvage.csproj.FileListAbsolute.txt
-Winterleaf.Game/obj/x64/Debug/LaughingDogStudios.Salvage.Executable.Properties.Resources.resources
-Winterleaf.Engine.Omni/obj/x64/Debug/WinterLeaf.Engine.Properties.Resources.resources
-Winterleaf.Engine.Omni/obj/x64/Debug/Winterleaf.Engine.csproj.FileListAbsolute.txt
-Winterleaf.Engine.Omni/bin/x64/Debug/DotNetTorque.XML
-Winterleaf.Engine.Omni/bin/Debug/DotNetTorque.XML
-Winterleaf.Game/obj/x64/Debug/Salvage.csproj.FileListAbsolute.txt
-procedural
-Winterleaf.Game/obj/x64/Debug/Salvage.csproj.FileListAbsolute.txt
 game/prefs.client.cs
 game/tools/settings.xml
