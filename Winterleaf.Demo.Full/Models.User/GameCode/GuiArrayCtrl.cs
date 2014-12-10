@@ -45,6 +45,9 @@ namespace LaughingDogStudios.Salvage.Logic.Models.User.Extendable
 	{
 		public override void onSelect(string x, string y)
 		{
+			//new WinterLeaf.Engine.Classes.View.Creators.ObjectCreator()
+			//new WinterLeaf.Engine.Classes.View.Creators.DatablockCreator(...)
+			//SingletonCreator
 			this.callScript("onSelect", new string[] { x });
 		}
 	}

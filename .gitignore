@@ -13,3 +13,10 @@ game/art/**/*.jpg
 game/art/**/*.dds
 *.log
 game/art/*.decals
+*.log
+*.exe
+*.dll
+*.pdb
+*.cache
+*.Cache
+Winterleaf.Demo.Full/obj/x64/Release/DesignTimeResolveAssemblyReferencesInput.cache

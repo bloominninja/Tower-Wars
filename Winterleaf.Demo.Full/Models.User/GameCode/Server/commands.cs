@@ -49,445 +49,445 @@ using WinterLeaf.Engine.Enums;
 
 namespace LaughingDogStudios.Salvage.Logic.Models.User.GameCode.Server
 {
-    public class commands
-    {
-        private static readonly pInvokes omni = new pInvokes();
-        //-----------------------------------------------------------------------------
-        // Misc. server commands avialable to clients
-        //-----------------------------------------------------------------------------
+	public class commands
+	{
+		private static readonly pInvokes omni = new pInvokes();
+		//-----------------------------------------------------------------------------
+		// Misc. server commands avialable to clients
+		//-----------------------------------------------------------------------------
 
-        //----------------------------------------------------------------------------
-        // Debug commands
-        //----------------------------------------------------------------------------
+		//----------------------------------------------------------------------------
+		// Debug commands
+		//----------------------------------------------------------------------------
 
-        public static void syncEditorGui()
-        {
-            EditorGui EditorGui = "EditorGui";
-            if (EditorGui.isObject())
-                //omni.console.Call("EditorGui", "syncCameraGui");
-                EditorGui.syncCameraGui();
-        }
+		public static void syncEditorGui()
+		{
+			EditorGui EditorGui = "EditorGui";
+			if (EditorGui.isObject())
+				//omni.console.Call("EditorGui", "syncCameraGui");
+				EditorGui.syncCameraGui();
+		}
 
-        [ConsoleInteraction(true)]
-        public static void serverCmdNetSimulateLag(GameConnection client, int msDelay, float packetLossPercent)
-        {
-            if (client["isAdmin"].AsBool())
-                client.setSimulatedNetParams((packetLossPercent/100.0f), msDelay);
-        }
+		[ConsoleInteraction(true)]
+		public static void serverCmdNetSimulateLag(GameConnection client, int msDelay, float packetLossPercent)
+		{
+			if (client["isAdmin"].AsBool())
+				client.setSimulatedNetParams((packetLossPercent / 100.0f), msDelay);
+		}
 
-        //----------------------------------------------------------------------------
-        // Camera commands
-        //----------------------------------------------------------------------------
-        
-        [ConsoleInteraction(true)]
-        public static void serverCmdTogglePathCamera(GameConnection client, bool val)
-        {
-            string control = val ? client["PathCamera"] : client["camera"];
+		//----------------------------------------------------------------------------
+		// Camera commands
+		//----------------------------------------------------------------------------
 
-            client.setControlObject(control);
+		[ConsoleInteraction(true)]
+		public static void serverCmdTogglePathCamera(GameConnection client, bool val)
+		{
+			string control = val ? client["PathCamera"] : client["camera"];
 
-            syncEditorGui();
-        }
+			client.setControlObject(control);
 
-        [ConsoleInteraction(true)]
-        public static void serverCmdToggleCamera(GameConnection client)
-        {
-            string control;
-            if (client.getControlObject() == client["player"])
-                {
-                ((Extendable.Camera) client["camera"]).setVelocity(new Point3F("0 0 0"));
-                control = client["camera"];
-                }
-            else
-                {
-                ((Player) client["player"]).setVelocity(new Point3F("0 0 0"));
-                control = client["player"];
-                }
-            client.setControlObject(control);
+			syncEditorGui();
+		}
 
-            syncEditorGui();
-        }
+		[ConsoleInteraction(true)]
+		public static void serverCmdToggleCamera(GameConnection client)
+		{
+			string control;
+			if (client.getControlObject() == client["player"])
+			{
+				((Extendable.Camera)client["camera"]).setVelocity(new Point3F("0 0 0"));
+				control = client["camera"];
+			}
+			else
+			{
+				((Player)client["player"]).setVelocity(new Point3F("0 0 0"));
+				control = client["player"];
+			}
+			client.setControlObject(control);
 
-        [ConsoleInteraction(true)]
-        public static void serverCmdSetEditorCameraPlayer(GameConnection client)
-        {
-            ((Player) client["player"]).setVelocity(new Point3F("0 0 0"));
-            client.setControlObject(client["player"]);
-            client.setFirstPerson(true);
-            omni.bGlobal["$isFirstPersonVar"] = true;
-            syncEditorGui();
-        }
+			syncEditorGui();
+		}
 
-        [ConsoleInteraction(true)]
-        public static void serverCmdSetEditorCameraPlayerThird(GameConnection client)
-        {
-            ((Player) client["player"]).setVelocity(new Point3F("0 0 0"));
-            client.setControlObject(client["player"]);
-            client.setFirstPerson(false);
-            omni.bGlobal["$isFirstPersonVar"] = false;
-            syncEditorGui();
-        }
+		[ConsoleInteraction(true)]
+		public static void serverCmdSetEditorCameraPlayer(GameConnection client)
+		{
+			((Player)client["player"]).setVelocity(new Point3F("0 0 0"));
+			client.setControlObject(client["player"]);
+			client.setFirstPerson(true);
+			omni.bGlobal["$isFirstPersonVar"] = true;
+			syncEditorGui();
+		}
 
-        [ConsoleInteraction(true)]
-        public static void serverCmdDropPlayerAtCamera(GameConnection client)
-        {
-            // If the player is mounted to something (like a vehicle) drop that at the
-            // camera instead. The player will remain mounted.
-            Player player = client["player"];
-            ShapeBase obj = null;
+		[ConsoleInteraction(true)]
+		public static void serverCmdSetEditorCameraPlayerThird(GameConnection client)
+		{
+			((Player)client["player"]).setVelocity(new Point3F("0 0 0"));
+			client.setControlObject(client["player"]);
+			client.setFirstPerson(false);
+			omni.bGlobal["$isFirstPersonVar"] = false;
+			syncEditorGui();
+		}
 
-            obj = player.getObjectMount();
-            if (!omni.console.isObject(obj))
-                obj = client["player"];
+		[ConsoleInteraction(true)]
+		public static void serverCmdDropPlayerAtCamera(GameConnection client)
+		{
+			// If the player is mounted to something (like a vehicle) drop that at the
+			// camera instead. The player will remain mounted.
+			Player player = client["player"];
+			ShapeBase obj = null;
 
-            obj.setTransform(((Extendable.Camera) client["Camera"]).getTransform());
-            obj.setVelocity(new Point3F("0 0 0"));
-            client.setControlObject(player);
-            syncEditorGui();
-        }
+			obj = player.getObjectMount();
+			if (!omni.console.isObject(obj))
+				obj = client["player"];
 
-        [ConsoleInteraction(true)]
-        public static void serverCmdDropCameraAtPlayer(GameConnection client)
-        {
-            Player player = client["player"];
-            ((Extendable.Camera) client["camera"]).setTransform(player.getEyeTransform());
-            ((Extendable.Camera) client["camera"]).setVelocity(new Point3F("0 0 0"));
-            client.setControlObject(client["camera"]);
-            syncEditorGui();
-        }
+			obj.setTransform(((Extendable.Camera)client["Camera"]).getTransform());
+			obj.setVelocity(new Point3F("0 0 0"));
+			client.setControlObject(player);
+			syncEditorGui();
+		}
 
-        [ConsoleInteraction(true)]
-        public static void serverCmdCycleCameraFlyType(GameConnection client)
-        {
-            Extendable.Camera camera = client["camera"];
-            if (camera.getMode() != TypeCameraMotionMode.Fly)
-                return;
-            if (camera["newtonMode"].AsBool() == false)
-                {
-                camera["newtonMode"] = true.AsString();
-                camera["newtonRotation"] = false.AsString();
-                camera.setVelocity(new Point3F("0 0 0"));
-                }
-            else if (camera["newtonRotation"].AsBool() == false)
-                {
-                camera["newtonMode"] = true.AsString();
-                camera["newtonRotation"] = true.AsString();
-                camera.setAngularVelocity(new Point3F("0 0 0"));
-                }
-            else
-                {
-                camera["newtonMode"] = false.AsString();
-                camera["newtonRotation"] = false.AsString();
-                }
-            client.setControlObject(camera);
-            syncEditorGui();
-        }
+		[ConsoleInteraction(true)]
+		public static void serverCmdDropCameraAtPlayer(GameConnection client)
+		{
+			Player player = client["player"];
+			((Extendable.Camera)client["camera"]).setTransform(player.getEyeTransform());
+			((Extendable.Camera)client["camera"]).setVelocity(new Point3F("0 0 0"));
+			client.setControlObject(client["camera"]);
+			syncEditorGui();
+		}
 
-        [ConsoleInteraction(true)]
-        public static void serverCmdSetEditorCameraStandard(GameConnection client)
-        {
-            Extendable.Camera camera = client["camera"];
-            camera.setFlyMode();
-            camera["newtonMode"] = false.AsString();
-            camera["newtonRotation"] = false.AsString();
-            client.setControlObject(camera);
-            syncEditorGui();
-        }
+		[ConsoleInteraction(true)]
+		public static void serverCmdCycleCameraFlyType(GameConnection client)
+		{
+			Extendable.Camera camera = client["camera"];
+			if (camera.getMode() != TypeCameraMotionMode.Fly)
+				return;
+			if (camera["newtonMode"].AsBool() == false)
+			{
+				camera["newtonMode"] = true.AsString();
+				camera["newtonRotation"] = false.AsString();
+				camera.setVelocity(new Point3F("0 0 0"));
+			}
+			else if (camera["newtonRotation"].AsBool() == false)
+			{
+				camera["newtonMode"] = true.AsString();
+				camera["newtonRotation"] = true.AsString();
+				camera.setAngularVelocity(new Point3F("0 0 0"));
+			}
+			else
+			{
+				camera["newtonMode"] = false.AsString();
+				camera["newtonRotation"] = false.AsString();
+			}
+			client.setControlObject(camera);
+			syncEditorGui();
+		}
 
-        [ConsoleInteraction(true)]
-        public static void serverCmdSetEditorCameraNewton(GameConnection client)
-        {
-            Extendable.Camera camera = client["camera"];
-            camera.setFlyMode();
-            camera["newtonMode"] = true.AsString();
-            camera["newtonRotation"] = false.AsString();
-            camera.setVelocity(new Point3F("0 0 0"));
-            client.setControlObject(camera);
-            syncEditorGui();
-        }
+		[ConsoleInteraction(true)]
+		public static void serverCmdSetEditorCameraStandard(GameConnection client)
+		{
+			Extendable.Camera camera = client["camera"];
+			camera.setFlyMode();
+			camera["newtonMode"] = false.AsString();
+			camera["newtonRotation"] = false.AsString();
+			client.setControlObject(camera);
+			syncEditorGui();
+		}
 
-        [ConsoleInteraction(true)]
-        public static void serverCmdSetEditorCameraNewtonDamped(GameConnection client)
-        {
-            Extendable.Camera camera = client["camera"];
-            camera.setFlyMode();
-            camera["newtonMode"] = true.AsString();
-            camera["newtonRotation"] = true.AsString();
-            camera.setAngularVelocity(new Point3F("0 0 0"));
-            client.setControlObject(camera);
-            syncEditorGui();
-        }
+		[ConsoleInteraction(true)]
+		public static void serverCmdSetEditorCameraNewton(GameConnection client)
+		{
+			Extendable.Camera camera = client["camera"];
+			camera.setFlyMode();
+			camera["newtonMode"] = true.AsString();
+			camera["newtonRotation"] = false.AsString();
+			camera.setVelocity(new Point3F("0 0 0"));
+			client.setControlObject(camera);
+			syncEditorGui();
+		}
 
-        [ConsoleInteraction(true)]
-        public static void serverCmdSetEditorOrbitCamera(GameConnection client)
-        {
-            Extendable.Camera camera = client["camera"];
-            camera.setEditOrbitMode();
-            client.setControlObject(camera);
-            syncEditorGui();
-        }
+		[ConsoleInteraction(true)]
+		public static void serverCmdSetEditorCameraNewtonDamped(GameConnection client)
+		{
+			Extendable.Camera camera = client["camera"];
+			camera.setFlyMode();
+			camera["newtonMode"] = true.AsString();
+			camera["newtonRotation"] = true.AsString();
+			camera.setAngularVelocity(new Point3F("0 0 0"));
+			client.setControlObject(camera);
+			syncEditorGui();
+		}
 
-        [ConsoleInteraction(true)]
-        public static void serverCmdSetEditorFlyCamera(GameConnection client)
-        {
-            Extendable.Camera camera = client["camera"];
-            camera.setFlyMode();
-            client.setControlObject(camera);
-            syncEditorGui();
-        }
+		[ConsoleInteraction(true)]
+		public static void serverCmdSetEditorOrbitCamera(GameConnection client)
+		{
+			Extendable.Camera camera = client["camera"];
+			camera.setEditOrbitMode();
+			client.setControlObject(camera);
+			syncEditorGui();
+		}
 
-        [ConsoleInteraction(true)]
-        public static void serverCmdEditorOrbitCameraSelectChange(GameConnection client, int size, Point3F center)
-        {
-            Extendable.Camera camera = client["camera"];
-            if (size > 0)
-                {
-                camera.setValidEditOrbitPoint(true);
-                camera.setEditOrbitPoint(center);
-                }
-            else
-                camera.setValidEditOrbitPoint(false);
-        }
+		[ConsoleInteraction(true)]
+		public static void serverCmdSetEditorFlyCamera(GameConnection client)
+		{
+			Extendable.Camera camera = client["camera"];
+			camera.setFlyMode();
+			client.setControlObject(camera);
+			syncEditorGui();
+		}
 
-        [ConsoleInteraction(true)]
-        public static void serverCmdEditorCameraAutoFit(GameConnection client, float radius)
-        {
-            Extendable.Camera camera = client["camera"];
-            camera.autoFitRadius(radius);
-            client.setControlObject(camera);
-            syncEditorGui();
-        }
-        [ConsoleInteraction(true)]
-        public static void serverCmdorbitCam(GameConnection client)
-        {
-           Extendable.Camera camera = client["camera"];
-           //Player player = client["player"];
-           camera.setOrbitObject(client["player"], (new Point3F(".33 0 0")), 1, 5, 5);
-           camera.controlMode = "OrbitObject";
-           //the=camera.getPosition();
+		[ConsoleInteraction(true)]
+		public static void serverCmdEditorOrbitCameraSelectChange(GameConnection client, int size, Point3F center)
+		{
+			Extendable.Camera camera = client["camera"];
+			if (size > 0)
+			{
+				camera.setValidEditOrbitPoint(true);
+				camera.setEditOrbitPoint(center);
+			}
+			else
+				camera.setValidEditOrbitPoint(false);
+		}
 
-        //   %client.camera.camDist = 5.5;
-        //   %client.camera.controlMode = "OrbitObject";
-        }
-       [ConsoleInteraction(true)]
-        public static void serverCmdoverheadCam(GameConnection client)
-        {
-            Extendable.Camera camera = client["camera"];
-            pInvokes U=new pInvokes();
-            Point3F beta= new Point3F("0 0 0");
-            Player player = client["player"];
-            
+		[ConsoleInteraction(true)]
+		public static void serverCmdEditorCameraAutoFit(GameConnection client, float radius)
+		{
+			Extendable.Camera camera = client["camera"];
+			camera.autoFitRadius(radius);
+			client.setControlObject(camera);
+			syncEditorGui();
+		}
+		[ConsoleInteraction(true)]
+		public static void serverCmdorbitCam(GameConnection client)
+		{
+			Extendable.Camera camera = client["camera"];
+			//Player player = client["player"];
+			camera.setOrbitObject(client["player"], (new Point3F(".33 0 0")), 1, 5, 5);
+			camera.controlMode = "OrbitObject";
+			//the=camera.getPosition();
 
-            //player=new Player;
-            beta=U.Util.VectorAdd(player.getPosition(),(new Point3F("0 0 0")));
-            camera.position.X = beta.x;
-            camera.position.Y = beta.y;
-            camera.position.Z = beta.z;
-            camera.lookAt(player.getPosition());
-            camera.controlMode = "Overhead";
-        }
-        [ConsoleInteraction(true)]
-        public static void serverCmdtoggleCamMode(GameConnection client)
-        {
-            Extendable.Camera camera = client["camera"];
-            pInvokes U = new pInvokes();
-            Point3F beta = new Point3F("0 0 0");
-            Player player = client["player"];
-
-            if (camera.controlMode.AsString() == "Overhead")
-            {
-                //Player player = client["player"];
-                camera.setOrbitObject(player, (new Point3F(".33 0 0")), 1, 5, 5);
-                camera.controlMode = "OrbitObject";
-            }
-            else if(camera.controlMode.AsString() == "OrbitObject")
-            {
-                beta = U.Util.VectorAdd(player.getPosition(), (new Point3F("0 0 0")));
-                camera.position.X = beta.x;
-                camera.position.Y = beta.y;
-                camera.position.Z = beta.z;
-                camera.lookAt(player.getPosition());
-                camera.controlMode = "Overhead";
-            }
-        }
-        [ConsoleInteraction(true)]
-        public static void serverCmdadjustCamera(GameConnection client, int adjustment)
-        {
-            Extendable.Camera camera = client["camera"];
-            Player player = client["player"];
-            pInvokes U = new pInvokes();
-            Point3F beta = new Point3F("0 0 0");
-            double num;
-            if (camera.controlMode.AsString() == "OrbitObject")
-            {
-                if (adjustment == 1)
-                {
-                    num = (camera.getPosition()).z + 0.5;
-                }
-                else
-                {
-                    num = (camera.getPosition()).z - 0.5;
-                }
-                if (num < 0.5)
-                {
-                    num = 0;
-                }
-                if (num > 15.0)
-                {
-                    num = 15.0;
-                }
-
-                camera.setOrbitObject(client["player"], camera.getRotation(), 1, (float)num, (float)num);
-                camera.position.Z = (float)num;
-            }
-            if (camera.controlMode.AsString() == "Overhead")
-            {
-                beta = U.Util.VectorAdd(player.getPosition(), (new Point3F("0 0 adjustment")));
-                camera.position.X = beta.x;
-                camera.position.Y = beta.y;
-                camera.position.Z = beta.z;
-            }
-        }
-
-        [ConsoleInteraction(true)]
-        public static void serverCmdNudge(GameConnection client)
-        {
-            Extendable.Camera camera = client["camera"];
-            camera.setEditable();
-
-            camera.position.X = camera.position.X + (float)5;
-            omni.console.print((camera.position.X).AsString());
-            omni.console.print((camera.getMode()).AsString());
-        }
+			//   %client.camera.camDist = 5.5;
+			//   %client.camera.controlMode = "OrbitObject";
+		}
+		[ConsoleInteraction(true)]
+		public static void serverCmdoverheadCam(GameConnection client)
+		{
+			Extendable.Camera camera = client["camera"];
+			pInvokes U = new pInvokes();
+			Point3F beta = new Point3F("0 0 0");
+			Player player = client["player"];
 
 
-        //----------------------------------------------------------------------------
-        // Server admin
-        //----------------------------------------------------------------------------
+			//player=new Player;
+			beta = U.Util.VectorAdd(player.getPosition(), (new Point3F("0 0 0")));
+			camera.position.X = beta.x;
+			camera.position.Y = beta.y;
+			camera.position.Z = beta.z;
+			camera.lookAt(player.getPosition());
+			camera.controlMode = "Overhead";
+		}
+		[ConsoleInteraction(true)]
+		public static void serverCmdtoggleCamMode(GameConnection client)
+		{
+			Extendable.Camera camera = client["camera"];
+			pInvokes U = new pInvokes();
+			Point3F beta = new Point3F("0 0 0");
+			Player player = client["player"];
 
-        [ConsoleInteraction(true)]
-        public static void serverCmdSAD(GameConnection client, string password)
-        {
-            if (password == string.Empty || password != omni.sGlobal["$Pref::Server::AdminPassword"])
-                return;
-            client["isAdmin"] = true.AsString();
-            client["isSuperAdmin"] = true.AsString();
+			if (camera.controlMode.AsString() == "Overhead")
+			{
+				//Player player = client["player"];
+				camera.setOrbitObject(player, (new Point3F(".33 0 0")), 1, 5, 5);
+				camera.controlMode = "OrbitObject";
+			}
+			else if (camera.controlMode.AsString() == "OrbitObject")
+			{
+				beta = U.Util.VectorAdd(player.getPosition(), (new Point3F("0 0 0")));
+				camera.position.X = beta.x;
+				camera.position.Y = beta.y;
+				camera.position.Z = beta.z;
+				camera.lookAt(player.getPosition());
+				camera.controlMode = "Overhead";
+			}
+		}
+		[ConsoleInteraction(true)]
+		public static void serverCmdadjustCamera(GameConnection client, int adjustment)
+		{
+			Extendable.Camera camera = client["camera"];
+			Player player = client["player"];
+			pInvokes U = new pInvokes();
+			Point3F beta = new Point3F("0 0 0");
+			double num;
+			if (camera.controlMode.AsString() == "OrbitObject")
+			{
+				if (adjustment == 1)
+				{
+					num = (camera.getPosition()).z + 0.5;
+				}
+				else
+				{
+					num = (camera.getPosition()).z - 0.5;
+				}
+				if (num < 0.5)
+				{
+					num = 0;
+				}
+				if (num > 15.0)
+				{
+					num = 15.0;
+				}
 
-            string name = omni.console.getTaggedString(client["playerName"]);
+				camera.setOrbitObject(client["player"], camera.getRotation(), 1, (float)num, (float)num);
+				camera.position.Z = (float)num;
+			}
+			if (camera.controlMode.AsString() == "Overhead")
+			{
+				beta = U.Util.VectorAdd(player.getPosition(), (new Point3F("0 0 adjustment")));
+				camera.position.X = beta.x;
+				camera.position.Y = beta.y;
+				camera.position.Z = beta.z;
+			}
+		}
 
-            message.MessageAll("MsgAdminForce", omni.console.ColorEncode(string.Format(@"\c2{0} has become Admin by force.", name)), client);
-        }
+		[ConsoleInteraction(true)]
+		public static void serverCmdNudge(GameConnection client)
+		{
+			Extendable.Camera camera = client["camera"];
+			camera.setEditable();
 
-        [ConsoleInteraction(true)]
-        public static void serverCmdSADSetPassword(GameConnection client, string password)
-        {
-            if (client["isSuperAdmin"].AsBool())
-                omni.sGlobal["$Pref::Server::AdminPassword"] = password;
-        }
+			camera.position.X = camera.position.X + (float)5;
+			omni.console.print((camera.position.X).AsString());
+			omni.console.print((camera.getMode()).AsString());
+		}
 
-        //----------------------------------------------------------------------------
-        // Server chat message handlers
-        //----------------------------------------------------------------------------
 
-        [ConsoleInteraction(true)]
-        public static void serverCmdTeamMessageSent(GameConnection client, string text)
-        {
-            if (text.Trim().Length >= omni.iGlobal["$Pref::Server::MaxChatLen"])
-                text = text.Substring(0, omni.iGlobal["$Pref::Server::MaxChatLen"]);
-            message.ChatMessageTeam(client, client["team"], omni.console.ColorEncode(@"\c3%1: %2"), client["playerName"], text);
-        }
+		//----------------------------------------------------------------------------
+		// Server admin
+		//----------------------------------------------------------------------------
 
-        [ConsoleInteraction(true)]
-        public static void ServerCmdMessageSent(GameConnection client, string text)
-        {
-            if (text.Trim().Length >= omni.iGlobal["$Pref::Server::MaxChatLen"])
-                text = text.Substring(0, omni.iGlobal["$Pref::Server::MaxChatLen"]);
-            message.ChatMessageAll(client, omni.console.ColorEncode(@"\c4%1: %2"), client["playerName"], text);
-        }
+		[ConsoleInteraction(true)]
+		public static void serverCmdSAD(GameConnection client, string password)
+		{
+			if (password == string.Empty || password != omni.sGlobal["$Pref::Server::AdminPassword"])
+				return;
+			client["isAdmin"] = true.AsString();
+			client["isSuperAdmin"] = true.AsString();
 
-        [ConsoleInteraction(true)]
-        public static void serverCmdSuicide(GameConnection client)
-        {
-            if (client.isObject())
-                ((Player) client["player"]).kill("Suicide");
-        }
+			string name = omni.console.getTaggedString(client["playerName"]);
 
-        [ConsoleInteraction(true)]
-        public static void serverCmdPlayCel(GameConnection client, string anim)
-        {
-            if (client.isObject())
-                ((Player) client["player"]).playCelAnimation(anim);
-        }
+			message.MessageAll("MsgAdminForce", omni.console.ColorEncode(string.Format(@"\c2{0} has become Admin by force.", name)), client);
+		}
 
-        [ConsoleInteraction(true)]
-        public static void serverCmdPlayDeath(GameConnection client, string anim)
-        {
-            if (client.isObject())
-                ((Player) client["player"]).playDeathAnimation();
-        }
+		[ConsoleInteraction(true)]
+		public static void serverCmdSADSetPassword(GameConnection client, string password)
+		{
+			if (client["isSuperAdmin"].AsBool())
+				omni.sGlobal["$Pref::Server::AdminPassword"] = password;
+		}
 
-        [ConsoleInteraction(true)]
-        public static void serverCmdThrow(GameConnection client, string data)
-        {
-            Player player = client["player"];
+		//----------------------------------------------------------------------------
+		// Server chat message handlers
+		//----------------------------------------------------------------------------
 
-            if (!player.isObject() || (player.getState() == "Dead") || !omni.bGlobal["$Game::Running"])
-                return;
+		[ConsoleInteraction(true)]
+		public static void serverCmdTeamMessageSent(GameConnection client, string text)
+		{
+			if (text.Trim().Length >= omni.iGlobal["$Pref::Server::MaxChatLen"])
+				text = text.Substring(0, omni.iGlobal["$Pref::Server::MaxChatLen"]);
+			message.ChatMessageTeam(client, client["team"], omni.console.ColorEncode(@"\c3%1: %2"), client["playerName"], text);
+		}
 
-            SimObject mountedimage = player.getMountedImage(omni.iGlobal["$WeaponSlot"]);
-            switch (data)
-                {
-                    case "Weapon":
-                    {
-                        if (mountedimage != "0")
-                            {
-                            ItemData item = mountedimage["item"];
-                            player.Throw(item, 1);
-                            }
-                    }
-                        break;
-                    case "Ammo":
-                    {
-                        if (mountedimage != "0")
-                            {
-                            SimObject item = mountedimage;
-                            if (item["ammo"] != string.Empty)
-                                player.Throw(item["ammo"]);
-                            }
-                    }
-                        break;
-                    default:
-                        if (player.hasInventory(data.getName()))
-                            player.Throw(data);
-                        break;
-                }
-        }
+		[ConsoleInteraction(true)]
+		public static void ServerCmdMessageSent(GameConnection client, string text)
+		{
+			if (text.Trim().Length >= omni.iGlobal["$Pref::Server::MaxChatLen"])
+				text = text.Substring(0, omni.iGlobal["$Pref::Server::MaxChatLen"]);
+			message.ChatMessageAll(client, omni.console.ColorEncode(@"\c4%1: %2"), client["playerName"], text);
+		}
 
-        [ConsoleInteraction(true)]
-        public static void serverCmdCycleWeapon(GameConnection client, string direction)
-        {
-            ShapeBase obj = client["player"];
-            obj.cycleWeapon(direction);
-        }
+		[ConsoleInteraction(true)]
+		public static void serverCmdSuicide(GameConnection client)
+		{
+			if (client.isObject())
+				((Player)client["player"]).kill("Suicide");
+		}
 
-        [ConsoleInteraction(true)]
-        public static void serverCmdUnmountWeapon(GameConnection client)
-        {
-            ((Player) client["player"]).unmountImage(omni.iGlobal["$WeaponSlot"]);
-        }
+		[ConsoleInteraction(true)]
+		public static void serverCmdPlayCel(GameConnection client, string anim)
+		{
+			if (client.isObject())
+				((Player)client["player"]).playCelAnimation(anim);
+		}
 
-        [ConsoleInteraction(true)]
-        public static void serverCmdReloadWeapon(GameConnection client)
-        {
-            Player player = client["player"];
+		[ConsoleInteraction(true)]
+		public static void serverCmdPlayDeath(GameConnection client, string anim)
+		{
+			if (client.isObject())
+				((Player)client["player"]).playDeathAnimation();
+		}
 
-            WeaponImage image = player.getMountedImage(omni.iGlobal["$WeaponSlot"]);
+		[ConsoleInteraction(true)]
+		public static void serverCmdThrow(GameConnection client, string data)
+		{
+			Player player = client["player"];
 
-            if (player.getInventory(image["ammo"]) == image["ammo.maxInventory"].AsInt())
-                return;
+			if (!player.isObject() || (player.getState() == "Dead") || !omni.bGlobal["$Game::Running"])
+				return;
 
-            if (image > 0)
-                image.clearAmmoClip(player, omni.sGlobal["$WeaponSlot"].AsInt());
-        }
-    }
+			SimObject mountedimage = player.getMountedImage(omni.iGlobal["$WeaponSlot"]);
+			switch (data)
+			{
+				case "Weapon":
+					{
+						if (mountedimage != "0")
+						{
+							ItemData item = mountedimage["item"];
+							player.Throw(item, 1);
+						}
+					}
+					break;
+				case "Ammo":
+					{
+						if (mountedimage != "0")
+						{
+							SimObject item = mountedimage;
+							if (item["ammo"] != string.Empty)
+								player.Throw(item["ammo"]);
+						}
+					}
+					break;
+				default:
+					if (player.hasInventory(data.getName()))
+						player.Throw(data);
+					break;
+			}
+		}
+
+		[ConsoleInteraction(true)]
+		public static void serverCmdCycleWeapon(GameConnection client, string direction)
+		{
+			ShapeBase obj = client["player"];
+			obj.cycleWeapon(direction);
+		}
+
+		[ConsoleInteraction(true)]
+		public static void serverCmdUnmountWeapon(GameConnection client)
+		{
+			((Player)client["player"]).unmountImage(omni.iGlobal["$WeaponSlot"]);
+		}
+
+		[ConsoleInteraction(true)]
+		public static void serverCmdReloadWeapon(GameConnection client)
+		{
+			Player player = client["player"];
+
+			WeaponImage image = player.getMountedImage(omni.iGlobal["$WeaponSlot"]);
+
+			if (player.getInventory(image["ammo"]) == image["ammo.maxInventory"].AsInt())
+				return;
+
+			if (image > 0)
+				image.clearAmmoClip(player, omni.sGlobal["$WeaponSlot"].AsInt());
+		}
+	}
 }
