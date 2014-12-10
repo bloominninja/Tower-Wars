@@ -1,5 +1,8 @@
-game/art/**/*
-game/levels/**/*
+#game/art/**/*
+#game/levels/**/*
+#game/core/**/*
+#game/tools/**/*
+#game/web/**/*
 game/shaders/procedural/*
 Winterleaf.Demo.Full/bin/**/*
 Winterleaf.Demo.Full/obj/**/*
@@ -8,6 +11,7 @@ Winterleaf.Engine.Omni/obj/**/*
 Winterleaf.Game/bin/**/*
 Winterleaf.Game/obj/**/*
 buildFiles/Link/**/*
+game/csScripts/bin/**/*
 *.bak
 *.tmp
 *.db

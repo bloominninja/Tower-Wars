@@ -1,0 +1,4 @@
+mklink /J art dropbox\Salvage\art
+mklink /J levels dropbox\Salvage\levels
+
+etc
