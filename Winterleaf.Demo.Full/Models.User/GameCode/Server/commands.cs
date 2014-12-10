@@ -355,8 +355,9 @@ namespace LaughingDogStudios.Salvage.Logic.Models.User.GameCode.Server
             Extendable.Camera camera = client["camera"];
             camera.setEditable();
 
-            camera.position.X = (float)5;
+            camera.position.X = camera.position.X + (float)5;
             omni.console.print((camera.position.X).AsString());
+            omni.console.print((camera.getMode()).AsString());
         }
 
 

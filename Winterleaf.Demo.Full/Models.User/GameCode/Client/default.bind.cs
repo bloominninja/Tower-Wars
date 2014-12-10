@@ -404,7 +404,7 @@ namespace LaughingDogStudios.Salvage.Logic.Models.User.GameCode.Client
            // omni.fGlobal["$mvYaw"] = omni.fGlobal["$mvYaw"] + yawAdj;
             omni.console.print("no");
             omni.console.commandToServer("Nudge");
-            omni.dGlobal["$mvForwardAction"] = 1;
+            omni.dGlobal["$mvxAction"] = 1;
 
             //console.SetVar("$mvYaw", console.GetVarFloat("$mvYaw") + yawAdj);
         }

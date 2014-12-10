@@ -472,13 +472,16 @@ namespace LaughingDogStudios.Salvage.Logic.Models.User.Extendable
                 c.setMode("Fly");
                 console.Call("EditorGui", "syncCameraGui");
             }
-            else
             {
-                omni.console.print("no");
-
+                omni.console.print("test");
+                omni.bGlobal["$isFlyVar"] = false;
                 Camera cam = this["camera"];
                 cam.position.X = (float)50;
+                cam.setMode("Newton");
+                omni.console.print((cam.getMode()).AsString());
 
+
+                //cam.moveCameraUp();
 
                 //control = player;
                // pInvokes U = new pInvokes();
@@ -545,7 +548,7 @@ namespace LaughingDogStudios.Salvage.Logic.Models.User.Extendable
         {
             string playerSpawnPoint = pickPlayerSpawnPoint(sGlobal["$Game::DefaultPlayerSpawnGroups"]);
 
-            if (SpawnPlayer(playerSpawnPoint, false))
+            if (SpawnPlayer(playerSpawnPoint, true))
                 
                 LoadOut(this["player"]);
             
