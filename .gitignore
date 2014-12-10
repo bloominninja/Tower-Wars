@@ -1,19 +1,17 @@
-game/art/**/*.DAE
-game/art/**/*.dts
-game/art/**/*.png
-game/art/**/*.bmp
-game/art/**/*.ogg
-game/art/**/*.wav
-game/art/**/*.ter
+game/art/**/*
+game/levels/**/*
 game/shaders/procedural/*
+C:\Users\nes\Source\Repos\OmniEngine.Net\My Projects\Salvage\Winterleaf.Demo.Full/bin/**/*
+C:\Users\nes\Source\Repos\OmniEngine.Net\My Projects\Salvage\Winterleaf.Demo.Full/obj/**/*
+C:\Users\nes\Source\Repos\OmniEngine.Net\My Projects\Salvage\Winterleaf.Engine.Omni/bin/**/*
+C:\Users\nes\Source\Repos\OmniEngine.Net\My Projects\Salvage\Winterleaf.Engine.Omni/obj/**/*
+C:\Users\nes\Source\Repos\OmniEngine.Net\My Projects\Salvage\Winterleaf.Game/bin/**/*
+C:\Users\nes\Source\Repos\OmniEngine.Net\My Projects\Salvage\Winterleaf.Game/obj/**/*
+buildFiles/Link/**/*
 *.bak
 *.tmp
-buildFiles/Link/**/*
 *.db
-game/art/**/*.jpg
-game/art/**/*.dds
 *.log
-game/art/*.decals
 *.exe
 *.dll
 *.pdb

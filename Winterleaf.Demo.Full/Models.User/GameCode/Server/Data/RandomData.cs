@@ -25,8 +25,9 @@ namespace LaughingDogStudios.Salvage.Logic.Models.User.GameCode.Server.Data
 
 		public override void onAdd(GameBase obj)
 		{
-			System.Windows.Forms.MessageBox.Show("hello");
-			game._gameBase.EventManager.EventManager_subscribe(gameDM.Event.ToString(), "onInitvars", "");
+			var a = new ScriptMsgListener();
+			//a.
+			//game._gameBase.EventManager.EventManager_subscribe(gameDM.Event.ToString(), gameDM.Event.initGameVars, "onInitvars");
 			//
 
 			//omni.console.print("hello");
