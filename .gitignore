@@ -19,4 +19,4 @@ game/art/*.decals
 *.pdb
 *.cache
 *.Cache
-Winterleaf.Demo.Full/obj/x64/Release/DesignTimeResolveAssemblyReferencesInput.cache
+*log*
