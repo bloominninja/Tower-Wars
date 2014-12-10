@@ -5,7 +5,7 @@ game/art/**/*.bmp
 game/art/**/*.ogg
 game/art/**/*.wav
 game/art/**/*.ter
-game/art/shaders/procedural/*
+game/shaders/procedural/*
 *.bak
 *.tmp
 buildFiles/Link/**/*
