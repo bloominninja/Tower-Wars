@@ -5,6 +5,7 @@ game/art/**/*.bmp
 game/art/**/*.ogg
 game/art/**/*.wav
 game/art/**/*.ter
+game/art/shaders/procedural/*
 *.bak
 *.tmp
 buildFiles/Link/**/*
@@ -28,5 +29,4 @@ Winterleaf.Engine.Omni/bin/x64/Debug/DotNetTorque.XML
 Winterleaf.Engine.Omni/bin/Debug/DotNetTorque.XML
 Winterleaf.Game/obj/x64/Debug/Salvage.csproj.FileListAbsolute.txt
 procedural
-*.hlsl
 Winterleaf.Game/obj/x64/Debug/Salvage.csproj.FileListAbsolute.txt
